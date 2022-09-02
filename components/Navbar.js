@@ -17,14 +17,16 @@ const Navbar = () => {
     };
 
     return (
-        <header className='bg-[#0077B6] sticky w-full h-full z-[100] shadow-xl '>
+        <header className='bg-[#0077B6] fixed  top-0 w-full h-20 z-[100] shadow-xl '>
             <div className='flex justify-between items-center w-full h-full mb-5 p-2 2xl:px-16'>
-                <Image 
-                    className='mt-2'
-                    src='/../public/assets/logo/logo2.png' 
-                    alt='logo' 
-                    width='100' 
-                    height='100' /> 
+                <div className='ml-5 sm:ml-1 mt-2'>
+                    <Image 
+                        className='mt-2'
+                        src='/../public/assets/logo/logo2.png' 
+                        alt='logo' 
+                        width='100' 
+                        height='100' /> 
+                </div>
                 <div>
                     <ul className='hidden md:flex'>
                         <Link href='/'>
@@ -51,10 +53,10 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className={navbar ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-[#0076b67b]' : ''}>
+            <div className={navbar ? 'md:hidden fixed left-0 top-0 w-full h-full bg-[#0076b67b]' : ''}>
                 <div className={
                     navbar 
-                        ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#00B4D8] p-10 ease-in duration-200' 
+                        ? 'fixed left-0 top-0 w-[75%] h-[100%] sm:w-[60%] md:w-[45%] bg-[#00B4D8] p-10 ease-in duration-200' 
                         : 'fixed left-[-150%] top-0 p-10 ease-out duration-200'}>
                     <div>
                         <div className='flex w-full items-center justify-between'>
