@@ -13,7 +13,7 @@ const Main = () => {
                 <h1 className='text-[#03055e]'>I'm a fullstack web developer</h1>
                 <p className='pt-4 pb-0 max-w-[70%] m-auto'>
                     At the beginning of this year I got the great news that I was chosen from more than a 1000 applicants to 
-                    attend the <span>School of Applied Thechnology JavaScript Bootcamp</span>. I got familiar with <span className=''>TDD, agile working methods,</span>
+                    attend the <span>School of Applied Technology JavaScript Bootcamp</span>. I got familiar with <span className=''>TDD, agile working methods,</span>
                     <span className=''>mob programming</span> and the tools modern fullstack developers work with. I know the principles of <span className=''>Clean Code </span> 
                     and I understand the importance of <span className=''>CI/CD</span>.
                 </p>

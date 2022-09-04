@@ -2,7 +2,7 @@ import React from 'react';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { IoLogoCss3, IoLogoNodejs } from 'react-icons/io';
 import { DiJavascript } from 'react-icons/di';
-import { SiNextdotjs, SiReact, SiGithub, SiAmazonaws } from 'react-icons/si';
+import { SiNextdotjs, SiReact, SiGithub, SiAmazonaws, SiTrello, SiPostgresql, SiEslint, SiFigma } from 'react-icons/si';
 
 const Skills = () => {
   return (
@@ -88,6 +88,46 @@ const Skills = () => {
                         </div>
                         <div className='flex flex-col justify-center items-center'>
                             <h3 className='text-[#023E8A]'>AWS</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className='bg-white p-6 shadow-xl rounded-xl text-white hover:scale-105 ease-in duration-30'>
+                    <div className='grid grid-cols-2 justify-center gap-4 items-center'>
+                        <div className='m-auto'>
+                            <SiTrello className='text-[#FF6D00]' size={60} />
+                        </div>
+                        <div className='flex flex-col justify-center items-center'>
+                            <h3 className='text-[#023E8A]'>Trello</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className='bg-white p-6 shadow-xl rounded-xl text-white hover:scale-105 ease-in duration-30'>
+                    <div className='grid grid-cols-2 justify-center gap-4 items-center'>
+                        <div className='m-auto'>
+                            <SiPostgresql className='text-[#FF6D00]' size={60} />
+                        </div>
+                        <div className='flex flex-col justify-center items-center'>
+                            <h3 className='text-[#023E8A]'>PostgreSQL</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className='bg-white p-6 shadow-xl rounded-xl text-white hover:scale-105 ease-in duration-30'>
+                    <div className='grid grid-cols-2 justify-center gap-4 items-center'>
+                        <div className='m-auto'>
+                            <SiEslint className='text-[#FF6D00]' size={60} />
+                        </div>
+                        <div className='flex flex-col justify-center items-center'>
+                            <h3 className='text-[#023E8A]'>ESLint</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className='bg-white p-6 shadow-xl rounded-xl text-white hover:scale-105 ease-in duration-30'>
+                    <div className='grid grid-cols-2 justify-center gap-4 items-center'>
+                        <div className='m-auto'>
+                            <SiFigma className='text-[#FF6D00]' size={60} />
+                        </div>
+                        <div className='flex flex-col justify-center items-center'>
+                            <h3 className='text-[#023E8A]'>Figma</h3>
                         </div>
                     </div>
                 </div>
