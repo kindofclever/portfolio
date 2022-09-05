@@ -20,18 +20,18 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleShadow = () => {
-            if(window.scrollY >= 90) {
+            if(window.scrollY > 0) {
                 setNavbarShadow(true);
             } else {
                 setNavbarShadow(false);
             }
         }
 
-        window.addEventListener('scrollY', handleShadow)
+        window.addEventListener('scroll', handleShadow)
     }, []);
 
     return (
-        <header className={ navbarShadow ? 'bg-[#0077B6] fixed top-0 w-full h-20 z-[100] shadow-xl ' : 'bg-[#0077B6] fixed top-0 w-full h-20 z-[100]' }>
+        <header className={ navbarShadow ? 'fixed top-0 w-full h-20 z-[100] shadow-xl bg-[#0077B6] text-white' : 'fixed top-0 w-full h-20 z-[100]' }>
             <div className='flex justify-between items-center w-full h-full mb-5 p-2 2xl:px-16'>
                 <Link href='/'>
                     <div className='ml-5 sm:ml-1 my-2'>
@@ -80,19 +80,19 @@ const Navbar = () => {
                     <div>
                         <ul className='uppercase py-5 text-white text-sm flex-col'>
                             <Link href='/'>
-                                <li className='py-2'>Home</li>
+                                <li onClick={ () => setNavbar(false) } className='py-2'>Home</li>
                             </Link>
                             <Link href='/#about'>
-                                <li className='py-2'>About me</li>
+                                <li onClick={ () => setNavbar(false) } className='py-2'>About me</li>
                             </Link>
                             <Link href='/#skills'>
-                                <li className='py-2'>Skills I have to offer</li>
+                                <li onClick={ () => setNavbar(false) } className='py-2'>Skills I have to offer</li>
                             </Link>
                             <Link href='/#projects'>
-                                <li className='py-2'>Projects</li>
+                                <li onClick={ () => setNavbar(false) } className='py-2'>Projects</li>
                             </Link>
                             <Link href='/#contact'>
-                                <li className='py-2'>Get in touch</li>
+                                <li onClick={ () => setNavbar(false) } className='py-2'>Get in touch</li>
                             </Link>
                         </ul>
                         <div className='py-'>

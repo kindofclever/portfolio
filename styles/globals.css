@@ -1,33 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    background: linear-gradient(-45deg, #48CAE4, #00B4D8, #0096C7, #0077B6);
-    background-size: 400% 400%;
-    animation: gradient 3s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+*{
+    font-family: 'Inter', sans-serif;
 }
 
 @layer base {
-    /* body {
+    body {
         @apply bg-[#00B4D8] text-[#03045E] tracking-wide;
-    } */
+    }
 
     h1, h2, h3, h4, h5, h6 {
         @apply font-bold text-[#03045E];
