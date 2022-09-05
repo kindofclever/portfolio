@@ -17,7 +17,7 @@ html {
     }
 
     h1, h2, h3, h4, h5, h6 {
-        @apply font-bold text-[#03045E];
+        @apply font-bold text-[#03045E] decoration-[#03045E];
     }
 
     h1 {
@@ -29,7 +29,7 @@ html {
     }
 
     li {
-        @apply list-none cursor-pointer 
+        @apply list-none cursor-pointer; 
     }
 
     button {

@@ -31,7 +31,7 @@ const Projects = () => {
                     projectTitle='Tilia-App' 
                     projectDescription='A page for a company that provides courses'
                     backgroundImg={activity} 
-                    projectUrl='/activityknot'/>
+                    projectUrl='/tilia'/>
             </div>
         </div>
     </div>

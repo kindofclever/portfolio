@@ -9,7 +9,7 @@ const Main = () => {
         <div className='max-w-[1240px] w-full bottom-0 flex justify-center items-centers lg:mt-[10%]'>
             <div>
                 <p className='uppercase text-sm tracking-widest text-[#03045E]'>Nice that you are visiting me</p>
-                <h1 className='text-white'>Hej, my name is <span className='text-[#ffbf00] hover:text-[#FF8500]'>Sandra</span></h1>
+                <h1 className='text-white'>Hello, my name is <span className='text-[#ffbf00] hover:text-[#FF8500]'>Sandra</span>.</h1>
                 <h1 className='text-[#03055e]'>I'm a fullstack web developer</h1>
                 <p className='pt-4 pb-0 max-w-[70%] m-auto'>
                     At the beginning of this year I got the great news that I was chosen from more than a 1000 applicants to 

@@ -7,11 +7,11 @@ import Link from 'next/link';
 const activityknot = () => {
   return (
     <div className='w-full'>
-      <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
-        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-[#023E8A]/90 z-10' />
+      <div className='w-screen h-[30vh] lg:h-[35vh] relative'>
+        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[35vh] bg-[#0077B6]/90 md:bg-[#0077B6]/80  z-10' />
           <Image className='absolute z-1' layout='fill' objectFit='cover' src={activity} alt='/' />
           <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white'>
-            <h2 className='py-2 text-white'>Activity-knot</h2>
+            <h2 className='py-2 text-white'>Activity-Knot</h2>
             <h3 className=' text-white'>React.js/ PostgreSQL/ Node.js/ Heroku</h3>
           </div>
         </div>

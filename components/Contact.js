@@ -21,17 +21,17 @@ const Contact = () => {
                                 className='rounded-xl hover:scale-105 ease-in duration-300 xs:mr-5 sm:mr-5 md:mr-5' />
                         </div>
                         <div>
-                        <div className='flex items-center justify-evenly pt-6'>
-                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                        <div className='flex items-center justify-between pt-6'>
+                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                             <IoLogoLinkedin size={30}/>
                             </div>
-                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                                 <ImGithub size={30} />
                             </div>
-                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                                 <IoMdMail size={30} />
                             </div>
-                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                                 <SiCodewars size={30} />
                             </div>
                             </div>
@@ -66,7 +66,7 @@ const Contact = () => {
             </div>
             <div className='flex justify-center pt-12' >
                 <Link href='/'>
-                    <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-200'>
+                    <div className='text-[#0077B6] p-2 m-1  cursor-pointer hover:scale-[105%] ease-in duration-200'>
                         <FaAngleDoubleUp size={35}/>
                     </div>
                 </Link>
