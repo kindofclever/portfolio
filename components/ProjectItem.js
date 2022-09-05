@@ -14,8 +14,7 @@ const ProjectItem = ({ projectTitle, projectDescription, backgroundImg, projectU
                  <motion.div
                      whileHover={{
                         scale: 1.1,
-                        textShadow: '0px 0px 8px rgb(255, 255, 255)',
-                        boxShadow: '0px 0px 8px rgb(255, 255, 255)',
+                        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px;',
                     }}>   
                     <Link 
                         href={projectUrl}>

@@ -6,6 +6,7 @@ import { VscChromeClose } from 'react-icons/vsc';
 import { IoLogoLinkedin, IoMdMail } from 'react-icons/io';
 import { ImGithub } from 'react-icons/im';
 import { SiCodewars } from 'react-icons/si';
+import { BsSunFill } from 'react-icons/bs';
 
 
 const Navbar = () => {
@@ -17,15 +18,10 @@ const Navbar = () => {
     };
 
     return (
-        <header className='bg-[#0077B6] fixed  top-0 w-full h-20 z-[100] shadow-xl '>
+        <header className='bg-[#0077B6] fixed top-0 w-full h-20 z-[100] shadow-xl '>
             <div className='flex justify-between items-center w-full h-full mb-5 p-2 2xl:px-16'>
-                <div className='ml-5 sm:ml-1 mt-2'>
-                    <Image 
-                        className='mt-2'
-                        src='/../public/assets/logo/logo2.png' 
-                        alt='logo' 
-                        width='100' 
-                        height='100' /> 
+                <div className='ml-5 sm:ml-1 my-2'>
+                  <BsSunFill className='text-[#ffbf00]' size={65} />
                 </div>
                 <div>
                     <ul className='hidden md:flex'>

@@ -18,16 +18,16 @@ const Main = () => {
                     and I understand the importance of <span className=''>CI/CD</span>.
                 </p>
                 <div className='flex items-center justify-evenly max-w-[350px] m-auto pt-5 sm:max-w[300px] md:pt-5'>
-                    <div className='bg-[#0077B6] text-[#ff9e00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                    <div className='text-[#0077B6] bg-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                         <IoLogoLinkedin size={30}/>
                     </div>
-                    <div className='bg-[#0077B6] text-[#FF9E00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                    <div className='text-[#0077B6] bg-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                         <ImGithub size={30} />
                     </div>
-                    <div className='bg-[#0077B6] text-[#FF9E00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                    <div className='text-[#0077B6] bg-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                         <IoMdMail size={30} />
                     </div>
-                    <div className='bg-[#0077B6] text-[#FF9E00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                    <div className='text-[#0077B6] bg-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                         <SiCodewars size={30} />
                     </div>
                 </div>

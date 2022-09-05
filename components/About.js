@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className='ml-5 sm:mr-5 md:mr-5 w-full md:h-screen p-2 flex items-center py-16'>
-        <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
+    <div className= 'sm:mr-5 md:mr-5 w-full md:h-screen p-2 flex items-center py-16'>
+        <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 ml-5'>
             <div className='col-span-2'>
                 <p className='text-[#0077B6] uppercase text-xl tracking-widest'>About me</p>
                 <h2 className='text-[#ffbf00] font-bold  mt-3'>Who am I?</h2>

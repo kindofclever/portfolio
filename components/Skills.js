@@ -6,11 +6,11 @@ import { SiNextdotjs, SiReact, SiGithub, SiAmazonaws, SiTrello, SiPostgresql, Si
 
 const Skills = () => {
   return (
-    <div className ='ml-5 w-full lg:h-screen p-2'>
-        <div className ='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
+    <div className ='w-full lg:h-screen p-2'>
+        <div className ='max-w-[1240px] ml-5 flex flex-col justify-center h-full'>
             <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Skills</p>
             <h2 className='text-[#ffbf00] font-bold mt-3'>What can I do for you?</h2>
-            <div className='mr-5 mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
+            <div className=' mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-8 sm:mr-5'>
                 <div className='bg-white p-6 shadow-xl rounded-xl text-white hover:scale-105 ease-in duration-30'>
                     <div className='grid grid-cols-2 justify-center gap-4 items-center'>
                         <div className='m-auto'>
