@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { RiMenu4Fill } from 'react-icons/ri';
@@ -12,35 +12,47 @@ import { BsSunFill } from 'react-icons/bs';
 const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false);
+    const [navbarShadow, setNavbarShadow] = useState(false);
 
     const handleNavClick = () => {
         setNavbar(!navbar);
     };
 
+    useEffect(() => {
+        const handleShadow = () => {
+            if(window.scrollY >= 90) {
+                setNavbarShadow(true);
+            } else {
+                setNavbarShadow(false);
+            }
+        }
+
+        window.addEventListener('scrollY', handleShadow)
+    }, []);
+
     return (
-        <header className='bg-[#0077B6] fixed top-0 w-full h-20 z-[100] shadow-xl '>
+        <header className={ navbarShadow ? 'bg-[#0077B6] fixed top-0 w-full h-20 z-[100] shadow-xl ' : 'bg-[#0077B6] fixed top-0 w-full h-20 z-[100]' }>
             <div className='flex justify-between items-center w-full h-full mb-5 p-2 2xl:px-16'>
-                <div className='ml-5 sm:ml-1 my-2'>
-                  <BsSunFill className='text-[#ffbf00]' size={65} />
-                </div>
+                <Link href='/'>
+                    <div className='ml-5 sm:ml-1 my-2'>
+                        <BsSunFill className='text-[#ffbf00]' size={65} />
+                    </div>
+                </Link>
                 <div>
                     <ul className='hidden md:flex'>
                         <Link href='/'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#about'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>About me</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#skills'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Skills I have to offer</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#projects'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
                         </Link>
-                        <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Blog</li>
-                        </Link>
-                        <Link href='/'>
+                        <Link href='/#contact'>
                             <li className='ml-10 mr-10 text-sm uppercase hover:border-b'>Get in touch</li>
                         </Link>
                     </ul>
@@ -56,12 +68,7 @@ const Navbar = () => {
                         : 'fixed left-[-150%] top-0 p-10 ease-out duration-200'}>
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                        <Image 
-                            className='mt-5'
-                            src='/../public/assets/logo/logo2.png' 
-                            alt='logo' 
-                            width='80' 
-                            height='70' />
+                        <BsSunFill className='text-[#ffbf00]' size={65} />
                             <div onClick={handleNavClick} className='hover:text-[#ffbf00] p-2 rounded-full shadow-xl cursor-pointer'>
                                 <VscChromeClose size={30} />
                             </div>
@@ -75,19 +82,16 @@ const Navbar = () => {
                             <Link href='/'>
                                 <li className='py-2'>Home</li>
                             </Link>
-                            <Link href='/'>
+                            <Link href='/#about'>
                                 <li className='py-2'>About me</li>
                             </Link>
-                            <Link href='/'>
+                            <Link href='/#skills'>
                                 <li className='py-2'>Skills I have to offer</li>
                             </Link>
-                            <Link href='/'>
+                            <Link href='/#projects'>
                                 <li className='py-2'>Projects</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-2'>Blog</li>
-                            </Link>
-                            <Link href='/'>
+                            <Link href='/#contact'>
                                 <li className='py-2'>Get in touch</li>
                             </Link>
                         </ul>

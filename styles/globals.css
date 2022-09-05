@@ -2,10 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    body {
-        @apply bg-[#00B4D8] text-[#03045E] tracking-wide;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(-45deg, #48CAE4, #00B4D8, #0096C7, #0077B6);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
     }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@layer base {
+    /* body {
+        @apply bg-[#00B4D8] text-[#03045E] tracking-wide;
+    } */
 
     h1, h2, h3, h4, h5, h6 {
         @apply font-bold text-[#03045E];
@@ -24,6 +46,6 @@
     }
 
     button {
-        @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#FF6D00] to-[#FF9100] text-white;
+        @apply shadow-xl rounded-xl uppercase bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] text-white;
     }
 }

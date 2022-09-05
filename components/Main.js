@@ -5,11 +5,11 @@ import { SiCodewars } from 'react-icons/si';
 
 const Main = () => {
   return (
-    <div className='w-full h-screen text-center mt-[33%] md:mt-[17%]'>
+    <div id='home' className='w-full h-screen text-center mt-[33%] md:mt-[17%]'>
         <div className='max-w-[1240px] w-full bottom-0 flex justify-center items-centers lg:mt-[10%]'>
             <div>
-                <p className='uppercase text-sm tracking-widest text-[#0077B6]'>Nice that you are visiting me</p>
-                <h1 className='text-white'>Hej, my name is <span className='text-[#ffbf00]'>Sandra</span></h1>
+                <p className='uppercase text-sm tracking-widest text-[#03045E]'>Nice that you are visiting me</p>
+                <h1 className='text-white'>Hej, my name is <span className='text-[#ffbf00] hover:text-[#FF8500]'>Sandra</span></h1>
                 <h1 className='text-[#03055e]'>I'm a fullstack web developer</h1>
                 <p className='pt-4 pb-0 max-w-[70%] m-auto'>
                     At the beginning of this year I got the great news that I was chosen from more than a 1000 applicants to 
@@ -18,16 +18,16 @@ const Main = () => {
                     and I understand the importance of <span className=''>CI/CD</span>.
                 </p>
                 <div className='flex items-center justify-evenly max-w-[350px] m-auto pt-5 sm:max-w[300px] md:pt-5'>
-                    <div className='text-[#0077B6] bg-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                    <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                         <IoLogoLinkedin size={30}/>
                     </div>
-                    <div className='text-[#0077B6] bg-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                    <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                         <ImGithub size={30} />
                     </div>
-                    <div className='text-[#0077B6] bg-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                    <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                         <IoMdMail size={30} />
                     </div>
-                    <div className='text-[#0077B6] bg-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                    <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
                         <SiCodewars size={30} />
                     </div>
                 </div>
