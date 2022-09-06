@@ -18,8 +18,6 @@ const About = () => {
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sit dolorem vero veritatis at hic, nulla molestias repellat aliquam, ipsa voluptates quae saepe? Inventore ex ducimus doloremque, reprehenderit rem dolorum.
                 </p>
-
-                <h3 className=' w-[35%]  py-2 cursor-pointer font-semibold hover:underline'> <Link href='/#projects'>Have a glance at my latest projects</Link></h3>
             </div>
             <div className='w-full h-auto m-auto flex items-center justify-center'>
                 <motion.div  

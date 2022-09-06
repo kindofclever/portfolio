@@ -115,18 +115,26 @@ const Navbar = () => {
                         <div className='py-'>
                             <p className='uppercase text-xs mt-10 tracking-widest text-[#ffbf00] font-bold'>Let's connect!</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[90%]'>
-                                <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
-                                    <IoLogoLinkedin size={30}/>
-                                </div>
+                                <a href='https://www.linkedin.com/in/sandragufler/'>
+                                    <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
+                                        <IoLogoLinkedin size={30}/>
+                                    </div>
+                                </a>
+                                <a href='https://github.com/kindofclever'>
                                 <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
                                     <ImGithub size={30} />
                                 </div>
-                                <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
-                                    <IoMdMail size={30} />
-                                </div>
-                                <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
-                                    <SiCodewars size={30} />
-                                </div>
+                                </a>
+                                <a href='/#contact'>
+                                    <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
+                                        <IoMdMail size={30} />
+                                    </div>
+                                </a>
+                                <a href='https://www.codewars.com/users/kindofclever'>
+                                    <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
+                                        <SiCodewars size={30} />
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
