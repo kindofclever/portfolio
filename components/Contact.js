@@ -21,19 +21,22 @@ const Contact = () => {
                                 className='rounded-xl hover:scale-105 ease-in duration-300 xs:mr-5 sm:mr-5 md:mr-5' />
                         </div>
                         <div>
-                        <div className='flex items-center justify-between pt-6'>
-                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
-                            <IoLogoLinkedin size={30}/>
-                            </div>
-                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
-                                <ImGithub size={30} />
-                            </div>
-                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
-                                <IoMdMail size={30} />
-                            </div>
-                            <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
-                                <SiCodewars size={30} />
-                            </div>
+                            <div className='flex items-center justify-between pt-6'>
+                                <a href='https://www.linkedin.com/in/sandragufler/'>
+                                    <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                                        <IoLogoLinkedin size={30}/>
+                                    </div>
+                                </a>
+                                <a href='https://github.com/kindofclever'>
+                                    <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                                        <ImGithub size={30} />
+                                    </div>
+                                </a>
+                                <a href='https://www.codewars.com/users/kindofclever'>
+                                <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                                    <SiCodewars size={30} />
+                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

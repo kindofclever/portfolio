@@ -19,8 +19,12 @@ const activityknot = () => {
           <div className='col-span-4'>
             <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overwiew</h2>
             <p className='mb-4'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus obcaecati ad sint nulla aut vero reprehenderit ducimus delectus recusandae quisquam officia impedit odio, libero laboriosam molestias eius consectetur aliquam in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia inventore, consequatur quaerat unde cumque consectetur alias numquam voluptatem amet quam ullam, id eligendi, possimus dolorum perferendis voluptate vel necessitatibus sed.</p>
-            <button className=' bg-[#0077B6] hover:bg-gradient-to-l from-[#023E8A] to-[#0077B6] px-8 py-4 mt-2 mr-8'>Demo</button>
-            <button className='bg-[#0077B6] hover:bg-gradient-to-l from-[#023E8A] to-[#0077B6] px-8 py-4 mt-2'>Code</button>
+            <a href='https://activity-knot.herokuapp.com/'>
+              <button className=' bg-[#0077B6] hover:bg-gradient-to-l from-[#023E8A] to-[#0077B6] px-8 py-4 mt-2 mr-8'>Demo</button>
+            </a>
+            <a href='https://github.com/matildisnil/saltFinalProjectBackend'>
+              <button className=' bg-[#0077B6] hover:bg-gradient-to-l from-[#023E8A] to-[#0077B6] px-8 py-4 mt-2'>Code</button>
+            </a>
           </div>
           <div className='col-span-4 md:col-span-1 shadow-xl rounded-xl bg-white hover:bg-[#0077B6] group  hover:text-white '>
             <div className='py-9'>
