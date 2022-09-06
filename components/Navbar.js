@@ -87,15 +87,15 @@ const Navbar = () => {
                         <div className='flex w-full items-center justify-between'>
                         <BsSunFill className='text-[#ffbf00]' size={65} />
                             <div onClick={handleNavClick} className='hover:text-[#ffbf00] p-2 rounded-full shadow-xl cursor-pointer'>
-                                <VscChromeClose size={30} />
+                                <VscChromeClose className='text-[#03045E]' size={30} />
                             </div>
                         </div>
                         <div className='border-b border-[#ffbf00] my-5'>
-                            <p className='w-[90%] md:w-[95%] py-3'>Let's check if I'm a good fit for your company!</p>
+                            <p className='w-[90%] md:w-[95%] py-3 text-[#03045E]'>Let's check if I'm a good fit for your company!</p>
                         </div>
                     </div>
                     <div>
-                        <ul className='uppercase py-5 text-[#03045E] text-sm flex-col'>
+                        <ul className='uppercase py-5 text-sm flex-col'>
                             <Link href='/'>
                                 <li onClick={ () => setNavbar(false) } className='py-2'>Home</li>
                             </Link>
@@ -114,7 +114,7 @@ const Navbar = () => {
                         </ul>
                         <div className='py-'>
                             <p className='uppercase text-xs mt-10 tracking-widest text-[#ffbf00] font-bold'>Let's connect!</p>
-                            <div className='flex items-center justify-between my-4 w-full sm:w-[90%]'>
+                            <div className='flex items-center text-[#03045E] justify-between my-4 w-full sm:w-[90%]'>
                                 <a href='https://www.linkedin.com/in/sandragufler/'>
                                     <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
                                         <IoLogoLinkedin size={30}/>
