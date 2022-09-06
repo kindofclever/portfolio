@@ -7,16 +7,33 @@ import { IoLogoLinkedin, IoMdMail } from 'react-icons/io';
 import { ImGithub } from 'react-icons/im';
 import { SiCodewars } from 'react-icons/si';
 import { BsSunFill } from 'react-icons/bs';
-import logo from '../public/assets/logo/logo2.png'
+import logo from '../public/assets/logo/logo2.png';
+import { useRouter } from 'next/router';
+
 
 const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false);
     const [navbarShadow, setNavbarShadow] = useState(false);
+    const [navbarTextColour, setNavbarTextColour] = useState('');
+    const router = useRouter();
 
     const handleNavClick = () => {
         setNavbar(!navbar);
     };
+
+    useEffect(() => {
+
+        if ( router.asPath === '/activityknot' ||
+             router.asPath === '/elevators' ||       
+             router.asPath === '/shoppinglist' ||       
+             router.asPath === '/tilia'       
+        ) {
+            setNavbarTextColour('white');
+        } else {
+            setNavbarTextColour('');
+        }
+    },[router]);
 
     useEffect(() => {
         const handleShadow = () => {
@@ -41,19 +58,19 @@ const Navbar = () => {
                 <div>
                     <ul className='hidden md:flex'>
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
+                            <li style={{color: `${navbarTextColour}`}} className='ml-10 text-sm uppercase hover:border-b'>Home</li>
                         </Link>
                         <Link href='/#about'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>About me</li>
+                            <li style={{color: `${navbarTextColour}`}} className='ml-10 text-sm uppercase hover:border-b'>About me</li>
                         </Link>
                         <Link href='/#skills'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Skills I have to offer</li>
+                            <li style={{color: `${navbarTextColour}`}} className='ml-10 text-sm uppercase hover:border-b'>Skills I have to offer</li>
                         </Link>
                         <Link href='/#projects'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
+                            <li style={{color: `${navbarTextColour}`}} className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
                         </Link>
                         <Link href='/#contact'>
-                            <li className='ml-10 mr-10 text-sm uppercase hover:border-b'>Get in touch</li>
+                            <li style={{color: `${navbarTextColour}`}} className='ml-10 mr-10 text-sm uppercase hover:border-b'>Get in touch</li>
                         </Link>
                     </ul>
                     <div onClick={handleNavClick} className='md:hidden mr-6'>
