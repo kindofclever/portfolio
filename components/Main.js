@@ -5,7 +5,7 @@ import { SiCodewars } from 'react-icons/si';
 
 const Main = () => {
   return (
-    <div id='home' className='w-full h-screen text-center mt-[33%] md:mt-[14%]'>
+    <div id='home' className='w-full h-screen text-center mt-[33%] md:mt-[10%]'>
         <div className='max-w-[1240px] w-full bottom-0 flex justify-center items-centers lg:mt-[10%]'>
             <div>
                 <p className='uppercase text-sm tracking-widest text-[#03045E]'>Nice that you are visiting me</p>
