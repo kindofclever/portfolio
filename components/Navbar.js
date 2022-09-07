@@ -125,11 +125,6 @@ const Navbar = () => {
                                     <ImGithub size={30} />
                                 </div>
                                 </a>
-                                <a href='/#contact'>
-                                    <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
-                                        <IoMdMail size={30} />
-                                    </div>
-                                </a>
                                 <a href='https://www.codewars.com/users/kindofclever'>
                                     <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
                                         <SiCodewars size={30} />
