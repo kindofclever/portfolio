@@ -30,10 +30,12 @@ const shoppinglist = () => {
         <div className='col-span-4 md:col-span-1 shadow-xl rounded-xl bg-white hover:bg-[#0077B6] group  hover:text-white '>
             <div className='py-9'>
                 <p className='text-center font-bold pb-2 text-[#023E8A]  group-hover:text-white '>Technologies</p>
-                <div className='grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1  group-hover:text-white '>
-                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Vanilla JavaScript</p>
-                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Local Storage</p>
-                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> VS Code</p>
+                <div className='flex flex-col justify-center items-start group-hover:text-white '>
+                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> React.js</p>
+                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Node.js</p>
+                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Express</p>
+                  <p className=' group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> PosgreSQL</p>
+                  <p className=' group-hover:text-white   text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Own RESTfull api</p>
                 </div>
               </div>
             </div>
@@ -45,7 +47,7 @@ const shoppinglist = () => {
               </div>
           </Link>
         </div>
-  </div>
+    </div>
   )
 }
 

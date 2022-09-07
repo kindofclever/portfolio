@@ -26,7 +26,7 @@ const elevators = () => {
           <div className='col-span-4 md:col-span-1 shadow-xl rounded-xl bg-white hover:bg-[#0077B6] group  hover:text-white '>
             <div className='py-9'>
                 <p className='text-center font-bold pb-2 text-[#023E8A]  group-hover:text-white '>Technologies</p>
-                <div className='grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1  group-hover:text-white '>
+                <div className='flex flex-col justify-center items-start group-hover:text-white '>
                   <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> React.js</p>
                   <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Node.js</p>
                   <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Express</p>
@@ -38,13 +38,13 @@ const elevators = () => {
         </div>
         <div className='flex justify-center' >
           <Link href='/#projects'>
-              <div className='text-[#0077B6] p-2 m-1 cursor-pointer hover:scale-[105%] ease-in duration-200'>
+              <div className='text-[#0077B6] p-2 m-1  cursor-pointer hover:scale-[105%] ease-in duration-200'>
                   <FaAngleDoubleLeft size={35}/>
               </div>
           </Link>
         </div>
     </div>
   )
-};
+}
 
 export default elevators;
