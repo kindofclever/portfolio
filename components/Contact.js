@@ -4,9 +4,27 @@ import { ImGithub } from 'react-icons/im';
 import { SiCodewars } from 'react-icons/si';
 import { FaAngleDoubleUp } from 'react-icons/fa';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Contact = () => {
-  return (
+       
+    const router = useRouter();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const formData = {};
+        Array.from(e.currentTarget.elements).forEach(field => {
+            if (!field.name) return;
+            formData[field.name] = field.value;
+        });
+        fetch('/api/mail', {
+            method: 'post',
+            body: JSON.stringify(formData),
+        })
+        router.push('/thankyou');
+    };
+
+    return (
         <div id='contact'className='w-full lg:h-screen pt-8'>
             <div className='max-w-[1240px] m-auto ml-5 px-2 py-16 w-full'>
                 <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Contact</p>
@@ -43,27 +61,26 @@ const Contact = () => {
                     </div>
                     <div className='col-span-3 mr-5 h-auto shadow-xl rounded-xl lg:p-4 bg-white'>
                         <div className='p-3'>
-                            <form action="https://formsubmit.co/sandra.gufler@appliedtechnology.se" method="POST">
+                            <form method='post' onSubmit={handleSubmit}>
                                 <div className='grid md:grid-cols-2 gap-1 w-full pt-1'>
                                     <div className='flex flex-col'>
-                                        <label className='uppercase text-sm py-2'>Name</label>
-                                        <input type="text" required className='border-2 rounded-xl p-3 w-full flex border-[#0096C7]'/>
+                                        <label className='uppercase text-sm py-2' htmlFor='name'>Name</label>
+                                        <input name='name' type="text" required className='border-2 rounded-xl p-3 w-full flex border-[#0096C7]'/>
                                     </div>
                                     <div className='flex flex-col'>
-                                        <label className='uppercase text-sm py-2'>Phone number</label>
-                                        <input type="text" className='border-2 rounded-xl p-3 w-full flex border-[#0096C7]'/>
+                                        <label className='uppercase text-sm py-2'  htmlFor='phone' >Phone number</label>
+                                        <input name='phone' type="text" className='border-2 rounded-xl p-3 w-full flex border-[#0096C7]'/>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <label className='uppercase text-sm py-2'>E-Mail</label>
-                                    <input type="email" required className='border-2 rounded-xl p-3 w-full flex border-[#0096C7]'/>
+                                    <label className='uppercase text-sm py-2' htmlFor='email'>E-Mail</label>
+                                    <input name='email' type='email' required className='border-2 rounded-xl p-3 w-full flex border-[#0096C7]'/>
                                 </div>
                                 <div className='flex flex-col mb-5'>
-                                    <label className='uppercase text-sm py-2'>Message</label>
-                                    <textarea required rows='4' className='border-2 rounded-xl p-3 w-full flex border-[#0096C7]'/>
+                                    <label className='uppercase text-sm py-2' htmlFor='message'>Message</label>
+                                    <textarea name='message' required rows='4' className='border-2 rounded-xl p-3 w-full flex border-[#0096C7]'/>
                                 </div>
-                                <input type="hidden" name="_next" value='https://sandragufler-portfolio.vercel.app/thankyou'></input>
-                                <button type='submit' className='w-full p-4 text-white lg:mt-5'>Send message</button>
+                                <button type='submit' className='w-full p-4 text-white bg-[#ffbf00] lg:mt-5'>Send message</button>
                             </form>
                         </div>
                     </div>
@@ -78,6 +95,6 @@ const Contact = () => {
             </div>
         </div>
     )
-    }
+}
 
 export default Contact

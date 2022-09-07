@@ -19,7 +19,7 @@ const About = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sit dolorem vero veritatis at hic, nulla molestias repellat aliquam, ipsa voluptates quae saepe? Inventore ex ducimus doloremque, reprehenderit rem dolorum.
                 </p>
             </div>
-            <div className='w-full h-auto m-auto flex items-center justify-center'>
+            <div className='w-full h-auto m-auto flex items-center justify-center mt-10 md:mt-0'>
                 <motion.div  
                     className='shadow-xl bg-white p-3 rounded-xl'
                     whileHover={{ scale: [null, 1.3, 1.2] }}
