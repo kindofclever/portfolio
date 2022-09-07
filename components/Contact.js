@@ -21,7 +21,8 @@ const Contact = () => {
             method: 'post',
             body: JSON.stringify(formData),
         })
-        router.push('/thankyou');
+        
+        setTimeout(()=> router.push('/thankyou'), 300);
     };
 
     return (
