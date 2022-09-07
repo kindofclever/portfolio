@@ -10,7 +10,7 @@ const thankyou = () => {
       <div className='w-full px-5 max-w-[1240px] h-screen flex flex-col justify-center items-center'> 
           <motion.div 
             animate={{rotate: 360}}  
-            transition={{ ease: "linear", duration: 5, repeat: Infinity }}
+            transition={{ ease: "linear", duration: 10, repeat: Infinity }}
             className='mb-[6%]'>
             <BsSunFill className='text-[#ffbf00]' size={70} />
           </motion.div>
