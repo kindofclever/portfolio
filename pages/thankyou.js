@@ -18,7 +18,7 @@ const thankyou = () => {
           <h2 className=' sm:mx-5 md:mx-5 text-center'>Thank you for sending me a message!</h2>
           <p className=' text-white text-2xl text-semibold mt-6 text-center'>I will get back to you as soon as I can!</p>
           <div className='flex justify-start items-center' >
-          <Link href='/#projects'>
+          <Link href='/'>
               <div className='text-[#0077B6] p-2 mt-0 cursor-pointer hover:scale-[105%] ease-in duration-200'>
                   <FaAngleDoubleLeft size={35}/>
               </div>
