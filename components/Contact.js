@@ -41,17 +41,17 @@ const Contact = () => {
                             <div>
                                 <div className='flex items-center justify-between pt-6'>
                                     <a href='https://www.linkedin.com/in/sandragufler/'>
-                                        <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                                        <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2 mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-50'>
                                             <IoLogoLinkedin size={30}/>
                                         </div>
                                     </a>
                                     <a href='https://github.com/kindofclever'>
-                                        <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                                        <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-50'>
                                             <ImGithub size={30} />
                                         </div>
                                     </a>
                                     <a href='https://www.codewars.com/users/kindofclever'>
-                                    <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[125%] ease-in duration-200'>
+                                    <div className='text-[#0077B6] bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-50'>
                                         <SiCodewars size={30} />
                                     </div>
                                     </a>
@@ -80,7 +80,7 @@ const Contact = () => {
                                     <label className='uppercase text-sm py-2' htmlFor='message'>Message</label>
                                     <textarea name='message' required rows='4' className='border-2 rounded-xl p-3 w-full flex border-[#0096C7]'/>
                                 </div>
-                                <button type='submit' className='w-full p-4 text-white bg-[#ffbf00] lg:mt-5'>Send message</button>
+                                <button type='submit' className='w-full p-4 text-white bg-[#ffbf00] lg:mt-5 hover:scale-[103%] duration-200'>Send message</button>
                             </form>
                         </div>
                     </div>

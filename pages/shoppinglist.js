@@ -38,13 +38,13 @@ const shoppinglist = () => {
               </div>
             </div>
         </div>
-      <div className='flex justify-start pt-12 ml-5'>
+        <div className='flex justify-center' >
           <Link href='/#projects'>
-              <div className='text-[#0077B6] uppercase text-xl hover:underline m-1 rounded-full cursor-pointer'>
-                  Back
+              <div className='text-[#0077B6] p-2 m-1  cursor-pointer hover:scale-[105%] ease-in duration-200'>
+                  <FaAngleDoubleLeft size={35}/>
               </div>
           </Link>
-      </div>
+        </div>
   </div>
   )
 }

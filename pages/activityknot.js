@@ -39,13 +39,13 @@ const activityknot = () => {
               </div>
             </div>
         </div>
-        <div className='flex justify-start ml-5 pt-12' >
-                <Link href='/#projects'>
-                    <div className='text-[#0077B6] uppercase text-xl hover:underline m-1 rounded-full cursor-pointer'>
-                        Back
-                    </div>
-                </Link>
-            </div>
+        <div className='flex justify-center' >
+          <Link href='/#projects'>
+              <div className='text-[#0077B6] p-2 m-1  cursor-pointer hover:scale-[105%] ease-in duration-200'>
+                  <FaAngleDoubleLeft size={35}/>
+              </div>
+          </Link>
+        </div>
     </div>
   )
 };
