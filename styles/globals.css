@@ -12,6 +12,13 @@ html {
 }
 
 
+@media screen and (max-width: 768px) {
+
+
+}
+
+
+
 @layer base {
     body {
         @apply bg-[#00B4D8] text-[#03045E] tracking-wide;
