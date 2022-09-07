@@ -18,6 +18,17 @@ html {
         margin-top: 17%;
     }
 
+    #about {
+       padding-top: 25%;   
+    }
+
+    #skills {
+        padding-top: 25%;   
+     }
+
+     #projects {
+        padding-top: 20%;   
+     }
 }
 
 
