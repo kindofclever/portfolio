@@ -8,7 +8,7 @@ const thankyou = () => {
 
   return (
     <div className='w-full max-w-[1240px] h-screen flex flex-col justify-center items-center'> 
-      <div className='w-full px-5 max-w-[1240px] h-screen flex flex-col justify-center items-center'> 
+      <div className='w-full px-5 max-w-[1240px] h-screen flex flex-col justify-center items-center mt-[-5%]'> 
           <motion.div 
             animate={{rotate: 360}}  
             transition={{ ease: "linear", duration: 10, repeat: Infinity }}
