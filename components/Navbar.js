@@ -9,6 +9,7 @@ import { SiCodewars } from 'react-icons/si';
 import { BsSunFill } from 'react-icons/bs';
 import logo from '../public/assets/logo/logo2.png';
 import { useRouter } from 'next/router';
+import { motion }   from 'framer-motion';
 
 
 const Navbar = () => {
@@ -74,7 +75,7 @@ const Navbar = () => {
                         </Link>
                     </ul>
                     <div onClick={handleNavClick} className='md:hidden mr-6'>
-                        <RiMenu4Fill size={35} className='text-[#ffec43]' />
+                        <RiMenu4Fill size={35} className='text-[#ffec43] hover:text-[#ff4369]' />
                     </div>
                 </div>
             </div>
@@ -116,19 +117,31 @@ const Navbar = () => {
                             <p className='uppercase text-xs mt-10 tracking-widest text-[#ffec43] font-bold'>Let's connect!</p>
                             <div className='flex items-center text-[#03045E] justify-between my-4 w-full sm:w-[90%]'>
                                 <a href='https://www.linkedin.com/in/sandragufler/'>
-                                    <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
-                                        <IoLogoLinkedin size={30}/>
-                                    </div>
+                                    <motion.div 
+                                        className='p-2 m-1 rounded-full shadow-xl cursor-pointer'
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                                            <IoLogoLinkedin size={30}/>
+                                    </motion.div>
                                 </a>
                                 <a href='https://github.com/kindofclever'>
-                                <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
-                                    <ImGithub size={30} />
-                                </div>
+                                    <motion.div 
+                                        className='p-2 m-1 rounded-full shadow-xl cursor-pointer'
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                                            <ImGithub size={30} />
+                                    </motion.div>
                                 </a>
                                 <a href='https://www.codewars.com/users/kindofclever'>
-                                    <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
-                                        <SiCodewars size={30} />
-                                    </div>
+                                    <motion.div 
+                                        className='p-2 m-1 rounded-full shadow-xl cursor-pointer'
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                                            <SiCodewars size={30} />
+                                    </motion.div>
                                 </a>
                             </div>
                         </div>

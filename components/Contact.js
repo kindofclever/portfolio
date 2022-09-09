@@ -5,6 +5,7 @@ import { SiCodewars } from 'react-icons/si';
 import { FaAngleDoubleUp } from 'react-icons/fa';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
        
@@ -42,19 +43,31 @@ const Contact = () => {
                             <div>
                                 <div className='flex items-center justify-between pt-6'>
                                     <a href='https://www.linkedin.com/in/sandragufler/'>
-                                        <div className='text-[#0077B6] bg-[#ffec43] hover:bg-gradient-to-l from-[#FF8500] to-[#ffec43] p-2 mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-50'>
-                                            <IoLogoLinkedin size={30}/>
-                                        </div>
+                                        <motion.div 
+                                            className='mx-5 text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer'
+                                            whileHover={{ scale: 1.1 }}
+                                            whileTap={{ scale: 0.9 }}
+                                            transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                                                <IoLogoLinkedin size={30}/>
+                                        </motion.div>                                       
                                     </a>
                                     <a href='https://github.com/kindofclever'>
-                                        <div className='text-[#0077B6] bg-[#ffec43] hover:bg-gradient-to-l from-[#FF8500] to-[#ffec43] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-50'>
-                                            <ImGithub size={30} />
-                                        </div>
+                                        <motion.div 
+                                            className='mx-5 text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer'
+                                            whileHover={{ scale: 1.1 }}
+                                            whileTap={{ scale: 0.9 }}
+                                            transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                                                <ImGithub size={30} />
+                                        </motion.div>
                                     </a>
                                     <a href='https://www.codewars.com/users/kindofclever'>
-                                    <div className='text-[#0077B6] bg-[#ffec43] hover:bg-gradient-to-l from-[#FF8500] to-[#ffec43] p-2  mx-4 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-50'>
-                                        <SiCodewars size={30} />
-                                    </div>
+                                        <motion.div 
+                                            className='mx-5 text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer'
+                                            whileHover={{ scale: 1.1 }}
+                                            whileTap={{ scale: 0.9 }}
+                                            transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                                                <SiCodewars size={30} />
+                                        </motion.div>
                                     </a>
                                 </div>
                             </div>
@@ -81,16 +94,28 @@ const Contact = () => {
                                     <label className='uppercase text-sm py-2' htmlFor='message'>Message</label>
                                     <textarea name='message' required rows='4' className='border-2 rounded-xl p-3 w-full flex border-[#0096C7]'/>
                                 </div>
-                                <button type='submit' className='w-full p-4 text-[#023E8A] bg-[#ffec43] lg:mt-5 hover:scale-[103%] duration-200'>Send message</button>
+                                <motion.button 
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                                    type='submit' 
+                                    className='w-full p-4 text-[#023E8A] bg-[#ffec43] lg:mt-5 hover:bg-[#ff4369] hover:text-[#03045E] rounded-xl shadow-xl'>
+                                        Send message
+                                </motion.button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div className='flex justify-center pt-12' >
                     <Link href='/'>
-                        <div className='text-[#0077B6] p-2 m-1  cursor-pointer hover:scale-[105%] ease-in duration-200'>
-                            <FaAngleDoubleUp size={35}/>
-                        </div>
+                        <motion.div 
+                            className='text-[#0077B6] hover:text-[#ff4369] p-2 m-1  cursor-pointer'
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.9 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                            <FaAngleDoubleUp 
+                                size={35}/>
+                        </motion.div>
                     </Link>
                 </div>
             </div>

@@ -1,16 +1,15 @@
 import '../styles/globals.css';
-import Navbar from '../components/Navbar';
-import Background from '../components/Background';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
-    <>
-      <AnimatePresence exitBeforeEnter>
-        <Component {...pageProps} />
-      </AnimatePresence>
-    </>
+  
+            <Component {...pageProps} />
+       
   )
 };
 

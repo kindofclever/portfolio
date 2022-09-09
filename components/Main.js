@@ -2,10 +2,11 @@ import React from 'react';
 import { IoLogoLinkedin, IoMdMail } from 'react-icons/io';
 import { ImGithub } from 'react-icons/im';
 import { SiCodewars } from 'react-icons/si';
+import { motion } from 'framer-motion';
 
 const Main = () => {
   return (
-    <div id='home' className='w-full h-screen text-center md:mt-[10%]'>
+    <motion.div exit={{opacity: 0}} id='home' className='w-full h-screen text-center md:mt-[10%]'>
         <div className='max-w-[1240px] w-full bottom-0 flex justify-center items-centers lg:mt-[10%]'>
             <div>
                 <p className='uppercase text-sm tracking-widest text-[#03045E]'>Nice that you are visiting me</p>
@@ -20,30 +21,46 @@ const Main = () => {
                 <div className='flex items-center justify-evenly max-w-[350px] m-auto pt-5 sm:max-w[300px] md:pt-5'>
                     
                     <a href='https://www.linkedin.com/in/sandragufler/'>
-                        <div className='text-[#0077B6] bg-[#ffec43] hover:bg-gradient-to-l from-[#FF8500] to-[#ffec43] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-50'>
-                            <IoLogoLinkedin size={30}/>
-                        </div>
+                        <motion.div 
+                            className='text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] hover:text-[#03045E] p-2 m-1 rounded-full shadow-xl cursor-pointer'
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                                <IoLogoLinkedin size={30}/>
+                        </motion.div>
                     </a>
                     <a href='https://github.com/kindofclever'>
-                        <div className='text-[#0077B6] bg-[#ffec43] hover:bg-gradient-to-l from-[#FF8500] to-[#ffec43] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-50'>
-                            <ImGithub size={30} />
-                        </div>
+                        <motion.div 
+                            className='text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] hover:text-[#03045E]  p-2 m-1 rounded-full shadow-xl cursor-pointer'
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                              <ImGithub size={30} />
+                        </motion.div>
                     </a>
 
                     <a href='/#contact'>
-                        <div className='text-[#0077B6] bg-[#ffec43] hover:bg-gradient-to-l from-[#FF8500] to-[#ffec43] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-50'>
-                            <IoMdMail size={30} />
-                        </div>
+                        <motion.div 
+                            className='text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer'
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                               <IoMdMail size={30} />
+                        </motion.div>
                     </a>
                     <a href='https://www.codewars.com/users/kindofclever'>
-                        <div className='text-[#0077B6] bg-[#ffec43] hover:bg-gradient-to-l from-[#FF8500] to-[#ffec43] p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-[105%] ease-in duration-50'>
-                            <SiCodewars size={30} />
-                        </div>
+                        <motion.div 
+                            className='text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer'
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                                <SiCodewars size={30} />
+                        </motion.div>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   );
 };
 

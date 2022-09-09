@@ -38,9 +38,14 @@ const tilia = () => {
         </div>
         <div className='flex justify-center' >
           <Link href='/#projects'>
-              <div className='text-[#0077B6] p-2 m-1  cursor-pointer hover:scale-[105%] ease-in duration-200'>
-                  <FaAngleDoubleLeft size={35}/>
-              </div>
+          <motion.div 
+                className='text-[#0077B6] hover:text-[#ff4369] p-2 m-1  cursor-pointer'
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                  <FaAngleDoubleLeft 
+                      size={35}/>
+            </motion.div>
           </Link>
         </div>
     </div>

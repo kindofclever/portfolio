@@ -27,11 +27,11 @@ const Projects = () => {
                     projectDescription='A very simple shopping item tracker'
                     backgroundImg={shoppinglist} 
                     projectUrl='/shoppinglist'/>
-                 <ProjectItem 
+                 {/* <ProjectItem 
                     projectTitle='Tilia-App' 
                     projectDescription='A page for a company that provides courses'
                     backgroundImg={activity} 
-                    projectUrl='/tilia'/>
+                    projectUrl='/tilia'/> */}
             </div>
         </div>
     </div>

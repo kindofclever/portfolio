@@ -53,8 +53,4 @@ html {
     li {
         @apply list-none cursor-pointer; 
     }
-
-    button {
-        @apply shadow-xl rounded-xl uppercase bg-[#ffec43] hover:bg-gradient-to-l from-[#FF8500] to-[#ffec43] text-white;
-    }
 }
