@@ -3,6 +3,7 @@ import Image from 'next/image';
 import activity from '../public/assets/projects/activity-knot.png';
 import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const tilia = () => {
   return (
