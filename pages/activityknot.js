@@ -3,10 +3,13 @@ import Image from 'next/image';
 import activity from '../public/assets/projects/activity-knot.png';
 import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const activityknot = () => {
   return (
-    <div className='w-full'>
+    <motion.div 
+      exit={{ opacity: 0 }}
+      className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[30vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[30vh] bg-[#0077B6]/90 md:bg-[#0077B6]/80  z-10' />
           <Image className='absolute z-1' layout='fill' objectFit='cover' src={activity} alt='/' />
@@ -46,7 +49,7 @@ const activityknot = () => {
               </div>
           </Link>
         </div>
-    </div>
+    </motion.div>
   )
 };
 

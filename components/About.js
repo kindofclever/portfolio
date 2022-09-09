@@ -10,7 +10,7 @@ const About = () => {
         <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 ml-5 '>
             <div className='col-span-2'>
                 <p className='text-[#0077B6] uppercase text-xl tracking-widest sm:mt-10'>About me</p>
-                <h2 className='text-[#ffbf00] font-bold  mt-3'>Who am I?</h2>
+                <h2 className='text-[#ffec43] font-bold  mt-3'>Who am I?</h2>
                 <p className='text-white py-2'> I'm a curios person with a versatile background </p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore fugit possimus labore, ullam non, architecto itaque, expedita quas facilis ab sequi deleniti. Facere qui dignissimos consequatur fuga enim deserunt.

@@ -10,7 +10,7 @@ const Projects = () => {
     <div id='projects' className='w-full xs:mr-5 sm:mr-5'>
         <div className='max-w-[1240px] mx-auto px-2 pt-[7%] ml-5'>
             <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Projects</p>
-            <h2 className='text-[#ffbf00] font-bold mt-3'>What I have build so far</h2>
+            <h2 className='text-[#ffec43] font-bold mt-3'>What I have build so far</h2>
             <div className='grid md:grid-cols-2 gap-8 mt-5'>
                 <ProjectItem 
                     projectTitle='Activity-Knot' 

@@ -55,6 +55,6 @@ html {
     }
 
     button {
-        @apply shadow-xl rounded-xl uppercase bg-[#ffbf00] hover:bg-gradient-to-l from-[#FF8500] to-[#ffbf00] text-white;
+        @apply shadow-xl rounded-xl uppercase bg-[#ffec43] hover:bg-gradient-to-l from-[#FF8500] to-[#ffec43] text-white;
     }
 }

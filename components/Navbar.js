@@ -74,7 +74,7 @@ const Navbar = () => {
                         </Link>
                     </ul>
                     <div onClick={handleNavClick} className='md:hidden mr-6'>
-                        <RiMenu4Fill size={35} className='text-[#ffbf00]' />
+                        <RiMenu4Fill size={35} className='text-[#ffec43]' />
                     </div>
                 </div>
             </div>
@@ -85,12 +85,12 @@ const Navbar = () => {
                         : 'fixed left-[-150%] top-0 p-10 ease-out duration-200'}>
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                        <BsSunFill className='text-[#ffbf00]' size={65} />
-                            <div onClick={handleNavClick} className='hover:text-[#ffbf00] p-2 rounded-full shadow-xl cursor-pointer'>
+                        <BsSunFill className='text-[#ffec43]' size={65} />
+                            <div onClick={handleNavClick} className='hover:text-[#ffec43] p-2 rounded-full shadow-xl cursor-pointer'>
                                 <VscChromeClose className='text-[#03045E]' size={30} />
                             </div>
                         </div>
-                        <div className='border-b border-[#ffbf00] my-5'>
+                        <div className='border-b border-[#ffec43] my-5'>
                             <p className='w-[90%] md:w-[95%] py-3 text-[#03045E]'>Let's check if I'm a good fit for your company!</p>
                         </div>
                     </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
                             </Link>
                         </ul>
                         <div className='py-'>
-                            <p className='uppercase text-xs mt-10 tracking-widest text-[#ffbf00] font-bold'>Let's connect!</p>
+                            <p className='uppercase text-xs mt-10 tracking-widest text-[#ffec43] font-bold'>Let's connect!</p>
                             <div className='flex items-center text-[#03045E] justify-between my-4 w-full sm:w-[90%]'>
                                 <a href='https://www.linkedin.com/in/sandragufler/'>
                                     <div className='p-2 m-1 rounded-full shadow-xl cursor-pointer hover:scale-105 ease-in duration-200'>
