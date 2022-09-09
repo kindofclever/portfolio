@@ -3,6 +3,7 @@ import Image from 'next/image';
 import shoppyImg from '../public/assets/projects/shopping-list.png';
 import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const shoppinglist = () => {
   return (
