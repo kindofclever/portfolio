@@ -49,7 +49,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <header id='header' className={ navbarShadow ? 'fixed top-0 w-full h-20 z-[100] shadow-xl bg-[#0077B6] text-white sm:mb-[10%]' : 'top-0 w-full h-20 mt-auto z-[100]' }>
+        <header id='header' className={ navbarShadow ? 'sticky top-0 w-full h-20 z-[100] shadow-xl bg-[#0077B6] text-white sm:mb-[10%]' : 'top-0 w-full h-20  z-[100]' }>
             <div className='flex justify-between items-center w-full h-full mb-5 p-2 2xl:px-16'>
                 <Link href='/' className='cursor-pointer'>
                     <div className='ml-5 sm:ml-1 mt-2'>
