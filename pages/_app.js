@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <AnimatePresence exitBeforeEnter>
-        <Navbar />
         <Component {...pageProps} />
       </AnimatePresence>
     </>
