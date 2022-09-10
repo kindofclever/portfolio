@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 
 const Main = () => {
   return (
-    <div id='home' className='w-screen h-screen text-center md:mt-[10%]'>
-        <div className='max-w-[1240px] w-full bottom-0 flex justify-center items-centers lg:mt-[10%]'>
+    <div id='home' className='w-full h-screen text-center'>
+        <div className='max-w-[1240px] ml-3  w-full bottom-0 flex justify-center items-centers mt-[30%] lg:mt-[20%]'>
             <div>
                 <p className='uppercase text-sm tracking-widest text-[#03045E]'>Nice that you are visiting me</p>
                 <h1 className='text-white'>Hello, my name is <span className='text-[#ffec43] hover:text-[#ff4369]'>Sandra</span></h1>
