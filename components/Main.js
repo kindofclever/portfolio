@@ -10,25 +10,36 @@ const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] ml-3 w-full bottom-0 flex justify-center items-centers mt-[30%] lg:mt-[20%]'>
-            <div>
-                <motion.p 
-                    animate={{x: isPhone ? [0, 0] : [-700, 0] }}
-                    transition={{ duration: isPhone ? 0 : 0.8}}
+            <div> 
+             {isPhone ? <div><p 
+                    className='uppercase text-sm tracking-widest text-[#03045E]'>
+                        Nice that you are visiting me
+                </p>
+                <h1 
+                    className='text-white'>
+                        Hello, my name is <span className='text-[#ffec43] hover:text-[#ff4369]'>Sandra</span>
+                </h1>
+                <h1 
+                    className='text-[#03055e]'>
+                        I'm a fullstack web developer
+                </h1> </div> : <div><motion.p 
+                    animate={{x: [-700, 0] }}
+                    transition={{ duration: 0.8}}
                     className='uppercase text-sm tracking-widest text-[#03045E]'>
                         Nice that you are visiting me
                 </motion.p>
                 <motion.h1 
                     className='text-white'  
-                    animate={{x: isPhone ? [0, 0] : [800, 0] }} 
-                    transition={{ duration: isPhone ? 0 : 1.3}}>
+                    animate={{x: [800, 0] }} 
+                    transition={{ duration:1.3}}>
                         Hello, my name is <span className='text-[#ffec43] hover:text-[#ff4369]'>Sandra</span>
                 </motion.h1>
                 <motion.h1 
                     className='text-[#03055e]'  
-                    animate={{x: isPhone ? [0, 0] : [-800, 0] }} 
-                    transition={{ duration: isPhone ? 0 : 1.1}}>
+                    animate={{x: [-800, 0] }} 
+                    transition={{ duration: 1.1}}>
                         I'm a fullstack web developer
-                </motion.h1>
+                </motion.h1> </div> }
                 <p className='pt-4 pb-0 max-w-[70%] m-auto'>
                     At the beginning of this year I got the great news that I was chosen from more than a 1000 applicants to 
                     attend the <span>School of Applied Technology JavaScript Bootcamp</span>. I got familiar with <span className=''>TDD, agile working methods,</span>
