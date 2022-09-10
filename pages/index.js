@@ -23,7 +23,6 @@ export default function Home() {
       </Head>
       <Navbar />
       {isPhone ? <PhoneMain /> : <ComputerMain /> }
-      <Main />
       <About />
       <Skills />
       <Projects />
