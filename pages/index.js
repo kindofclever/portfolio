@@ -22,9 +22,9 @@ export default function Home() {
         <link rel="icon" href="/smiley.ico" />
       </Head>
       <Navbar />
-      {!isPhone? <ComputerMain /> : <div></div> }
-      {isPhone ? <PhoneMain /> : <div></div> }
-      <div></div>
+      {/* {!isPhone? <ComputerMain /> : <div></div> }
+      {isPhone ? <PhoneMain /> : <div></div> } */}
+      <Main />
       <About />
       <Skills />
       <Projects />
