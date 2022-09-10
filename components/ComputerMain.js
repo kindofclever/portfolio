@@ -4,7 +4,7 @@ import { ImGithub } from 'react-icons/im';
 import { SiCodewars } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
-const computerMain = () => {
+const ComputerMain = () => {
   
     return (
         <div id='home' className='w-full h-screen text-center'>
@@ -80,4 +80,4 @@ const computerMain = () => {
   )
 }
 
-export default computerMain
+export default ComputerMain

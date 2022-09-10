@@ -6,10 +6,14 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Navbar from '../components/Navbar';
 import { motion } from 'framer-motion';
+import useMediaQuery from '../helpers/mediaQueries';
+import ComputerMain from '../components/ComputerMain';
+import PhoneMain from '../components/PhoneMain';
 
 
 
 export default function Home() {
+  const isPhone = useMediaQuery('(max-width: 550px)')
   return (
     <motion.div exit={{opacity: 0}}>
       <Head>
@@ -18,6 +22,7 @@ export default function Home() {
         <link rel="icon" href="/smiley.ico" />
       </Head>
       <Navbar />
+      {isPhone ? <PhoneMain /> : <ComputerMain /> }
       <Main />
       <About />
       <Skills />

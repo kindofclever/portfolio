@@ -4,7 +4,7 @@ import { ImGithub } from 'react-icons/im';
 import { SiCodewars } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
-const phoneMain = () => {
+const PhoneMain = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] ml-3 w-full bottom-0 flex justify-center items-centers mt-[30%] lg:mt-[20%]'>
@@ -73,4 +73,4 @@ const phoneMain = () => {
     )
 }
 
-export default phoneMain
+export default PhoneMain;
