@@ -3,11 +3,13 @@ import activity from '../public/assets/projects/activity-knot.png';
 import shoppinglist from '../public/assets/projects/shopping-list.png';
 import elevators from '../public/assets/projects/elevators.png';
 import ProjectItem from './ProjectItem';
+import { motion } from 'framer-motion';
+
 
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full xs:mr-5 sm:mr-5'>
+    <motion.div exit={{opacity: 0}} id='projects' className='w-full xs:mr-5 sm:mr-5'>
         <div className='max-w-[1240px] mx-auto px-2 pt-[7%] ml-5'>
             <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Projects</p>
             <h2 className='text-[#ffec43] font-bold mt-3'>What I have build so far</h2>
@@ -34,7 +36,7 @@ const Projects = () => {
                     projectUrl='/tilia'/> */}
             </div>
         </div>
-    </div>
+    </motion.div>
   );
 };
 

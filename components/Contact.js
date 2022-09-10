@@ -27,7 +27,7 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='w-full lg:h-screen pt-8'>
+        <motion.div exit={{opacity: 0}} id='contact' className='w-full lg:h-screen pt-8'>
             <div className='max-w-[1240px] m-auto ml-5 px-2 py-16 w-full'>
                 <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Contact</p>
                 <h2 className='text-[#ffec43] font-bold mt-3'>Do you want to send me a message?</h2>
@@ -119,7 +119,7 @@ const Contact = () => {
                     </Link>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

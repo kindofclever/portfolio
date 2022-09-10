@@ -49,7 +49,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <header id='header' className={ navbarShadow ? 'fixed top-0 w-full h-20 z-[100] shadow-xl  bg-[#0077B6] text-white sm:mb-[10%] ' : ' fixed top-0 w-full h-20  z-[100]' }>
+        <motion.header exit={{opacity: 0}} id='header' className={ navbarShadow ? 'fixed top-0 w-full h-20 z-[100] shadow-xl  bg-[#0077B6] text-white sm:mb-[10%] ' : ' fixed top-0 w-full h-20  z-[100]' }>
             <div className='flex justify-between items-center h-full mb-5 p-2 2xl:px-16'>
                 <Link href='/' className='cursor-pointer'>
                     <div className='ml-5 sm:ml-1 mt-2'>
@@ -153,7 +153,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </header>
+        </motion.header>
     );
 };
 

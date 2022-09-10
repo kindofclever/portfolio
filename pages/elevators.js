@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const elevators = () => {
   return (
-    <div className='w-full'>
+    <motion.div exit={{opacity: 0}} className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[30vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[30vh] bg-[#0077B6]/90 md:bg-[#0077B6]/90  z-10' />
           <Image className='absolute z-1' layout='fill' objectFit='cover' src={activity} alt='/' />
@@ -18,7 +18,7 @@ const elevators = () => {
         </div>
         <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 ml-5'>
           <div className='col-span-4'>
-            <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Project Overwiew</p>
+          <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overwiew</h2>
            
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia inventore, consequatur quaerat unde cumque consectetur alias numquam voluptatem amet quam ullam, id eligendi, possimus dolorum perferendis voluptate vel necessitatibus sed.</p>
             {/* <button className=' bg-[#0077B6] hover:bg-gradient-to-l from-[#023E8A] to-[#0077B6] px-8 py-4 mt-2 mr-8'>Demo</button>
@@ -51,7 +51,7 @@ const elevators = () => {
             </motion.div>
           </Link>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

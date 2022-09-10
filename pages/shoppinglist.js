@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const shoppinglist = () => {
   return (
-    <div className='w-full'>
+    <motion.div exit={{opacity: 0}} className='w-full'>
     <div className='w-screen h-[30vh] lg:h-[30vh] relative'>
       <div className='absolute top-0 left-0 w-full h-[35vh] lg:h-[30vh] bg-[#0077B6]/90 md:bg-[#0077B6]/80  z-10' />
         <Image className='absolute z-1' layout='fill' objectFit='cover' src={shoppyImg} alt='/' />
@@ -18,8 +18,7 @@ const shoppinglist = () => {
       </div>
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 ml-5'>
         <div className='col-span-4'>
-          <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Project</p>
-          <h2 className='text-[#ffec43] py-4 font-bold  mt-3'>Overview</h2>
+        <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overwiew</h2>
           <p className='py-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia inventore, consequatur quaerat unde cumque consectetur alias numquam voluptatem amet quam ullam, id eligendi, possimus dolorum perferendis voluptate vel necessitatibus sed.</p>
           <a href='https://kindofclever.github.io/shopping-list/'>
             <motion.button  
@@ -65,7 +64,7 @@ const shoppinglist = () => {
             </motion.div>
           </Link>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
