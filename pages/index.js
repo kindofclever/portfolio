@@ -22,7 +22,8 @@ export default function Home() {
         <link rel="icon" href="/smiley.ico" />
       </Head>
       <Navbar />
-      {isPhone ? <PhoneMain /> : <ComputerMain /> }
+      {isPhone ? <PhoneMain /> : <div></div> }
+      {!isPhone? <ComputerMain /> : <div></div> }
       <About />
       <Skills />
       <Projects />
