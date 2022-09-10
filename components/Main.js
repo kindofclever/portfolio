@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Main = () => {
   return (
-    <motion.div exit={{opacity: 0}} id='home' className='w-full h-screen text-center md:mt-[10%]'>
+    <div id='home' className='w-screen h-screen text-center md:mt-[10%]'>
         <div className='max-w-[1240px] w-full bottom-0 flex justify-center items-centers lg:mt-[10%]'>
             <div>
                 <p className='uppercase text-sm tracking-widest text-[#03045E]'>Nice that you are visiting me</p>
@@ -60,7 +60,7 @@ const Main = () => {
                 </div>
             </div>
         </div>
-    </motion.div>
+    </div>
   );
 };
 
