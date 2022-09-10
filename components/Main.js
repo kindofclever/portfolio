@@ -12,7 +12,7 @@ const Main = () => {
     
     return (
         <div id='home' className='w-full h-screen text-center'>
-        {isPhone ? <PhoneMain /> : <ComputerMain />}
+        {isPhone ? <PhoneMain /> : <PhoneMain />}
         </div>
    
   )
