@@ -3,15 +3,32 @@ import { IoLogoLinkedin, IoMdMail } from 'react-icons/io';
 import { ImGithub } from 'react-icons/im';
 import { SiCodewars } from 'react-icons/si';
 import { motion } from 'framer-motion';
+import useMediaQuery from '../helpers/mediaQueries';
 
 const Main = () => {
+    const isPhone = useMediaQuery('(max-width: 550px)');
   return (
-    <motion.div id='home' className='w-full h-screen text-center'>
-        <div className='max-w-[1240px] ml-3  w-full bottom-0 flex justify-center items-centers mt-[30%] lg:mt-[20%]'>
+    <div id='home' className='w-full h-screen text-center'>
+        <div className='max-w-[1240px] ml-3 w-full bottom-0 flex justify-center items-centers mt-[30%] lg:mt-[20%]'>
             <div>
-                <p className='uppercase text-sm tracking-widest text-[#03045E]'>Nice that you are visiting me</p>
-                <h1 className='text-white'>Hello, my name is <span className='text-[#ffec43] hover:text-[#ff4369]'>Sandra</span></h1>
-                <h1 className='text-[#03055e]'>I'm a fullstack web developer</h1>
+                <motion.p 
+                    animate={{x: isPhone ? [0, 0] : [-700, 0] }}
+                    transition={{ duration: isPhone ? 0 : 0.8}}
+                    className='uppercase text-sm tracking-widest text-[#03045E]'>
+                        Nice that you are visiting me
+                </motion.p>
+                <motion.h1 
+                    className='text-white'  
+                    animate={{x: isPhone ? [0, 0] : [800, 0] }} 
+                    transition={{ duration: isPhone ? 0 : 1.3}}>
+                        Hello, my name is <span className='text-[#ffec43] hover:text-[#ff4369]'>Sandra</span>
+                </motion.h1>
+                <motion.h1 
+                    className='text-[#03055e]'  
+                    animate={{x: isPhone ? [0, 0] : [-800, 0] }} 
+                    transition={{ duration: isPhone ? 0 : 1.1}}>
+                        I'm a fullstack web developer
+                </motion.h1>
                 <p className='pt-4 pb-0 max-w-[70%] m-auto'>
                     At the beginning of this year I got the great news that I was chosen from more than a 1000 applicants to 
                     attend the <span>School of Applied Technology JavaScript Bootcamp</span>. I got familiar with <span className=''>TDD, agile working methods,</span>
@@ -38,6 +55,7 @@ const Main = () => {
                               <ImGithub size={30} />
                         </motion.div>
                     </a>
+
                     <a href='/#contact'>
                         <motion.div 
                             className='text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer'
@@ -59,7 +77,7 @@ const Main = () => {
                 </div>
             </div>
         </div>
-    </motion.div>
+    </div>
   );
 };
 
