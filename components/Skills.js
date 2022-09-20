@@ -15,9 +15,6 @@ const Skills = () => {
             <h2 className='text-[#ffec43] font-bold mt-3'>What can I do for you?</h2>
             <Carou className='w-full'/>  
 
-
-            
-
         </div>
     </m.div>
   );
