@@ -15,7 +15,7 @@ const Projects = () => {
             <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Projects</p>
             <h2 className='text-[#ffec43] font-bold mt-3'>What I have build so far</h2>
             <div className='grid md:grid-cols-2 gap-8 mt-5'>
-            <ProjectItem 
+               <ProjectItem 
                     projectTitle='Happy-Puppy' 
                     projectDescription='A fullstack app for dog lovers'
                     backgroundImg={puppy} 

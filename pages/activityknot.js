@@ -18,7 +18,7 @@ const activityknot = () => {
             <h3 className=' text-white'>React.js/ PostgreSQL/ Node.js/ Heroku</h3>
           </div>
         </div>
-        <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 mx-5'>
+        <div className='max-w-[1240px] p-2 grid md:grid-cols-5 gap-8 pt-8 mx-5'>
           <div className='col-span-4'>
             <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overwiew</h2>
             <p className='mb-4'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus obcaecati ad sint nulla aut vero reprehenderit ducimus delectus recusandae quisquam officia impedit odio, libero laboriosam molestias eius consectetur aliquam in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia inventore, consequatur quaerat unde cumque consectetur alias numquam voluptatem amet quam ullam, id eligendi, possimus dolorum perferendis voluptate vel necessitatibus sed.</p>

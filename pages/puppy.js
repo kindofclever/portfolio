@@ -18,7 +18,7 @@ const puppy = () => {
             <h3 className=' text-white'>Typescript/ MongoDB/ Node.js/ React.js</h3>
           </div>
         </div>
-        <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 mx-5'>
+        <div className='max-w-[1240px] p-2 grid md:grid-cols-5 gap-8 pt-8 mx-5'>
           <div className='col-span-4'>
             <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overwiew</h2>
             <p className='mb-4'>This TypeScript App allows you to check out puppies, get to learn more about them on their own page. You add one by yourself or edit or even remove puppies from the database. But this is just the start: It's possible to add a lot of features like authentication, comment sections, the possibility to give puppies likes, a blog section to present the latest products ect ect. </p>
