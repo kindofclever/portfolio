@@ -15,13 +15,13 @@ const puppy = () => {
           <Image className='absolute z-1' layout='fill' objectFit='cover' src={activity} alt='/' />
           <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white'>
             <h2 className='py-2 text-white'>Activity-Knot</h2>
-            <h3 className=' text-white'>Typescript/ MongoDB/ Node.js/ React.js </h3>
+            <h3 className=' text-white'>Typescript/ MongoDB/ Node.js/ React.js</h3>
           </div>
         </div>
         <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 mx-5'>
           <div className='col-span-4'>
             <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overwiew</h2>
-            <p className='mb-4'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus obcaecati ad sint nulla aut vero reprehenderit ducimus delectus recusandae quisquam officia impedit odio, libero laboriosam molestias eius consectetur aliquam in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia inventore, consequatur quaerat unde cumque consectetur alias numquam voluptatem amet quam ullam, id eligendi, possimus dolorum perferendis voluptate vel necessitatibus sed.</p>
+            <p className='mb-4'>This TypeScript App allows you to check out puppies, get to learn more about them on their own page. You add one by yourself or edit or even remove puppies from the database. But this is just the start: It's possible to add a lot of features like authentication, comment sections, the possibility to give puppies likes, a blog section to present the latest products ect ect. </p>
             <a href='https://activity-knot.herokuapp.com/'>
             <motion.button  
                   whileHover={{ scale: 1.05 }}
