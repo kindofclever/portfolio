@@ -5,7 +5,9 @@ import { SiCodewars } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
 const Main = () => {
+
   return (
+  
     <div id='home' className='w-screen h-screen text-center'>
         <div className='max-w-[1240px] w-full bottom-0 flex justify-center items-centers'>
             <div className='mt-[17%]'>
