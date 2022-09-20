@@ -13,11 +13,7 @@ const Skills = () => {
         <div className ='max-w-[1240px] ml-5 flex flex-col justify-center h-full'>
             <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Skills</p>
             <h2 className='text-[#ffec43] font-bold mt-3'>What can I do for you?</h2>
-            <div className='w-full flex justify-center'>
-                <div>
-                    <Carou className='w-full'/>
-                </div>
-            </div>       
+            <Carou className='w-full'/>  
 
 
             
