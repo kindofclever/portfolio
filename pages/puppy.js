@@ -20,9 +20,9 @@ const puppy = () => {
         </div>
         <div className='max-w-[1240px] p-2 grid md:grid-cols-5 gap-8 pt-8 mx-5'>
           <div className='col-span-4'>
-            <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overwiew</h2>
+            <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overview</h2>
             <p className='mb-4'>This TypeScript App allows you to check out puppies, get to learn more about them on their own page. You add one by yourself or edit or even remove puppies from the database. But this is just the start: It's possible to add a lot of features like authentication, comment sections, the possibility to give puppies likes, a blog section to present the latest products ect ect. </p>
-            <a href='https://puppy-backend.onrender.com'>
+            <a href='https://puppy-backend.onrender.com/api/puppies'>
             <motion.button  
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}

@@ -18,7 +18,7 @@ const shoppinglist = () => {
       </div>
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 ml-5'>
         <div className='col-span-4'>
-        <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overwiew</h2>
+        <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overview</h2>
           <p className='py-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia inventore, consequatur quaerat unde cumque consectetur alias numquam voluptatem amet quam ullam, id eligendi, possimus dolorum perferendis voluptate vel necessitatibus sed.</p>
           <a href='https://kindofclever.github.io/shopping-list/'>
             <motion.button  

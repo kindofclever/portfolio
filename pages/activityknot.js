@@ -20,7 +20,7 @@ const activityknot = () => {
         </div>
         <div className='max-w-[1240px] p-2 grid md:grid-cols-5 gap-8 pt-8 mx-5'>
           <div className='col-span-4'>
-            <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overwiew</h2>
+            <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overview</h2>
             <p className='mb-4'>The goal of this app is to connect people who share the same hobbies and who want to create or attend an event for a special hobby. To check out the code for this project, you have to switch to the wednesdaybranch.</p>
             <a href='https://activity-knot.herokuapp.com/'>
             <motion.button  
