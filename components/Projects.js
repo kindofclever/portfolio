@@ -2,6 +2,7 @@ import React from 'react';
 import activity from '../public/assets/projects/activity-knot.png';
 import shoppinglist from '../public/assets/projects/shopping-list.png';
 import elevators from '../public/assets/projects/elevators.png';
+import puppy from '..public/assets/projects/puppy.png';
 import ProjectItem from './ProjectItem';
 import { motion } from 'framer-motion';
 
@@ -14,6 +15,11 @@ const Projects = () => {
             <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Projects</p>
             <h2 className='text-[#ffec43] font-bold mt-3'>What I have build so far</h2>
             <div className='grid md:grid-cols-2 gap-8 mt-5'>
+            <ProjectItem 
+                    projectTitle='Happy-Puppy' 
+                    projectDescription='A fullstack app for dog lovers'
+                    backgroundImg={puppy} 
+                    projectUrl='/puppy'/>
                 <ProjectItem 
                     projectTitle='Activity-Knot' 
                     projectDescription='A social media app for people who share the same interests'
