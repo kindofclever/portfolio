@@ -29,7 +29,7 @@ const Skills = () => {
               <m.div drag='x' 
                 dragConstraints={{right: 0, left: -width}}
                 className='flex'>
-                <m.div className='min-h-[40rem] min-w-[15rem] md:min-w-[24rem]  p-[40px]  flex flex-col'> 
+                <m.div className='min-h-[40rem] min-w-[18rem] md:min-w-[24rem]  p-[40px]  flex flex-col'> 
                   <div className='bg-white p-6 shadow-xl rounded-xl px-5 mb-5'>
                       <div className='grid grid-cols-2 justify-center gap-4 items-center'>
                           <div className='m-auto'>
@@ -51,7 +51,7 @@ const Skills = () => {
                       </div>
                   </div>
                 </m.div>
-                <m.div className='min-h-[40rem] min-w-[15rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
+                <m.div className='min-h-[40rem] min-w-[18rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
                   <div className='bg-white p-6 shadow-xl rounded-xl px-5 mb-5'>
                       <div className='grid grid-cols-2 justify-center gap-4 items-center'>
                           <div className='m-auto'>
@@ -73,7 +73,7 @@ const Skills = () => {
                       </div>
                   </div>
                 </m.div>
-                <m.div className='min-h-[40rem] min-w-[15rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
+                <m.div className='min-h-[40rem] min-w-[18rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
                   <div className='bg-white p-6 shadow-xl rounded-xl px-5 mb-5'>
                       <div className='grid grid-cols-2 justify-center gap-4 items-center'>
                           <div className='m-auto'>
@@ -95,7 +95,7 @@ const Skills = () => {
                       </div>
                   </div>
                 </m.div>
-                <m.div className='min-h-[40rem] min-w-[15rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
+                <m.div className='min-h-[40rem] min-w-[18rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
                   <div className='bg-white p-6 shadow-xl rounded-xl px-5 mb-5'>
                       <div className='grid grid-cols-2 justify-center gap-4 items-center'>
                           <div className='m-auto'>
@@ -117,7 +117,7 @@ const Skills = () => {
                       </div>
                   </div>
                 </m.div>
-                <m.div className='min-h-[40rem] min-w-[15rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
+                <m.div className='min-h-[40rem] min-w-[18rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
                   <div className='bg-white p-6 shadow-xl rounded-xl px-5 mb-5'>
                       <div className='grid grid-cols-2 justify-center gap-4 items-center'>
                           <div className='m-auto'>
@@ -139,7 +139,7 @@ const Skills = () => {
                       </div>
                   </div>
                 </m.div>
-                <m.div className='min-h-[40rem] min-w-[15rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
+                <m.div className='min-h-[40rem] min-w-[18rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
                   <div className='bg-white p-6 shadow-xl rounded-xl px-5 mb-5'>
                       <div className='grid grid-cols-2 justify-center gap-4 items-center'>
                           <div className='m-auto'>
@@ -161,7 +161,7 @@ const Skills = () => {
                       </div>
                   </div>
                 </m.div>
-                <m.div className='min-h-[40rem] min-w-[15rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
+                <m.div className='min-h-[40rem] min-w-[18rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
                   <div className='bg-white p-6 shadow-xl rounded-xl px-5 mb-5'>
                       <div className='grid grid-cols-2 justify-center gap-4 items-center'>
                           <div className='m-auto'>
@@ -183,7 +183,7 @@ const Skills = () => {
                       </div>
                   </div>
                 </m.div>
-                <m.div className='min-h-[40rem] min-w-[15rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
+                <m.div className='min-h-[40rem] min-w-[18rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
                   <div className='bg-white p-6 shadow-xl rounded-xl px-5 mb-5'>
                       <div className='grid grid-cols-2 justify-center gap-4 items-center'>
                           <div className='m-auto'>
