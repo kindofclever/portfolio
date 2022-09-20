@@ -22,7 +22,7 @@ const puppy = () => {
           <div className='col-span-4'>
             <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overwiew</h2>
             <p className='mb-4'>This TypeScript App allows you to check out puppies, get to learn more about them on their own page. You add one by yourself or edit or even remove puppies from the database. But this is just the start: It's possible to add a lot of features like authentication, comment sections, the possibility to give puppies likes, a blog section to present the latest products ect ect. </p>
-            <a href='https://activity-knot.herokuapp.com/'>
+            <a href='https://puppy-backend.onrender.com'>
             <motion.button  
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}
@@ -31,7 +31,7 @@ const puppy = () => {
                     Demo
                 </motion.button>
             </a>
-            <a href='https://github.com/matildisnil/saltFinalProjectBackend'>
+            <a href='https://github.com/kindofclever/ts-react-fullstack'>
                 <motion.button  
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}

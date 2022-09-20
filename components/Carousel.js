@@ -10,7 +10,7 @@ const skill = <h1></h1>
 const colors = ['hello'];
 
 const Carou = () => (
-    <div className=' mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-8 sm:mr-5' style={{ width: 600, height: 400 }}>
+    // <div className=' mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-8 sm:mr-5' style={{ width: 600, height: 400 }}>
     <Carousel>
 
                   
@@ -52,11 +52,8 @@ const Carou = () => (
                 </div>
             </div>
         </div>
-        
-
-
 
     </Carousel>
-  </div>
+
 );
 export default Carou;
