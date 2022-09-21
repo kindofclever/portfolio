@@ -26,7 +26,7 @@ const elevators = () => {
             <p className='text-white py-2'>The code for this project is not public at the moment...</p>
             <p>...because it was written on top of an already existing bare bone project for a code challenge. This means I don't have the legal rights to share the code. But I made a short clip where you can see the part of the code that I wrote in action.For this code challenge I had to animate an elevator system with 20 floors and 5 elevator cabins. The goal was to fetch the cabins and their current position from the backend and visualize them in the frontend.  Also I had to make sure that when I press a floor button, that the best fitting elevator cabin appears. I could decide for myself which cabin was the "best", so I decided to write an algorithem that checks for the closest elevator: Like this the people who press the button don't have to wait longer than necessary.</p>
 
-            <a href='https://share.vidyard.com/watch/iU2S58nLt8UqBFFjJ4fFKg?'>
+            <a href='https://share.vidyard.com/watch/K8wAm2MbXJok1bxi5hTxgv?'>
             <motion.button  
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}
