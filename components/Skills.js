@@ -19,10 +19,11 @@ const Skills = () => {
   
 
   return (
-    <m.div exit={{opacity: 0}} id='skills' className ='w-full lg:h-screen p-2'>
+    <m.div exit={{opacity: 0}} id='skills' className =' sticky w-full lg:h-screen p-2 pt-[15%]'>
         <div className ='max-w-[1240px] ml-5 flex flex-col justify-center h-full'>
             <p className='text-[#0077B6] uppercase text-xl tracking-widest'>Skills</p>
-            <h2 className='text-[#ffec43] font-bold mt-3 mb-10'>What can I do for you?</h2>
+            <h2 className='text-[#ffec43] font-bold mt-3 mb-5'>What can I do for you?</h2>
+            <p className='text-white'>Slide through some of my skills!</p>
             <m.div  
               ref={carousel}
               className='cursor-grab overflow-hidden mx-[5%]'>

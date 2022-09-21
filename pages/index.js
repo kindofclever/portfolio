@@ -26,7 +26,7 @@ export default function Home() {
       {isPhone ? <PhoneMain /> : <div></div> }
       {/* <Main /> */}
       <About />
-      <Skills />
+      <Skills className='pt-[7%]'/>
       <Projects />
       <Contact />
     </motion.div>
