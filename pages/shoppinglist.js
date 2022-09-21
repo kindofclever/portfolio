@@ -13,13 +13,13 @@ const shoppinglist = () => {
         <Image className='absolute z-1' layout='fill' objectFit='cover' src={shoppyImg} alt='/' />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-20 p-2 text-white'>
           <h2 className='py-2 text-white'>Shopping-List</h2>
-          <h3 className=' text-white'>React.js/ PostgreSQL/ Node.js/ Heroku</h3>
+          <h3 className=' text-white'>Vanillas JavaScript/ GitHub Pages/ Localstorage</h3>
         </div>
       </div>
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 ml-5'>
         <div className='col-span-4'>
         <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overview</h2>
-          <p className='py-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia inventore, consequatur quaerat unde cumque consectetur alias numquam voluptatem amet quam ullam, id eligendi, possimus dolorum perferendis voluptate vel necessitatibus sed.</p>
+          <p className='py-4'>This is just a very simple shopping list app.</p>
           <a href='https://kindofclever.github.io/shopping-list/'>
             <motion.button  
                     whileHover={{ scale: 1.05 }}
@@ -43,11 +43,9 @@ const shoppinglist = () => {
             <div className='py-9'>
                 <p className='text-center font-bold pb-2 text-[#023E8A]  group-hover:text-white '>Technologies</p>
                 <div className='flex flex-col justify-center items-start group-hover:text-white '>
-                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> React.js</p>
-                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Node.js</p>
-                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Express</p>
-                  <p className=' group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> PosgreSQL</p>
-                  <p className=' group-hover:text-white   text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Own RESTfull api</p>
+                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Vanilla JavaScript</p>
+                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> GitHub Pages</p>
+                  <p className='  group-hover:text-white  text-[#023E8A] flex items-center '><FaDotCircle size={10} className='mx-4  group-hover:text-white ' /> Localstorage</p>
                 </div>
               </div>
             </div>
