@@ -3,7 +3,7 @@ import { AiFillHtml5 } from 'react-icons/ai';
 import { IoLogoCss3, IoLogoNodejs } from 'react-icons/io';
 import { DiJavascript } from 'react-icons/di';
 import { ImGit } from 'react-icons/im';
-import { SiNextdotjs, SiReact, SiGithub, SiAmazonaws, SiMongodb, SiTrello, SiPostgresql, SiEslint, SiFigma, SiTypescript, SiExpress } from 'react-icons/si';
+import { SiFramer, SiNextdotjs, SiReact, SiGithub, SiAmazonaws, SiMongodb, SiTrello, SiPostgresql, SiEslint, SiFigma, SiTypescript, SiExpress } from 'react-icons/si';
 import { motion as m } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
 
@@ -52,6 +52,7 @@ const Skills = () => {
                       </div>
                   </div>
                 </m.div>
+                
                 <m.div className='min-h-[40rem] min-w-[18rem] md:min-w-[22rem]  p-[40px]  flex flex-col'> 
                   <div className='bg-white p-6 shadow-xl rounded-xl px-5 mb-5'>
                       <div className='grid grid-cols-2 justify-center gap-4 items-center'>
@@ -88,10 +89,32 @@ const Skills = () => {
                   <div className='bg-white p-6 shadow-xl rounded-xl px-5'>
                       <div className='grid grid-cols-2 justify-center gap-4 items-center'>
                           <div className='m-auto'>
+                              <SiReact className='text-[#ff4369]' size={60} />
+                          </div> 
+                          <div className='flex flex-col justify-center items-center'>
+                              <h3 className='text-[#023E8A]'>React native</h3>
+                          </div>
+                      </div>
+                  </div>
+                </m.div>
+                <m.div className='min-h-[40rem] min-w-[18rem] md:min-w-[24rem]  p-[40px]  flex flex-col'> 
+                  <div className='bg-white p-6 shadow-xl rounded-xl px-5 mb-5'>
+                      <div className='grid grid-cols-2 justify-center gap-4 items-center'>
+                          <div className='m-auto'>
                               <SiNextdotjs className='text-[#ff4369]' size={60} />
                           </div> 
                           <div className='flex flex-col justify-center items-center'>
                               <h3 className='text-[#023E8A]'>Next.js</h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div className='bg-white p-6 shadow-xl rounded-xl px-5'>
+                      <div className='grid grid-cols-2 justify-center gap-4 items-center'>
+                          <div className='m-auto'>
+                              <SiFramer className='text-[#ff4369]' size={60} />
+                          </div> 
+                          <div className='flex flex-col justify-center items-center'>
+                              <h3 className='text-[#023E8A]'>Framer Motion</h3>
                           </div>
                       </div>
                   </div>
