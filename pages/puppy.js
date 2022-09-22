@@ -21,9 +21,8 @@ const puppy = () => {
         <div className='max-w-[1240px] p-2 grid md:grid-cols-5 gap-8 pt-8 mx-5'>
           <div className='col-span-4'>
             <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overview</h2>
-            <p className='text-white '>Due to deployment issues in th frontend it's not possible to use the CRUD operations at the moment. I'm working on it! Meanwhile you can checkout the deployed backend if you want.</p>
-            <p className='mb-4'>This TypeScript App allows you to check out puppies and get to learn more about them on their own page. You add one by yourself or edit or even remove puppies from the database. But this is just the start: It's possible to add a lot of features like authentication, comment sections, the possibility to give puppies likes, a blog section to present the latest products ect ect. </p>
-            <a href='https://happy-puppy.onrender.com/'>
+            <p className='mb-4'>This TypeScript App allows you to check out puppies and get to learn more about them on their own page. You can add a puppy by yourself or edit or even remove puppies from the database. But this is just the start: It's possible to add a lot of features like authentication, comment sections, the possibility to give puppies likes, a blog section to present the latest products ect ect. </p>
+            <a href='https://main.d3mfuxjxgnbn1p.amplifyapp.com/'>
             <motion.button  
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}
