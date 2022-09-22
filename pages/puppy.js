@@ -21,6 +21,7 @@ const puppy = () => {
         <div className='max-w-[1240px] p-2 grid md:grid-cols-5 gap-8 pt-8 mx-5'>
           <div className='col-span-4'>
             <h2 className='text-[#0077B6] uppercase text-xl tracking-widest mb-4'>Project overview</h2>
+            <p className='text-white mb-2'>I'm still fighting withsome deployment issues! So please excuse the lack of some CRUD funcionalities...</p>
             <p className='mb-4'>This TypeScript App allows you to check out puppies and get to learn more about them on their own page. You can add a puppy by yourself or edit or even remove puppies from the database. But this is just the start: It's possible to add a lot of features like authentication, comment sections, the possibility to give puppies likes, a blog section to present the latest products ect ect. </p>
             <a href='https://main.d3mfuxjxgnbn1p.amplifyapp.com/'>
             <motion.button  
@@ -36,7 +37,7 @@ const puppy = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                  className=' bg-[#0077B6] text-white hover:bg-gradient-to-l from-[#023E8A] to-[#0077B6] px-8 py-4 mt-2 rounded-xl shadow-xl cursor-pointer'>
+                  className=' bg-[#0077B6] text-white hover:bg-gradient-to-l from-[#023E8A] to-[#0077B6] px-8 py-4 mt-2 mx-5 rounded-xl shadow-xl cursor-pointer'>
                     Demo backenend
                 </motion.button>
             </a>
