@@ -27,7 +27,7 @@ const ComputerMain = () => {
                             className='text-[#03055e]'
                             animate={{x: [-800, 0] }}
                             transition={{ duration: 1.1}}>
-                                I'm a fullstack web developer
+                                I'm a fullstack developer
                         </motion.h1> </div> 
                         <p className='pt-4 pb-0 max-w-[70%] m-auto'>
                             At the beginning of this year I got the great news that I was chosen from more than a thousand applicants to 

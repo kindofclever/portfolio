@@ -20,7 +20,7 @@ const PhoneMain = () => {
                     </h1>
                     <h1 
                         className='text-[#03055e]'>
-                            I'm a fullstack web developer
+                            I'm a fullstack developer
                     </h1> </div> 
                     <p className='pt-4 pb-0 max-w-[70%] m-auto'>
                         At the beginning of this year I got the great news that I was chosen from more than a thousand applicants to 
