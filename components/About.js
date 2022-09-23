@@ -15,7 +15,7 @@ const About = () => {
                     About me
                 </motion.p>
                 <h2 className='text-[#ffec43] font-bold  mt-3'>Who am I?</h2>
-                <p className='text-white py-2'> I'm a curios person with a versatile background </p>
+                <p className='text-white pb-2'> I'm a curios person with a versatile background </p>
                 <p>
                     This portfolio is still under construction. I decided to deploy it anyways, so that you can have at least a little taste of my skills.  
                 </p>                
