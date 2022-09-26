@@ -34,7 +34,7 @@ const About = () => {
                 </motion.div>
             </div>
             <div className=' w-[50vw] h-[50vh] overflow-hidden flex justify-center items-center'>
-              <Slider />
+              {/* <Slider /> */}
             </div>
         </div>
     </motion.div>
