@@ -28,7 +28,7 @@ const puppy = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                  className=' bg-[#0077B6] text-white hover:bg-gradient-to-l from-[#023E8A] to-[#0077B6] px-8 py-4 mt-2 rounded-xl shadow-xl cursor-pointer'>
+                  className=' bg-[#0077B6] text-white hover:bg-gradient-to-l from-[#023E8A] to-[#0077B6] px-8 py-4 mt-2 mx-5 rounded-xl shadow-xl cursor-pointer'>
                     Demo frontend
                 </motion.button>
             </a>

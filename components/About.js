@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import sandra from '../public/assets/p-picture.jpg';
 import Link from 'next/link';
+import Slider from './Slider';
 
 const About = () => {
 
@@ -31,6 +32,9 @@ const About = () => {
                     whileTap={{ scale: 1.1 }} >
                         <Image src={sandra} alt='Sandra making a funny face' height='270' width='270' className='rounded-xl m-0 p-0 bottom-0' />
                 </motion.div>
+            </div>
+            <div className=' w-[50vw] h-[50vh] overflow-hidden flex justify-center items-center'>
+              <Slider />
             </div>
         </div>
     </motion.div>
