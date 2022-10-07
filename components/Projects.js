@@ -18,7 +18,7 @@ const Projects = () => {
           Projects
         </p>
         <h2 className="text-[#ffec43] font-bold mt-3">
-          What I have build so far
+          What I have built so far
         </h2>
         <div className="grid md:grid-cols-2 gap-8 mt-5">
           <ProjectItem
