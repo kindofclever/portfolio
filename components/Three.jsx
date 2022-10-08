@@ -14,10 +14,14 @@ export default function Three() {
   // Code to move the camera around
   const orbitControlsRef = useRef(null);
   const [colorBox, setColorBox] = useState('#FF4369');
+  const [activeBox, setActiveBox] = useState(false);
   const [colorBall, setColorBall] = useState('#FF4369');
+  const [activeBall, setActiveBall] = useState(false);
   const [colorCone, setColorCone] = useState('#FF4369');
   const [colorFloor, setColorFloor] = useState('#FFEC43');
   useFrame((state) => {
+    boxRef.current.rotation.y += 0.01;
+    coneRef.current.rotation.x += 0.02;
     if (!!orbitControlsRef.current) {
       const { x, y } = state.mouse;
       orbitControlsRef.current.setAzimuthalAngle(-x * angleToRadians(80));
@@ -106,12 +110,19 @@ export default function Three() {
       />
       {/* Ball */}
       <mesh
+        scale={activeBall ? 1 : 1}
         position={[-7, 1.5, 1]}
         castShadow
         ref={ballRef}
         onClick={() => Router.push('/whatIlike')}
-        onPointerEnter={() => setColorBall('#0077B6')}
-        onPointerOut={() => setColorBall('#FF4369')}
+        onPointerEnter={() => {
+          setColorBall('#0077B6');
+          setActiveBall(!activeBall);
+        }}
+        onPointerOut={() => {
+          setActiveBall(!activeBall);
+          setColorBall('#FF4369');
+        }}
       >
         <sphereGeometry args={[0.5, 32, 32]} />
         <meshStandardMaterial
@@ -123,6 +134,7 @@ export default function Three() {
       {/* Box */}
       <mesh
         position={[6, 1.5, 0]}
+        rotation-x={Math.PI * 0.25}
         castShadow
         ref={boxRef}
         onClick={() => Router.push('/whatIamlookingfor')}
@@ -139,6 +151,7 @@ export default function Three() {
       {/* Triangle */}
       <mesh
         position={[-1, 1, -2]}
+        rotation-x={Math.PI * 0.5}
         castShadow
         ref={coneRef}
         onClick={() => Router.push('/faq')}
