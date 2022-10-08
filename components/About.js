@@ -21,7 +21,7 @@ const About = () => {
         </p>
         <h2 className="text-[#ffec43] font-bold mt-3">Who am I?</h2>
         <p className="text-white">
-          Click the Objects to find out more about me!
+          Click on one of the objects to find out more about me!
         </p>
       </div>
       <Canvas className="w-[100vw]" id="three-canvas-container" shadows>
