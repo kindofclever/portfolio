@@ -10,7 +10,7 @@ import Three from './Three';
 
 const About = () => {
   return (
-    <motion.div
+    <div
       exit={{ opacity: 0 }}
       id="about"
       className="sm:mr-5  md:mr-5 md:h-screen p-2 flex flex-col items-start py-16 m-5 sticky w-full lg:h-screen pt-[15%]"
@@ -67,7 +67,7 @@ const About = () => {
           </motion.div>
         </div>
       </div> */}
-    </motion.div>
+    </div>
   );
 };
 

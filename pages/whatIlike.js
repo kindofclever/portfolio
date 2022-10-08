@@ -15,7 +15,7 @@ const whatIlike = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <Link href="/">
+          <Link href="/#about">
             <motion.div
               className="text-[#0077B6] hover:text-[#ff4369] p-2 m- cursor-pointer"
               whileHover={{ scale: 1.2 }}
