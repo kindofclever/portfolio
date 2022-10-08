@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 
 const faq = () => {
   return (

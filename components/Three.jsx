@@ -157,7 +157,7 @@ export default function Three() {
       <mesh
         rotation={[-angleToRadians(90), 0, 0]}
         receiveShadow
-        onClick={() => Router.push('/faq')}
+        onClick={() => Router.push('/foundation')}
       >
         <planeGeometry args={[20, 20]} />
         <meshStandardMaterial color={colorFloor} />

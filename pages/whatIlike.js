@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 
 const whatIlike = () => {
   return (
