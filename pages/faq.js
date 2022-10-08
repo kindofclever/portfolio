@@ -1,8 +1,8 @@
 import React from 'react';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
-const whatIlike = () => {
+const faq = () => {
   return (
     <>
       <div className="w-screen h-screen flex justify-center items-center">
@@ -28,4 +28,4 @@ const whatIlike = () => {
   );
 };
 
-export default whatIlike;
+export default faq;
