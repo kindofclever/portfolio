@@ -23,10 +23,10 @@ export default function Home() {
       {!isPhone ? <ComputerMain /> : <div></div>}
       {isPhone ? <PhoneMain /> : <div></div>}
       {/* <Main /> */}
-      <About />
-      <Projects />
+      <About className="pt-[7%]" />
+      <Projects className="pt-[7%]" />
       <Skills className="pt-[7%]" />
-      <Contact />
+      <Contact className="pt-[7%]" />
     </motion.div>
   );
 }

@@ -10,26 +10,23 @@ import Three from './Three';
 
 const About = () => {
   return (
-    <div
-      exit={{ opacity: 0 }}
-      id="about"
-      className="sm:mr-5  md:mr-5 md:h-screen p-2 flex flex-col items-start py-16 m-5 sticky w-full lg:h-screen pt-[15%]"
-    >
-      <div className="flex flex-col justify-start">
-        <p className="text-[#0077B6] uppercase text-xl tracking-widest">
-          About me
-        </p>
-        <h2 className="text-[#ffec43] font-bold mt-3">Who am I?</h2>
-        <p className="text-white">
-          Click on one of the objects to find out more about me!
-        </p>
-      </div>
-      <Canvas className="w-[100vw]" id="three-canvas-container" shadows>
-        <Suspense fallback={<></>}>
-          <Three />
-        </Suspense>
-      </Canvas>
-      {/* <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 ml-5 ">
+    <div exit={{ opacity: 0 }} id="about">
+      <div className="sm:mr-5  md:mr-5 md:h-screen p-2 flex flex-col items-start sticky w-full lg:h-screen pt-[15%]">
+        <div className="flex flex-col justify-start">
+          <p className="text-[#0077B6] uppercase text-xl tracking-widest">
+            About me
+          </p>
+          <h2 className="text-[#ffec43] font-bold mt-3">Who am I?</h2>
+          <p className="text-white">
+            Click on one of the objects to find out more about me!
+          </p>
+        </div>
+        <Canvas className="w-[100vw]" id="three-canvas-container" shadows>
+          <Suspense fallback={<></>}>
+            <Three />
+          </Suspense>
+        </Canvas>
+        {/* <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 ml-5 ">
         <div className="col-span-2">
           <motion.p className="text-[#0077B6] uppercase text-xl tracking-widest">
             About me
@@ -67,6 +64,7 @@ const About = () => {
           </motion.div>
         </div>
       </div> */}
+      </div>
     </div>
   );
 };
