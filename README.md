@@ -8,13 +8,11 @@ So if you are checking out my skills please have a look at the projects in my po
 
 In this portfolio I use: Next.js, three.js, r3f, SendGrid, Framer Motion, Tailwind, Prettier, Contentful etc...
 
-Here you can visit my portfolio:
-
-(sandragufler.se)[https://www.sandragufler.se/]
+Here you can visit my portfolio: [sandragufler.se](https://www.sandragufler.se/)
 
 Thank you very much for your interest in my portfolio!
 
 Kind regards,
 Sandra
 
-![Sandra](./public/assets/portfolio-picture.jpg)
+![Sandra](./public/assets/sandra.png)
