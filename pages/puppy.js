@@ -30,16 +30,17 @@ const puppy = () => {
             Project overview
           </h2>
           <p className="text-white mb-2">
-            I'm still fighting withsome deployment issues! So please excuse the
-            lack of some CRUD funcionalities...
+            I'm still fighting withs ome deployment issues. So please excuse the
+            lack of some CRUD functionalities and you have to be patient with
+            the database.
           </p>
           <p className="mb-4">
-            This TypeScript App allows you to check out puppies and get to learn
+            This TypeScript App allows you to check out puppies and to learn
             more about them on their own page. You can add a puppy by yourself
             or edit or even remove puppies from the database. But this is just
             the start: It's possible to add a lot of features like
             authentication, comment sections, the possibility to give puppies
-            likes, a blog section to present the latest products ect ect.{' '}
+            likes, a blog section to present the latest products ect ect.
           </p>
           <a href="https://main.d3mfuxjxgnbn1p.amplifyapp.com/">
             <motion.button
