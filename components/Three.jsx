@@ -94,7 +94,7 @@ export default function Three() {
         position={[-7, 1.5, 1]}
         castShadow
         ref={ballRef}
-        onClick={() => Router.push('/whatIlike')}
+        onClick={() => Router.push('/what-I-like')}
         onPointerEnter={() => {
           setColorBall('#0077B6');
         }}
@@ -141,14 +141,14 @@ export default function Three() {
           roughness={0.1}
         />
       </mesh>
-      <mesh
+      {/* <mesh
         rotation={[-angleToRadians(90), 0, 0]}
         receiveShadow
         onClick={() => Router.push('/foundation')}
       >
         <planeGeometry args={[20, 20]} />
         <meshStandardMaterial color={colorFloor} />
-      </mesh>
+      </mesh> */}
       <ambientLight args={['#FFFFFF', 0.23]} />
       <spotLight
         args={['#FFFFFF', 1.5, 7, angleToRadians(45), 0.4]}
