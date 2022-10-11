@@ -1,30 +1,31 @@
-import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import SimpleImageSlider from 'react-simple-image-slider';
+import { createClient } from 'contentful';
 
-function Slider() {
-  const [seconds, setSeconds] = useState(0);
+import React from 'react';
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSeconds((seconds) => seconds + 1);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
+const Slider = ({ aboutMe }) => {
+  const images = [
+    { url: aboutMe[0].fields.picture1.fields.file.url },
+    { url: aboutMe[0].fields.picture2.fields.file.url },
+    { url: aboutMe[0].fields.picture3.fields.file.url },
+    { url: aboutMe[0].fields.picture4.fields.file.url },
+    { url: aboutMe[0].fields.picture5.fields.file.url },
+    { url: aboutMe[0].fields.picture6.fields.file.url },
+    { url: aboutMe[0].fields.picture7.fields.file.url },
+    { url: aboutMe[0].fields.picture8.fields.file.url },
+  ];
 
   return (
-    <AnimatePresence exitBeforeEnter>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 1.2 } }}
-        exit={{ opacity: 0 }}
-        className="App"
-        style={{ fontSize: 100 }}
-        key={seconds}
-      >
-        {seconds}
-      </motion.div>
-    </AnimatePresence>
+    <SimpleImageSlider
+      width={600}
+      height={320}
+      images={images}
+      loop={true}
+      autoPlay={true}
+      showNavs={true}
+      autoPlayDelay={3}
+    />
   );
-}
+};
 
 export default Slider;

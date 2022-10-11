@@ -16,10 +16,7 @@ const thankyou = () => {
           transition={{ ease: 'linear', duration: 10, repeat: Infinity }}
           className="mb-[5%]"
         >
-          <BsSunFill
-            className="text-[#ffec43] hover:text-[#ff4369] z-[1]"
-            size={70}
-          />
+          <BsSunFill className="text-[#ffec43] z-[1]" size={70} />
         </motion.div>
         <h2 className=" sm:mx-5 md:mx-5 text-center">
           Thank you for sending me a message!

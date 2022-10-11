@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
     "@react-three/drei": "^9.34.2",
     "@react-three/fiber": "^8.8.9",
     "@sendgrid/mail": "^7.7.0",
+    "contentful": "^9.2.5",
     "framer-motion": "^7.2.1",
     "framer-motion-carousel": "^2.0.1",
     "gltfjsx": "^5.0.2",
@@ -20,6 +22,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "react-simple-image-slider": "^2.4.1",
     "react-spring": "^9.5.2",
     "react-spring-carousel": "^2.0.19",
     "sendgrid": "^5.2.3",

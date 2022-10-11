@@ -14,9 +14,7 @@ const Projects = () => {
       className="w-full xs:mr-5 sm:mr-5"
     >
       <div className="max-w-[1240px] mx-auto px-2 pt-[7%] ml-5">
-        <p className="text-[#0077B6] uppercase text-xl tracking-widest">
-          Projects
-        </p>
+        <p className="uppercase text-xl tracking-widest">Projects</p>
         <h2 className="text-[#ffec43] font-bold mt-3">
           What I have built so far
         </h2>

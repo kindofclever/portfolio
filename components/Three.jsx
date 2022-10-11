@@ -10,10 +10,10 @@ import gsap from 'gsap';
 import Router from 'next/router';
 export default function Three() {
   const orbitControlsRef = useRef(null);
-  const [colorBox, setColorBox] = useState('#FF4369');
-  const [colorBall, setColorBall] = useState('#FF4369');
-  const [colorCone, setColorCone] = useState('#FF4369');
-  const [colorFloor, setColorFloor] = useState('#FFEC43');
+  const [colorBox, setColorBox] = useState('#ffec43');
+  const [colorBall, setColorBall] = useState('#ffec43');
+  const [colorCone, setColorCone] = useState('#ffec43');
+  const [colorFloor, setColorFloor] = useState('#00B4D8');
   useFrame((state) => {
     boxRef.current.rotation.y += 0.01;
     coneRef.current.rotation.x += 0.02;
@@ -51,14 +51,14 @@ export default function Three() {
     if (!!boxRef.current) {
       const timeline = gsap.timeline({ paused: false });
       timeline.to(boxRef.current.position, {
-        x: 2,
+        x: 4,
         duration: 3,
         ease: 'power2.out',
       });
       timeline.to(
         boxRef.current.position,
         {
-          y: 1.5,
+          y: 1,
           duration: 4,
           ease: 'bounce.out',
         },
@@ -83,7 +83,7 @@ export default function Three() {
   }, [ballRef.current, boxRef.current, coneRef.current]);
   return (
     <>
-      <PerspectiveCamera makeDefault position={[0, 1, 5]} />
+      <PerspectiveCamera makeDefault position={[0.5, 1, 4.5]} />
       <OrbitControls
         autoRotate
         ref={orbitControlsRef}
@@ -99,7 +99,7 @@ export default function Three() {
           setColorBall('#0077B6');
         }}
         onPointerOut={() => {
-          setColorBall('#FF4369');
+          setColorBall('#ffec43');
         }}
       >
         <sphereGeometry args={[0.5, 32, 32]} />
@@ -110,31 +110,31 @@ export default function Three() {
         />
       </mesh>
       <mesh
-        position={[6, 1.5, 0]}
+        position={[6, 1.2, 0]}
         rotation-x={Math.PI * 0.25}
         castShadow
         ref={boxRef}
         onClick={() => Router.push('/whatIamlookingfor')}
         onPointerEnter={() => setColorBox('#0077B6')}
-        onPointerOut={() => setColorBox('#FF4369')}
+        onPointerOut={() => setColorBox('#ffec43')}
       >
         <boxGeometry args={[0.5, 1, 1]} />
         <meshStandardMaterial
           color={colorBox}
-          metalness={0.1}
-          roughness={0.7}
+          metalness={0.7}
+          roughness={0.2}
         />
       </mesh>
       <mesh
-        position={[-1, 1, -2]}
+        position={[-0.5, 1, -2]}
         rotation-x={Math.PI * 0.5}
         castShadow
         ref={coneRef}
         onClick={() => Router.push('/faq')}
         onPointerEnter={() => setColorCone('#0077B6')}
-        onPointerOut={() => setColorCone('#FF4369')}
+        onPointerOut={() => setColorCone('#ffec43')}
       >
-        <coneGeometry args={[0.5, 1, 32]} />
+        <coneGeometry args={[0.6, 1.5, 32]} />
         <meshStandardMaterial
           color={colorCone}
           metalness={0.3}
@@ -149,7 +149,7 @@ export default function Three() {
         <planeGeometry args={[20, 20]} />
         <meshStandardMaterial color={colorFloor} />
       </mesh>
-      <ambientLight args={['#FFFFFF', 0.25]} />
+      <ambientLight args={['#FFFFFF', 0.23]} />
       <spotLight
         args={['#FFFFFF', 1.5, 7, angleToRadians(45), 0.4]}
         position={[-3, 1, 0]}
@@ -163,6 +163,11 @@ export default function Three() {
       <spotLight
         args={['#FFFFFF', 4, 10, angleToRadians(45), 0.4]}
         position={[-11, 1, 4]}
+        castShadow
+      />
+      <spotLight
+        args={['#FFFFFF', 4, 10, angleToRadians(45), 0.7]}
+        position={[9, 2, 4]}
         castShadow
       />
     </>

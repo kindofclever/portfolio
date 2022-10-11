@@ -13,8 +13,8 @@ const Main = () => {
             Nice that you are visiting me
           </p>
           <h1 className="text-white">
-            Hello, my name is{' '}
-            <span className="text-[#ffec43] hover:text-[#ff4369]">Sandra</span>
+            Hello, my name is
+            <span className="text-[#ffec43]"> Sandra</span>
           </h1>
           <h1 className="text-[#03055e]">I'm a fullstack web developer</h1>
           <p className="pt-4 pb-0 max-w-[70%] m-auto">

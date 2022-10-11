@@ -14,10 +14,7 @@ const PhoneMain = () => {
               Nice that you are visiting me
             </p>
             <h1 className="text-white">
-              Hello, my name is{' '}
-              <span className="text-[#ffec43] hover:text-[#ff4369]">
-                Sandra
-              </span>
+              Hello, my name is <span className="text-[#ffec43]"> Sandra</span>
             </h1>
             <h1 className="text-[#03055e]">I'm a fullstack developer</h1>{' '}
           </div>
@@ -34,7 +31,7 @@ const PhoneMain = () => {
           <div className="flex items-center justify-evenly max-w-[350px] m-auto pt-5 sm:max-w[300px] md:pt-5">
             <a href="https://www.linkedin.com/in/sandragufler/">
               <motion.div
-                className="text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] hover:text-[#03045E] p-2 m-1 rounded-full shadow-xl cursor-pointer"
+                className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-2 m-1 hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}
@@ -44,7 +41,7 @@ const PhoneMain = () => {
             </a>
             <a href="https://github.com/kindofclever">
               <motion.div
-                className="text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] hover:text-[#03045E]  p-2 m-1 rounded-full shadow-xl cursor-pointer"
+                className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-2 m-1 hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}
@@ -55,7 +52,7 @@ const PhoneMain = () => {
 
             <a href="/#contact">
               <motion.div
-                className="text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer"
+                className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-2 m-1 hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}
@@ -65,7 +62,7 @@ const PhoneMain = () => {
             </a>
             <a href="https://www.codewars.com/users/kindofclever">
               <motion.div
-                className="text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer"
+                className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-2 m-1 hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}

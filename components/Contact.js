@@ -1,29 +1,29 @@
-import React from 'react'
-import { IoLogoLinkedin, IoMdMail } from 'react-icons/io'
-import { ImGithub } from 'react-icons/im'
-import { SiCodewars } from 'react-icons/si'
-import { FaAngleDoubleUp } from 'react-icons/fa'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { IoLogoLinkedin, IoMdMail } from 'react-icons/io';
+import { ImGithub } from 'react-icons/im';
+import { SiCodewars } from 'react-icons/si';
+import { FaAngleDoubleUp } from 'react-icons/fa';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    const formData = {}
+    e.preventDefault();
+    const formData = {};
     Array.from(e.currentTarget.elements).forEach((field) => {
-      if (!field.name) return
-      formData[field.name] = field.value
-    })
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
     await fetch('/api/mail', {
       method: 'post',
       body: JSON.stringify(formData),
-    })
+    });
 
-    setTimeout(() => router.push('/thankyou'), 300)
-  }
+    setTimeout(() => router.push('/thankyou'), 300);
+  };
 
   return (
     <motion.div
@@ -32,9 +32,7 @@ const Contact = () => {
       className="w-full lg:h-screen pt-8"
     >
       <div className="max-w-[1240px] m-auto ml-5 px-2 py-16 w-full">
-        <p className="text-[#0077B6] uppercase text-xl tracking-widest">
-          Contact
-        </p>
+        <p className="uppercase text-xl tracking-widest">Contact</p>
         <h2 className="text-[#ffec43] font-bold mt-3">
           Do you want to send me a message?
         </h2>
@@ -52,7 +50,7 @@ const Contact = () => {
                 <div className="flex items-center justify-between pt-6">
                   <a href="https://www.linkedin.com/in/sandragufler/">
                     <motion.div
-                      className="mx-5 text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer"
+                      className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-2 m-1 hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       transition={{
@@ -66,7 +64,7 @@ const Contact = () => {
                   </a>
                   <a href="https://github.com/kindofclever">
                     <motion.div
-                      className="mx-5 text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer"
+                      className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-2 m-1 hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       transition={{
@@ -80,7 +78,7 @@ const Contact = () => {
                   </a>
                   <a href="https://www.codewars.com/users/kindofclever">
                     <motion.div
-                      className="mx-5 text-[#0077B6] bg-[#ffec43] hover:bg-[#ff4369] p-2 m-1 hover:text-[#03045E]  rounded-full shadow-xl cursor-pointer"
+                      className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-2 m-1 hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       transition={{
@@ -108,7 +106,7 @@ const Contact = () => {
                       name="name"
                       type="text"
                       required
-                      className="border-2 rounded-xl p-3 w-full flex border-[#0096C7]"
+                      className="border-2 rounded-xl p-3 w-full flex border-[#03045E]"
                     />
                   </div>
                   <div className="flex flex-col">
@@ -118,7 +116,7 @@ const Contact = () => {
                     <input
                       name="phone"
                       type="text"
-                      className="border-2 rounded-xl p-3 w-full flex border-[#0096C7]"
+                      className="border-2 rounded-xl p-3 w-full flex border-[#03045E]"
                     />
                   </div>
                 </div>
@@ -130,7 +128,7 @@ const Contact = () => {
                     name="email"
                     type="email"
                     required
-                    className="border-2 rounded-xl p-3 w-full flex border-[#0096C7]"
+                    className="border-2 rounded-xl p-3 w-full flex border-[#03045E]"
                   />
                 </div>
                 <div className="flex flex-col mb-5">
@@ -141,7 +139,7 @@ const Contact = () => {
                     name="message"
                     required
                     rows="4"
-                    className="border-2 rounded-xl p-3 w-full flex border-[#0096C7]"
+                    className="border-2 rounded-xl p-3 w-full flex border-[#03045E]"
                   />
                 </div>
                 <motion.button
@@ -149,7 +147,7 @@ const Contact = () => {
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 17 }}
                   type="submit"
-                  className="w-full p-4 text-[#023E8A] bg-[#ffec43] lg:mt-5 hover:bg-[#ff4369] hover:text-[#03045E] rounded-xl shadow-xl"
+                  className="w-full p-4 text-[#03045E] bg-[#ffec43] lg:mt-5 hover:bg-[#03045E] hover:text-[#ffec43] rounded-xl shadow-xl"
                 >
                   Send message
                 </motion.button>
@@ -160,7 +158,7 @@ const Contact = () => {
         <div className="flex justify-center pt-12">
           <Link href="/">
             <motion.div
-              className="text-[#0077B6] hover:text-[#ff4369] p-2 m-1  cursor-pointer"
+              className="text-[#03045E] hover:text-[#ffec43] p-2 m-1  cursor-pointer"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               transition={{ type: 'spring', stiffness: 400, damping: 17 }}
@@ -171,7 +169,7 @@ const Contact = () => {
         </div>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -11,9 +11,9 @@ const ProjectItem = ({
 }) => {
   return (
     <div>
-      <div className="relative flex justify-center items-center bg-white p-4 h-auto w-full shadow-xl rounded-xl group hover:bg-gradient-to-r from-[#FF8500] to-[#ffec43]">
+      <div className="relative flex justify-center items-center bg-white p-4 h-auto w-full shadow-xl rounded-xl group hover:bg-[#03045E]">
         <Image
-          className="rounded-xl group-hover:opacity-10 p-4"
+          className="rounded-xl group-hover:opacity-[0.05] p-4"
           src={backgroundImg}
           alt={projectDescription}
         />
@@ -31,7 +31,7 @@ const ProjectItem = ({
             }}
           >
             <Link href={projectUrl}>
-              <p className="text-center py-3 rounded-xl bg-white text-[#FF8500] font-bold text-lg cursor-pointer hover:scale-105">
+              <p className="text-center py-3 rounded-xl bg-white text-[#03045E] font-bold text-lg cursor-pointer hover:scale-105">
                 More Info
               </p>
             </Link>

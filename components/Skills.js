@@ -36,9 +36,7 @@ const Skills = () => {
       className=" sticky w-full lg:h-screen pt-[15%] m-5"
     >
       <div className="max-w-[1240px] ml-5 flex flex-col justify-center h-full">
-        <p className="text-[#0077B6] uppercase text-xl tracking-widest">
-          Skills
-        </p>
+        <p className="uppercase text-xl tracking-widest">Skills</p>
         <h2 className="text-[#ffec43] font-bold mt-3">
           What can I do for you?
         </h2>
@@ -53,20 +51,20 @@ const Skills = () => {
               <div className="bg-white p-6 shadow-xl rounded-xl px-5 mb-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <AiFillHtml5 className="text-[#ff4369]" size={60} />
+                    <AiFillHtml5 className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">HTML</h3>
+                    <h3 className="text-[#03045E]">HTML</h3>
                   </div>
                 </div>
               </div>
               <div className="bg-white p-6 shadow-xl rounded-xl px-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <IoLogoCss3 className="text-[#ff4369]" size={60} />
+                    <IoLogoCss3 className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">CSS</h3>
+                    <h3 className="text-[#03045E]">CSS</h3>
                   </div>
                 </div>
               </div>
@@ -76,20 +74,20 @@ const Skills = () => {
               <div className="bg-white p-6 shadow-xl rounded-xl px-5 mb-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <DiJavascript className="text-[#ff4369]" size={60} />
+                    <DiJavascript className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">JavaScript</h3>
+                    <h3 className="text-[#03045E]">JavaScript</h3>
                   </div>
                 </div>
               </div>
               <div className="bg-white p-6 shadow-xl rounded-xl px-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiTypescript className="text-[#ff4369]" size={60} />
+                    <SiTypescript className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">Typescript</h3>
+                    <h3 className="text-[#03045E]">Typescript</h3>
                   </div>
                 </div>
               </div>
@@ -98,20 +96,20 @@ const Skills = () => {
               <div className="bg-white p-6 shadow-xl rounded-xl px-5 mb-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiReact className="text-[#ff4369]" size={60} />
+                    <SiReact className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">React.js</h3>
+                    <h3 className="text-[#03045E]">React.js</h3>
                   </div>
                 </div>
               </div>
               <div className="bg-white p-6 shadow-xl rounded-xl px-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiReact className="text-[#ff4369]" size={60} />
+                    <SiReact className="text-[#03045E]" size={60} />
                   </div>
-                  <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">React native</h3>
+                  <div className="flex flex-col justify-center items-center ">
+                    <h3 className=" text-[#03045E] ">React native</h3>
                   </div>
                 </div>
               </div>
@@ -120,20 +118,20 @@ const Skills = () => {
               <div className="bg-white p-6 shadow-xl rounded-xl px-5 mb-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiNextdotjs className="text-[#ff4369]" size={60} />
+                    <SiNextdotjs className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">Next.js</h3>
+                    <h3 className="text-[#03045E]">Next.js</h3>
                   </div>
                 </div>
               </div>
               <div className="bg-white p-6 shadow-xl rounded-xl px-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiFramer className="text-[#ff4369]" size={60} />
+                    <SiFramer className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">Framer Motion</h3>
+                    <h3 className="text-[#03045E]">Framer Motion</h3>
                   </div>
                 </div>
               </div>
@@ -142,20 +140,20 @@ const Skills = () => {
               <div className="bg-white p-6 shadow-xl rounded-xl px-5 mb-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <IoLogoNodejs className="text-[#ff4369]" size={60} />
+                    <IoLogoNodejs className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">Node.js</h3>
+                    <h3 className="text-[#03045E]">Node.js</h3>
                   </div>
                 </div>
               </div>
               <div className="bg-white p-6 shadow-xl rounded-xl px-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiExpress className="text-[#ff4369]" size={60} />
+                    <SiExpress className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">Express</h3>
+                    <h3 className="text-[#03045E]">Express</h3>
                   </div>
                 </div>
               </div>
@@ -164,20 +162,20 @@ const Skills = () => {
               <div className="bg-white p-6 shadow-xl rounded-xl px-5 mb-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiEslint className="text-[#ff4369]" size={60} />
+                    <SiEslint className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">ESLint</h3>
+                    <h3 className="text-[#03045E]">ESLint</h3>
                   </div>
                 </div>
               </div>
               <div className="bg-white p-6 shadow-xl rounded-xl px-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <ImGit className="text-[#ff4369]" size={60} />
+                    <ImGit className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">Git</h3>
+                    <h3 className="text-[#03045E]">Git</h3>
                   </div>
                 </div>
               </div>
@@ -186,20 +184,20 @@ const Skills = () => {
               <div className="bg-white p-6 shadow-xl rounded-xl px-5 mb-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiGithub className="text-[#ff4369]" size={60} />
+                    <SiGithub className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">GitHub</h3>
+                    <h3 className="text-[#03045E]">GitHub</h3>
                   </div>
                 </div>
               </div>
               <div className="bg-white p-6 shadow-xl rounded-xl px-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiMongodb className="text-[#ff4369]" size={60} />
+                    <SiMongodb className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">MongoDB</h3>
+                    <h3 className="text-[#03045E]">MongoDB</h3>
                   </div>
                 </div>
               </div>
@@ -208,20 +206,20 @@ const Skills = () => {
               <div className="bg-white p-6 shadow-xl rounded-xl px-5 mb-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiPostgresql className="text-[#ff4369]" size={60} />
+                    <SiPostgresql className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">PostgreSQL</h3>
+                    <h3 className="text-[#03045E]">PostgreSQL</h3>
                   </div>
                 </div>
               </div>
               <div className="bg-white p-6 shadow-xl rounded-xl px-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiAmazonaws className="text-[#ff4369]" size={60} />
+                    <SiAmazonaws className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">AWS</h3>
+                    <h3 className="text-[#03045E]">AWS</h3>
                   </div>
                 </div>
               </div>
@@ -230,20 +228,20 @@ const Skills = () => {
               <div className="bg-white p-6 shadow-xl rounded-xl px-5 mb-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiFigma className="text-[#ff4369]" size={60} />
+                    <SiFigma className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">Figma</h3>
+                    <h3 className="text-[#03045E]">Figma</h3>
                   </div>
                 </div>
               </div>
               <div className="bg-white p-6 shadow-xl rounded-xl px-5">
                 <div className="grid grid-cols-2 justify-center gap-4 items-center">
                   <div className="m-auto">
-                    <SiTrello className="text-[#ff4369]" size={60} />
+                    <SiTrello className="text-[#03045E]" size={60} />
                   </div>
                   <div className="flex flex-col justify-center items-center">
-                    <h3 className="text-[#023E8A]">Trello</h3>
+                    <h3 className="text-[#03045E]">Trello</h3>
                   </div>
                 </div>
               </div>

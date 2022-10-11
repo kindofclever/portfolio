@@ -52,7 +52,7 @@ const Navbar = () => {
       id="header"
       className={
         navbarShadow
-          ? 'fixed top-0 w-full h-20 z-[100] shadow-xl  bg-[#0077B6] text-white sm:mb-[10%] '
+          ? 'fixed top-0 w-full h-20 z-[100]   bg-[#00B4D8] text-white sm:mb-[10%] '
           : ' fixed top-0 w-full h-20  z-[100]'
       }
     >
@@ -117,17 +117,13 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={
-          navbar
-            ? 'md:hidden fixed left-0 top-0 w-full h-full bg-[#0076b67b]'
-            : ''
-        }
+        className={navbar ? 'md:hidden fixed left-0 top-0 w-full h-full' : ''}
       >
         <div
           className={
             navbar
               ? 'fixed left-0 top-0 w-[75%] h-[100%] sm:w-[60%] md:w-[45%] bg-[#00B4D8] p-10 ease-in duration-200'
-              : 'fixed left-[-150%] top-0 p-10 ease-out duration-200'
+              : 'fixed left-[-150%] top-0 p-10 ease-out duration-200 '
           }
         >
           <div>
