@@ -17,12 +17,12 @@ export default function Three() {
   useFrame((state) => {
     boxRef.current.rotation.y += 0.01;
     coneRef.current.rotation.x += 0.02;
-    if (!!orbitControlsRef.current) {
-      const { x, y } = state.mouse;
-      orbitControlsRef.current.setAzimuthalAngle(-x * angleToRadians(80));
-      orbitControlsRef.current.setPolarAngle((y + 1) * angleToRadians(80));
-      orbitControlsRef.current.update();
-    }
+    // if (!!orbitControlsRef.current) {
+    //   const { x, y } = state.mouse;
+    //   orbitControlsRef.current.setAzimuthalAngle(-x * angleToRadians(80));
+    //   orbitControlsRef.current.setPolarAngle((y + 1) * angleToRadians(80));
+    //   orbitControlsRef.current.update();
+    // }
   });
 
   const ballRef = useRef(null);
@@ -51,7 +51,7 @@ export default function Three() {
     if (!!boxRef.current) {
       const timeline = gsap.timeline({ paused: false });
       timeline.to(boxRef.current.position, {
-        x: 4,
+        x: 3,
         duration: 3,
         ease: 'power2.out',
       });
@@ -69,7 +69,7 @@ export default function Three() {
     if (!!coneRef.current) {
       const timeline = gsap.timeline({ paused: false });
       timeline.to(coneRef.current.position, {
-        x: -7,
+        x: -4,
         duration: 3,
         ease: 'power2.out',
       });

@@ -11,8 +11,7 @@ const About = () => {
           <p className=" uppercase text-xl tracking-widest">About me</p>
           <h2 className="text-[#ffec43] font-bold mt-3">Who am I?</h2>
           <p className="text-white">
-            Click on one of the objects to find out more about me! I consider
-            the floor as an object too.
+            Click on one of the objects to find out more about me!
           </p>
         </div>
         <Canvas className="w-[100%]" id="three-canvas-container" shadows>
