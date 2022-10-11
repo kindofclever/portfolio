@@ -54,19 +54,19 @@ const whatIlike = ({ aboutMe }) => {
             <h4 className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1">
               {subtitle1}
             </h4>
-            <p className="text-xl md:text-base">{paragraph1}</p>
+            <p className="text-2xl md:text-base">{paragraph1}</p>
           </div>
           <div className="pb-[3%] grid md:grid-cols-2 ml-5 mr-9">
             <h4 className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1">
               {subtitle2}
             </h4>
-            <p className="text-xl md:text-base">{paragraph2}</p>
+            <p className="text-2xl md:text-base">{paragraph2}</p>
           </div>
           <div className="mb-5 grid md:grid-cols-2 ml-5 mr-9">
             <h4 className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1">
               {subtitle3}
             </h4>
-            <p className="text-xl md:text-base">{paragraph3}</p>
+            <p className="text-2xl md:text-base">{paragraph3}</p>
           </div>
           <div className="flex justify-center">
             <Link href="/">
