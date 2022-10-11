@@ -10,7 +10,7 @@ const whatIamlookingfor = () => {
         <div>
           <div className="flex justify-center items-center">
             <h3 className="text-white text-3xl">
-              This page needs to be implemented...
+              This page needs to be implemented!
             </h3>
           </div>
         </div>
