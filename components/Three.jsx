@@ -33,7 +33,7 @@ export default function Three() {
     if (!!ballRef.current) {
       const timeline = gsap.timeline({ paused: false });
       timeline.to(ballRef.current.position, {
-        x: -1,
+        x: -2,
         duration: 2.5,
         ease: 'power2.out',
       });
