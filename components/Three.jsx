@@ -69,7 +69,7 @@ export default function Three() {
     if (!!coneRef.current) {
       const timeline = gsap.timeline({ paused: false });
       timeline.to(coneRef.current.position, {
-        x: -4,
+        x: -3,
         duration: 3,
         ease: 'power2.out',
       });
@@ -96,7 +96,7 @@ export default function Three() {
         ref={ballRef}
         onClick={() => Router.push('/what-I-like')}
         onPointerEnter={() => {
-          setColorBall('#0077B6');
+          setColorBall('#03055e');
         }}
         onPointerOut={() => {
           setColorBall('#ffec43');
@@ -115,7 +115,7 @@ export default function Three() {
         castShadow
         ref={boxRef}
         onClick={() => Router.push('/whatIamlookingfor')}
-        onPointerEnter={() => setColorBox('#0077B6')}
+        onPointerEnter={() => setColorBox('#03055e')}
         onPointerOut={() => setColorBox('#ffec43')}
       >
         <boxGeometry args={[0.5, 1, 1]} />
@@ -131,7 +131,7 @@ export default function Three() {
         castShadow
         ref={coneRef}
         onClick={() => Router.push('/faq')}
-        onPointerEnter={() => setColorCone('#0077B6')}
+        onPointerEnter={() => setColorCone('#03055e')}
         onPointerOut={() => setColorCone('#ffec43')}
       >
         <coneGeometry args={[0.6, 1.5, 32]} />
