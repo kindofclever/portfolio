@@ -37,16 +37,11 @@ const Skills = () => {
           Click an hold the slider to pause the animation!
         </p>
         <div>
-          <m.div className="flex mt-[20%] md:mt-[10%]">
-            <Marquee
-              speed="120"
-              gradientWidth="0"
-              pauseOnClick
-              className="-rotate-6 bg-[#ffec43] p-0 md:p-5"
-            >
+          <m.div className="flex mt-[20%] md:mt-[10%] bg-[#ffec43] -rotate-6 p-3 md:p-5">
+            <Marquee speed="120" gradientWidth="0" pauseOnClick className="">
               <m.div
                 whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <AiFillHtml5 className="text-[#03045E]" size={80} />
@@ -54,7 +49,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <IoLogoCss3 className="text-[#03045E]" size={80} />
@@ -62,6 +57,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <DiJavascript className="text-[#03045E]" size={80} />
@@ -69,6 +65,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiTypescript className="text-[#03045E]" size={80} />
@@ -76,6 +73,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiReact className="text-[#03045E]" size={80} />
@@ -83,6 +81,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiNextdotjs className="text-[#03045E]" size={80} />
@@ -90,6 +89,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiFramer className="text-[#03045E]" size={80} />
@@ -97,6 +97,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <IoLogoNodejs className="text-[#03045E]" size={80} />
@@ -104,6 +105,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiExpress className="text-[#03045E]" size={80} />
@@ -111,6 +113,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiEslint className="text-[#03045E]" size={80} />
@@ -118,6 +121,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <ImGit className="text-[#03045E]" size={80} />
@@ -125,6 +129,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiGithub className="text-[#03045E]" size={80} />
@@ -132,6 +137,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiMongodb className="text-[#03045E]" size={80} />
@@ -139,6 +145,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiPostgresql className="text-[#03045E]" size={80} />
@@ -146,6 +153,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiFigma className="text-[#03045E]" size={80} />
@@ -153,6 +161,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.1 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <SiTrello className="text-[#03045E]" size={80} />
