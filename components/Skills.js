@@ -46,6 +46,7 @@ const Skills = () => {
             >
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.2 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <AiFillHtml5 className="text-[#03045E]" size={80} />
@@ -53,6 +54,7 @@ const Skills = () => {
               </m.div>
               <m.div
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.2 }}
                 className="flex flex-col justify-center items-center bg-white m-5 w-[200px] rounded-xl p-5 h-[200px] "
               >
                 <IoLogoCss3 className="text-[#03045E]" size={80} />
