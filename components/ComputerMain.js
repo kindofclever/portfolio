@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const ComputerMain = () => {
   return (
     <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] ml-3 w-full bottom-0 flex justify-center items-centers mt-[30%] lg:mt-[20%]">
+      <div className="max-w-[1240px] w-full bottom-0 flex justify-center items-center mt-[30%] lg:mt-[20%]">
         <div>
           <div>
             <motion.p
