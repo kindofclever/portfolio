@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const PhoneMain = () => {
   return (
-    <div id="home" className="w-full h-screen text-center">
+    <div id="home" className="w-full h-[95vh] text-center">
       <div className="w-full bottom-0 flex justify-center items-centers mt-[30%]">
         <div>
           <div>
