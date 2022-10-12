@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 const Projects = () => {
   return (
     <motion.div exit={{ opacity: 0 }} id="projects" className="w-full">
-      <div className=" pt-[7%] m-5 mr-2 md:mr-5 md:m-5 px-0 md:px-2">
+      <div className=" pt-[7%] m-5  md:mr-5 md:m-5 px-0 md:px-2">
         <p className="uppercase text-xl tracking-widest">Projects</p>
         <h2 className="text-[#ffec43] font-bold mt-3">
           What I have built so far

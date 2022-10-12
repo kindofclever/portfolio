@@ -31,7 +31,7 @@ const Contact = () => {
       id="contact"
       className="w-full xs:mr-5 sm:mr-5"
     >
-      <div className="pt-[7%] mmr-0 ml-5 md:m-5 px-0 md:px-2 mr-2 md:mr-5">
+      <div className="pt-[7%] m-5 md:m-5 px-0 md:px-2">
         <p className="uppercase text-xl tracking-widest">Contact</p>
         <h2 className="text-[#ffec43] font-bold mt-3">
           Can't wait to read your message!

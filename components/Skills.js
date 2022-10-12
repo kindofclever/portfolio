@@ -26,7 +26,7 @@ const Skills = () => {
     <m.div
       exit={{ opacity: 0 }}
       id="skills"
-      className=" sticky  lg:h-screen pt-[15%] pb-[95%] md:pb-[15%]  m-5 "
+      className=" sticky lg:h-screen pt-[15%] pb-[95%] md:pb-[15%]  m-5 "
     >
       <div className=" px-0 md:px-2 flex flex-col justify-center">
         <p className="uppercase text-xl tracking-widest">Skills</p>
