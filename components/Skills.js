@@ -34,15 +34,15 @@ const Skills = () => {
           What can I do for you?
         </h2>
         <p className="text-white">
-          Hover over the slider to pause the animation!
+          Click an hold the slider to pause the animation!
         </p>
         <div>
-          <m.div className="flex mt-[20%] md:mt-7">
+          <m.div className="flex mt-[20%] md:mt-[10%]">
             <Marquee
               speed="120"
               gradientWidth="0"
-              pauseOnHover
-              className="-rotate-6 bg-[#ffec43] p-5"
+              pauseOnClick
+              className="-rotate-6 bg-[#ffec43] p-0 md:p-5"
             >
               <m.div
                 whileHover={{ scale: 1.2 }}
