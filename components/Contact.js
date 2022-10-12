@@ -29,21 +29,21 @@ const Contact = () => {
     <motion.div
       exit={{ opacity: 0 }}
       id="contact"
-      className="w-full lg:h-screen pt-8"
+      className="w-full xs:mr-5 sm:mr-5"
     >
-      <div className="max-w-[1240px] m-auto ml-5 px-2 py-16 w-full">
+      <div className="pt-[7%] mmr-0 ml-5 md:m-5 px-0 md:px-2">
         <p className="uppercase text-xl tracking-widest">Contact</p>
         <h2 className="text-[#ffec43] font-bold mt-3">
-          Do you want to send me a message?
+          Can't wait to read your message!
         </h2>
         <div className="grid lg:grid-cols-5 gap-8 mt-5">
-          <div className="col-span-3 lg:col-span-2 mr-5 h-full shadow-xl rounded-xl p-3 bg-white">
+          <div className="col-span-3 lg:col-span-2 h-full shadow-xl rounded-xl p-3 bg-white">
             <div className="h-full lg:p-4 flex flex-col justify-center items-center">
               <div>
                 <img
                   src="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                   alt="contact"
-                  className="rounded-xl hover:scale-105 ease-in duration-300 xs:mr-5 sm:mr-5 md:mr-5"
+                  className="rounded-xl hover:scale-105 ease-in duration-300"
                 />
               </div>
               <div>
@@ -94,7 +94,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-3 mr-5 h-auto shadow-xl rounded-xl lg:p-4 bg-white">
+          <div className="col-span-3 h-auto shadow-xl rounded-xl lg:p-4 bg-white">
             <div className="p-3">
               <form method="post" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-1 w-full pt-1">
@@ -147,7 +147,7 @@ const Contact = () => {
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 17 }}
                   type="submit"
-                  className="w-full p-4 text-[#03045E] bg-[#ffec43] lg:mt-5 hover:bg-[#03045E] hover:text-[#ffec43] rounded-xl shadow-xl"
+                  className="w-full p-4 text-[#03045E] bg-[#ffec43] lg:mt-5  hover:bg-[#03045E] hover:text-[#ffec43] rounded-xl shadow-xl"
                 >
                   Send message
                 </motion.button>

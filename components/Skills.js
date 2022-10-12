@@ -33,15 +33,18 @@ const Skills = () => {
     <m.div
       exit={{ opacity: 0 }}
       id="skills"
-      className=" sticky w-full lg:h-screen pt-[15%] m-5"
+      className=" sticky w-full lg:h-screen pt-[15%] m-5 "
     >
-      <div className="max-w-[1240px] ml-5 flex flex-col justify-center h-full">
+      <div className=" px-0 md:px-2 flex flex-col justify-center h-full">
         <p className="uppercase text-xl tracking-widest">Skills</p>
         <h2 className="text-[#ffec43] font-bold mt-3">
           What can I do for you?
         </h2>
         <p className="text-white">Slide through some of my skills!</p>
-        <m.div ref={carousel} className="cursor-grab overflow-hidden mx-[5%]">
+        <m.div
+          ref={carousel}
+          className="cursor-grab overflow-hidden mr-5 md:mr-10"
+        >
           <m.div
             drag="x"
             dragConstraints={{ right: 0, left: -width }}

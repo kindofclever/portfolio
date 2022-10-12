@@ -7,9 +7,9 @@ import { motion } from 'framer-motion';
 const ComputerMain = () => {
   return (
     <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full bottom-0 flex justify-center items-center mt-[30%] lg:mt-[20%]">
-        <div>
-          <div>
+      <div className="w-full bottom-0 flex justify-center items-center mt-[30%] lg:mt-[20%]">
+        <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center">
             <motion.p
               className="uppercase text-sm tracking-widest text-[#03045E]"
               animate={{ x: [-700, 0] }}
@@ -33,15 +33,13 @@ const ComputerMain = () => {
               I'm a fullstack developer
             </motion.h1>{' '}
           </div>
-          <p className="pt-4 pb-0 max-w-[70%] m-auto">
+          <p className="pt-4 pb-0 mx-[26%]">
             At the beginning of this year I got the great news that I was chosen
-            from more than a thousand applicants to attend the{' '}
-            <span>School of Applied Technology JavaScript Bootcamp</span>. I got
-            familiar with <span className="">TDD, agile working methods,</span>
-            <span className="">mob programming</span> and the tools modern
-            fullstack developers work with. I know the principles of{' '}
-            <span className="">Clean Code </span>
-            and I understand the importance of <span className="">CI/CD</span>.
+            from more than a thousand applicants to attend the School of Applied
+            Technology JavaScript Bootcamp. I got familiar with TDD, agile
+            working methods, mob programming and the tools modern fullstack
+            developers work with. I know the principles of Clean Code and I
+            understand the importance of CI/CD.
           </p>
           <div className="flex items-center justify-evenly max-w-[350px] m-auto pt-5 sm:max-w[300px] md:pt-5">
             <a href="https://www.linkedin.com/in/sandragufler/">
