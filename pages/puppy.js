@@ -30,7 +30,7 @@ const puppy = () => {
             Project overview
           </h2>
           <p className="text-white mb-2">
-            I'm still fighting withs ome deployment issues. So please excuse the
+            I'm still fighting with some deployment issues. So please excuse the
             lack of some CRUD functionalities and you have to be patient with
             the database.
           </p>
@@ -42,16 +42,6 @@ const puppy = () => {
             authentication, comment sections, the possibility to give puppies
             likes, a blog section to present the latest products ect ect.
           </p>
-          <a href="https://main.d3mfuxjxgnbn1p.amplifyapp.com/">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-              className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
-            >
-              Demo frontend
-            </motion.button>
-          </a>
           <a href="https://puppy-backend.onrender.com/api/puppies">
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -60,6 +50,16 @@ const puppy = () => {
               className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
             >
               Demo backenend
+            </motion.button>
+          </a>
+          <a href="https://main.d3mfuxjxgnbn1p.amplifyapp.com/">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+              className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
+            >
+              Demo frontend
             </motion.button>
           </a>
           <a href="https://github.com/kindofclever/ts-react-fullstack">
