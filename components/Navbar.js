@@ -62,7 +62,7 @@ const Navbar = () => {
             <Image src={logo} height="80" width="80" />
           </div>
         </Link>
-        <div className="mx-0 xl:mx-[-4%]">
+        <div>
           <ul className="hidden md:flex">
             <Link href="/">
               <li
