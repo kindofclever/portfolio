@@ -114,7 +114,7 @@ export default function Three() {
         rotation-x={Math.PI * 0.25}
         castShadow
         ref={boxRef}
-        onClick={() => Router.push('/whatIamlookingfor')}
+        onClick={() => Router.push('/alva-labs')}
         onPointerEnter={() => setColorBox('#03055e')}
         onPointerOut={() => setColorBox('#ffec43')}
       >

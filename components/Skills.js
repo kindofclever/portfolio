@@ -34,7 +34,7 @@ const Skills = () => {
           What can I do for you?
         </h2>
         <p className="text-white">
-          Click an hold the slider to pause the animation!
+          Click and hold the slider to pause the animation!
         </p>
         <div>
           <m.div className="flex mt-[20%] md:mt-[10%] bg-[#ffec43] -rotate-6 p-3 md:p-5">
