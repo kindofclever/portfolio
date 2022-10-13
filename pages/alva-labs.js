@@ -2,16 +2,43 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
+import Marquee from 'react-fast-marquee';
 
 const whatIamlookingfor = () => {
   return (
     <>
-      <div className="w-screen h-screen flex flex-col justify-center items-center">
+      <div className="w-screen h-screen flex flex-col justify-start items-center">
         <div>
           <div className="flex flex-col justify-center items-center">
-            <h3 className="text-white text-center text-xl md:text-3xl uppercase">
-              Alvalabs personality and general mental ability test
-            </h3>
+            <div className="grid grid-rows-2 justify-center m-5">
+              <Marquee
+                speed="120"
+                gradientWidth="0"
+                className=" mb-[-10%] mb:mb-[-15%] mt-[20%] md:mt-0 z-1"
+              >
+                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
+                  Alvalabs
+                </h3>
+                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
+                  Alvalabs
+                </h3>
+                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
+                  Alvalabs
+                </h3>
+                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
+                  Alvalabs
+                </h3>
+                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
+                  Alvalabs
+                </h3>
+                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
+                  Alvalabs
+                </h3>
+              </Marquee>
+              <h3 className="text-white text-center  px-[12%]  mt-[-10%]  md:mt-[-2.5%] z-10  bg-[#00b4d8] gradient text-xl md:text-5xl uppercase mx-[10%]">
+                personality and general mental ability test
+              </h3>
+            </div>
             <p className=" my-[10%] md:my-[3%] text-lg mx-[10%] text-center">
               The Alvalabs test is a popular tool for recruiters and companies
               to find out more about potential candiates. The first part of the

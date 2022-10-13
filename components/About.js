@@ -14,7 +14,7 @@ const About = () => {
             Click on one of the objects to find out more about me!
           </p>
         </div>
-        <div className="w-[90%] md:w-[90%] mt-[20%] md:mt-2 mx-auto shadow-xl h-[60%] md:h-[90%]">
+        <div className="w-full mt-[20%] md:mt-2 mx-auto h-full">
           <Canvas className="" id="three-canvas-container" shadows>
             <Suspense fallback={<></>}>
               <Three />

@@ -33,14 +33,14 @@ export default function Three() {
     if (!!ballRef.current) {
       const timeline = gsap.timeline({ paused: false });
       timeline.to(ballRef.current.position, {
-        x: -2,
+        x: 0,
         duration: 2.5,
         ease: 'power2.out',
       });
       timeline.to(
         ballRef.current.position,
         {
-          y: 0.5,
+          y: -0.2,
           duration: 1,
           ease: 'bounce.out',
         },
@@ -69,7 +69,7 @@ export default function Three() {
     if (!!coneRef.current) {
       const timeline = gsap.timeline({ paused: false });
       timeline.to(coneRef.current.position, {
-        x: -3,
+        x: -6,
         duration: 3,
         ease: 'power2.out',
       });
@@ -83,15 +83,20 @@ export default function Three() {
   }, [ballRef.current, boxRef.current, coneRef.current]);
   return (
     <>
-      <PerspectiveCamera makeDefault position={[0.5, 1, 4.5]} />
+      <PerspectiveCamera
+        makeDefault
+        position={[0.5, 1, 4.5]}
+        rotation={[Math.PI, 0, 0]}
+      />
       <OrbitControls
-        autoRotate
+        enabled={false}
         ref={orbitControlsRef}
         minPolarAngle={angleToRadians(40)}
         maxPolarAngle={angleToRadians(88)}
       />
       <mesh
-        position={[-7, 1.5, 1]}
+        position={[-7, 1.5, 2]}
+        rotation-z={Math.PI * 0.25}
         castShadow
         ref={ballRef}
         onClick={() => Router.push('/what-I-like')}
