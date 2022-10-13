@@ -35,7 +35,7 @@ const whatIlike = ({ aboutMe }) => {
 
   return (
     <div className="w-screen h-screen flex flex-col justify-start items-center">
-      <div className=" m-5 sm:mr-5  md:mr-5 md:h-screen p-2 flex flex-col items-start sticky w-full lg:h-screen">
+      <div className=" m-5 sm:mr-5  md:mr-5 md:h-screen md:p-2 flex flex-col items-start sticky w-full lg:h-screen">
         <div className="flex flex-col">
           <div className="grid md:grid-cols-2 mb-[1%]">
             <div className="flex ml-5 flex-col justify-start">
@@ -46,11 +46,11 @@ const whatIlike = ({ aboutMe }) => {
                 {title}
               </h2>
             </div>
-            <div className="m-5 md:ml-[-1%] rounded-xl">
-              <Slider aboutMe={aboutMe} />
+            <div className="m-5 flex justify-start md:ml-[-1%] rounded-xl">
+              <Slider aboutMe={aboutMe} className="w-full" />
             </div>
           </div>
-          <div className=" pb-[5%] md:pb-[3%] grid md:grid-cols-2 ml-5 mr-9">
+          <div className=" pb-[5%] md:pb-[3%] grid md:grid-cols-2 justify-center ml-5 mr-5 md:ml-5 md:mr-9">
             <h4 className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1">
               {subtitle1}
             </h4>
