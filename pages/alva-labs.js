@@ -11,13 +11,13 @@ const whatIamlookingfor = () => {
           <div className="flex flex-col justify-center items-center">
             <div className="grid grid-rows-2 justify-center m-5 xl:mt-[5%] ">
               <motion.h3
-                className="text-[#ffec43] text-center text-3xl md:text-5xl mt-5 uppercase p-3 xl:mb-5"
+                className="text-[#ffec43] text-center text-3xl md:text-5xl md:after:mt-5 uppercase p-3 xl:mb-5"
                 animate={{ y: [-700, 0] }}
                 transition={{ duration: 0.8 }}
               >
                 Alvalabs
               </motion.h3>
-              <h3 className="text-white text-center  px-[12%]  mt-3  md:mt-[-2.5%] xl:mt-5 z-10  bg-[#00b4d8] gradient text-xl md:text-3xl xl:text-4xl uppercase mx-[5%]">
+              <h3 className="text-white text-center  px-[12%] md:mt-[-2.5%] xl:mt-5 z-10  bg-[#00b4d8] gradient text-xl md:text-3xl xl:text-4xl uppercase mx-[5%]">
                 personality and general mental ability test
               </h3>
             </div>
