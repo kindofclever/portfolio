@@ -133,7 +133,7 @@ const whatIlike = ({ aboutMe }) => {
               <motion.div
                 initial={'offscreen'}
                 whileInView={'onscreen'}
-                viewport={{ once: false, amount: 0.9 }}
+                viewport={{ once: false, amount: 0.8 }}
                 className=" pb-[5%] md:pb-[3%] grid md:grid-cols-2 justify-center ml-5 mr-5 md:ml-5 md:mr-9"
               >
                 <motion.h4

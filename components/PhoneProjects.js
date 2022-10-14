@@ -14,7 +14,7 @@ const PhoneProjects = () => {
         <h2 className="text-[#ffec43] font-bold mt-3">
           What I have built so far
         </h2>
-        <motion.div className="grid md:grid-cols-2 xl:grid-cols-3  gap-8 mt-5">
+        <motion.div className="grid md:grid-cols-2 xl:grid-cols-2  gap-8 mt-5">
           <ProjectItem
             projectTitle="Activity-Knot"
             projectDescription="A social media app for people who share the same interests"

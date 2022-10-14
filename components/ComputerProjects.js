@@ -15,7 +15,7 @@ const ComputerProjects = () => {
       type: 'spring',
 
       bounce: '0.4',
-      duration: '2',
+      duration: '7s',
       easing: 'ease',
     },
   };
@@ -25,7 +25,7 @@ const ComputerProjects = () => {
       exit={{ opacity: 0 }}
       initial={'offscreen'}
       whileInView={'onscreen'}
-      viewport={{ once: false, amount: 0.6 }}
+      viewport={{ once: false, amount: 0.5 }}
       transition={{ staggerChildren: 0.2 }}
       id="projects"
       className="w-full"
@@ -35,7 +35,7 @@ const ComputerProjects = () => {
         <h2 className="text-[#ffec43] font-bold mt-3">
           What I have built so far
         </h2>
-        <motion.div className="grid md:grid-cols-2 xl:grid-cols-3  gap-8 mt-5">
+        <motion.div className="grid md:grid-cols-2 xl:grid-cols-2  gap-8 mt-5">
           <motion.div variants={animate}>
             <ProjectItem
               projectTitle="Activity-Knot"
