@@ -8,20 +8,20 @@ const whatIamlookingfor = () => {
     <>
       <div className="w-screen h-screen flex flex-col justify-start items-center">
         <div>
-          <div className="flex flex-col justify-center items-center">
-            <div className="grid grid-rows-2 justify-center m-5 xl:mt-[5%] ">
+          <div className="flex flex-col justify-center items-center m-5">
+            <div className="grid grid-rows-2 justify-center xl:mt-[5%] ">
               <motion.h3
-                className="text-[#ffec43] text-center text-3xl md:text-5xl md:after:mt-5 uppercase p-3 xl:mb-5"
+                className="text-[#ffec43] text-center text-3xl md:text-5xl md:after:mt-5 uppercase xl:mb-5"
                 animate={{ y: [-700, 0] }}
                 transition={{ duration: 0.8 }}
               >
                 Alvalabs
               </motion.h3>
-              <h3 className="text-white text-center  px-[12%] md:mt-[-2.5%] xl:mt-5 z-10  bg-[#00b4d8] gradient text-xl md:text-3xl xl:text-4xl uppercase mx-[5%]">
+              <h3 className="text-white text-center mb-2  px-[12%] md:mt-[-2.5%] xl:mt-5 z-10  bg-[#00b4d8] gradient text-xl md:text-3xl xl:text-4xl uppercase mx-[5%]">
                 personality and general mental ability test
               </h3>
             </div>
-            <p className=" my-[2%] md:my-[3%] text-lg mx-[10%] xl:mx-[20%] text-center">
+            <p className="mb-2 md:my-[3%] text-lg mx-[10%] xl:mx-[20%] text-center">
               The Alvalabs test is a popular tool for recruiters and companies
               to find out more about potential candiates. The first part of the
               test covers information about the candidates personality when it
@@ -35,7 +35,7 @@ const whatIamlookingfor = () => {
               className="mb-1 md:mb-3"
             >
               <motion.div
-                className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-2 m-1 hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer"
+                className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-3  hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}
