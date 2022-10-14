@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import Slider from '../components/Slider';
+import useMediaQuery from '../helpers/mediaQueries';
 
 import { motion } from 'framer-motion';
 import { FaAngleDoubleLeft, FaDotCircle } from 'react-icons/fa';
@@ -22,6 +23,7 @@ export async function getStaticProps() {
 }
 
 const whatIlike = ({ aboutMe }) => {
+  const isPhone = useMediaQuery('(max-width: 550px)');
   const {
     title,
     subtitle1,
@@ -75,56 +77,104 @@ const whatIlike = ({ aboutMe }) => {
               <Slider aboutMe={aboutMe} className="w-full" />
             </div>
           </div>
-          <motion.div>
-            <motion.div
-              initial={'offscreen'}
-              whileInView={'onscreen'}
-              viewport={{ once: false, amount: 0.9 }}
-              className=" pb-[5%] md:pb-[3%] grid md:grid-cols-2 justify-center ml-5 mr-5 md:ml-5 md:mr-9"
-            >
-              <motion.h4
-                variants={animate1}
-                className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1"
+          {!isPhone ? (
+            <motion.div>
+              <motion.div
+                initial={'offscreen'}
+                whileInView={'onscreen'}
+                viewport={{ once: false, amount: 0.2 }}
+                className=" pb-[5%] md:pb-[3%] grid md:grid-cols-2 justify-center ml-5 mr-5 md:ml-5 md:mr-9"
               >
-                {subtitle1}
-              </motion.h4>
-              <motion.p variants={animate2} className="text-2xl md:text-base">
-                {paragraph1}
-              </motion.p>
-            </motion.div>
-            <motion.div
-              initial={'offscreen'}
-              whileInView={'onscreen'}
-              viewport={{ once: false, amount: 0.2 }}
-              className="pb-[3%] grid md:grid-cols-2 ml-5 mr-9"
-            >
-              <motion.h4
-                variants={animate1}
-                className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1"
+                <motion.h4
+                  variants={animate1}
+                  className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1"
+                >
+                  {subtitle1}
+                </motion.h4>
+                <motion.p variants={animate2} className="text-2xl md:text-base">
+                  {paragraph1}
+                </motion.p>
+              </motion.div>
+              <motion.div
+                initial={'offscreen'}
+                whileInView={'onscreen'}
+                viewport={{ once: false, amount: 0.2 }}
+                className="pb-[3%] grid md:grid-cols-2 ml-5 mr-9"
               >
-                {subtitle2}
-              </motion.h4>
-              <motion.p variants={animate2} className="text-2xl md:text-base">
-                {paragraph2}
-              </motion.p>
-            </motion.div>
-            <motion.div
-              initial={'offscreen'}
-              whileInView={'onscreen'}
-              viewport={{ once: false, amount: 0.2 }}
-              className="mb-5 grid md:grid-cols-2 ml-5 mr-9"
-            >
-              <motion.h4
-                variants={animate1}
-                className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1"
+                <motion.h4
+                  variants={animate1}
+                  className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1"
+                >
+                  {subtitle2}
+                </motion.h4>
+                <motion.p variants={animate2} className="text-2xl md:text-base">
+                  {paragraph2}
+                </motion.p>
+              </motion.div>
+              <motion.div
+                initial={'offscreen'}
+                whileInView={'onscreen'}
+                viewport={{ once: false, amount: 0.2 }}
+                className="mb-5 grid md:grid-cols-2 ml-5 mr-9"
               >
-                {subtitle3}
-              </motion.h4>
-              <motion.p variants={animate2} className="text-2xl md:text-base">
-                {paragraph3}
-              </motion.p>
+                <motion.h4
+                  variants={animate1}
+                  className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1"
+                >
+                  {subtitle3}
+                </motion.h4>
+                <motion.p variants={animate2} className="text-2xl md:text-base">
+                  {paragraph3}
+                </motion.p>
+              </motion.div>
             </motion.div>
-          </motion.div>
+          ) : (
+            <motion.div>
+              <motion.div
+                initial={'offscreen'}
+                whileInView={'onscreen'}
+                viewport={{ once: false, amount: 0.9 }}
+                className=" pb-[5%] md:pb-[3%] grid md:grid-cols-2 justify-center ml-5 mr-5 md:ml-5 md:mr-9"
+              >
+                <motion.h4
+                  variants={animate1}
+                  className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1"
+                >
+                  {subtitle1}
+                </motion.h4>
+                <p className="text-2xl md:text-base">{paragraph1}</p>
+              </motion.div>
+              <motion.div
+                initial={'offscreen'}
+                whileInView={'onscreen'}
+                viewport={{ once: false, amount: 0.2 }}
+                className="pb-[3%] grid md:grid-cols-2 ml-5 mr-9"
+              >
+                <motion.h4
+                  variants={animate1}
+                  className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1"
+                >
+                  {subtitle2}
+                </motion.h4>
+                <p className="text-2xl md:text-base">{paragraph2}</p>
+              </motion.div>
+              <motion.div
+                initial={'offscreen'}
+                whileInView={'onscreen'}
+                viewport={{ once: false, amount: 0.2 }}
+                className="mb-5 grid md:grid-cols-2 ml-5 mr-9"
+              >
+                <motion.h4
+                  variants={animate1}
+                  className="uppercase text-white text-3xl md:text-2xl pb-[3%] md:pb-[0%] tracking-widest mb-1"
+                >
+                  {subtitle3}
+                </motion.h4>
+                <p className="text-2xl md:text-base">{paragraph3}</p>
+              </motion.div>
+            </motion.div>
+          )}
+
           <div className="flex justify-center">
             <Link href="/">
               <motion.div
