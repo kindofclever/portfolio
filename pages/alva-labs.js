@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
-import Marquee from 'react-fast-marquee';
+import { FaAngleDoubleLeft } from 'react-icons/fa';
 
 const whatIamlookingfor = () => {
   return (
@@ -10,36 +9,19 @@ const whatIamlookingfor = () => {
       <div className="w-screen h-screen flex flex-col justify-start items-center">
         <div>
           <div className="flex flex-col justify-center items-center">
-            <div className="grid grid-rows-2 justify-center m-5">
-              <Marquee
-                speed="120"
-                gradientWidth="0"
-                className=" mb-[-10%] mb:mb-[-15%] mt-[20%] md:mt-0 z-1"
+            <div className="grid grid-rows-2 justify-center m-5 xl:mt-[5%] ">
+              <motion.h3
+                className="text-[#ffec43] text-center text-3xl md:text-5xl mt-5 uppercase p-3 xl:mb-5"
+                animate={{ y: [-700, 0] }}
+                transition={{ duration: 0.8 }}
               >
-                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
-                  Alvalabs
-                </h3>
-                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
-                  Alvalabs
-                </h3>
-                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
-                  Alvalabs
-                </h3>
-                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
-                  Alvalabs
-                </h3>
-                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
-                  Alvalabs
-                </h3>
-                <h3 className="text-[#ffec43] text-center text-xl md:text-5xl uppercase mb-3 p-3">
-                  Alvalabs
-                </h3>
-              </Marquee>
-              <h3 className="text-white text-center  px-[12%]  mt-[-10%]  md:mt-[-2.5%] z-10  bg-[#00b4d8] gradient text-xl md:text-5xl uppercase mx-[10%]">
+                Alvalabs
+              </motion.h3>
+              <h3 className="text-white text-center  px-[12%]  mt-3  md:mt-[-2.5%] xl:mt-5 z-10  bg-[#00b4d8] gradient text-xl md:text-3xl xl:text-4xl uppercase mx-[5%]">
                 personality and general mental ability test
               </h3>
             </div>
-            <p className=" my-[2%] md:my-[3%] text-lg mx-[10%] text-center">
+            <p className=" my-[2%] md:my-[3%] text-lg mx-[10%] xl:mx-[20%] text-center">
               The Alvalabs test is a popular tool for recruiters and companies
               to find out more about potential candiates. The first part of the
               test covers information about the candidates personality when it
@@ -67,9 +49,15 @@ const whatIamlookingfor = () => {
           <Link href="/">
             <motion.div
               className=" hover:text-[#ffec43] p-2 m-1  cursor-pointer"
+              animate={{ y: [700, 0] }}
+              transition={{
+                duration: 0.8,
+                type: 'spring',
+                stiffness: 400,
+                damping: 17,
+              }}
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 17 }}
             >
               <FaAngleDoubleLeft size={35} />
             </motion.div>
