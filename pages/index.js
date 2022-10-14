@@ -2,7 +2,8 @@ import Head from 'next/head';
 import Main from '../components/Main';
 import About from '../components/About';
 import Skills from '../components/Skills';
-import Projects from '../components/Projects';
+import ComputerProjects from '../components/ComputerProjects';
+import PhoneProjects from '../components/PhoneProjects';
 import Contact from '../components/Contact';
 import Navbar from '../components/Navbar';
 import { motion } from 'framer-motion';
@@ -20,11 +21,14 @@ export default function Home() {
         <link rel="icon" href="/smiley.ico" />
       </Head>
       <Navbar />
-      {!isPhone ? <ComputerMain /> : <div></div>}
-      {isPhone ? <PhoneMain /> : <div></div>}
+      {!isPhone ? <ComputerMain /> : <PhoneMain />}
       {/* <Main /> */}
       <About className="pt-[7%]" />
-      <Projects className="pt-[7%]" />
+      {!isPhone ? (
+        <ComputerProjects className="pt-[7%]" />
+      ) : (
+        <PhoneProjects className="pt-[7%]" />
+      )}
       <Skills className="pt-[7%]" />
       <Contact className="pt-[7%]" />
     </motion.div>

@@ -6,7 +6,7 @@ import puppy from '../public/assets/projects/puppy.png';
 import ProjectItem from './ProjectItem';
 import { motion, Variants } from 'framer-motion';
 
-const Projects = () => {
+const ComputerProjects = () => {
   const animate = {
     offscreen: { x: -3000 },
     onscreen: { x: 0 },
@@ -79,4 +79,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ComputerProjects;
