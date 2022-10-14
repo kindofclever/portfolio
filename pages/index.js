@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Main from '../components/Main';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import ComputerProjects from '../components/ComputerProjects';
@@ -22,7 +21,6 @@ export default function Home() {
       </Head>
       <Navbar />
       {!isPhone ? <ComputerMain /> : <PhoneMain />}
-      {/* <Main /> */}
       <About className="pt-[7%]" />
       {!isPhone ? (
         <ComputerProjects className="pt-[7%]" />
