@@ -135,7 +135,11 @@ export default function Three() {
         rotation-x={Math.PI * 0.5}
         castShadow
         ref={coneRef}
-        onClick={() => Router.push('/cv')}
+        onClick={() =>
+          Router.push(
+            'https://drive.google.com/file/d/1d2CGCzi0hpBJ7pD-z7CCjXT7Y-uirQP6/view?usp=sharing'
+          )
+        }
         onPointerEnter={() => setColorCone('#03055e')}
         onPointerOut={() => setColorCone('#ffec43')}
       >
