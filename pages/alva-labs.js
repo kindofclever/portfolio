@@ -45,7 +45,7 @@ const whatIamlookingfor = () => {
             </a>
           </div>
         </div>
-        <div className="flex justify-center mt-5 md:mt-10">
+        <div className="flex justify-center mt-0 md:mt-10">
           <Link href="/">
             <motion.div
               className=" hover:text-[#ffec43] p-2 m-1  cursor-pointer"
