@@ -135,7 +135,7 @@ export default function Three() {
         rotation-x={Math.PI * 0.5}
         castShadow
         ref={coneRef}
-        onClick={() => Router.push('/faq')}
+        onClick={() => Router.push('/cv')}
         onPointerEnter={() => setColorCone('#03055e')}
         onPointerOut={() => setColorCone('#ffec43')}
       >

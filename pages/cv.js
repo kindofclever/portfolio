@@ -12,6 +12,13 @@ const faq = () => {
             <h3 className="text-white text-3xl">
               This page needs to be implemented...
             </h3>
+            <h3 className="text-white text-3xl">Download my cv here...</h3>
+            <a
+              href="https://drive.google.com/file/d/1d2CGCzi0hpBJ7pD-z7CCjXT7Y-uirQP6/view?usp=sharing"
+              download
+            >
+              Click to download
+            </a>
           </div>
         </div>
         <div className="flex justify-center">
