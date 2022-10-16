@@ -14,7 +14,7 @@ const ComputerProjects = () => {
     transition: {
       type: 'spring',
 
-      bounce: '0.4',
+      bounce: '0.1',
       duration: '7s',
       easing: 'ease',
     },
@@ -26,7 +26,7 @@ const ComputerProjects = () => {
       initial={'offscreen'}
       whileInView={'onscreen'}
       viewport={{ once: false, amount: 0.5 }}
-      transition={{ staggerChildren: 0.2 }}
+      transition={{ staggerChildren: 0.5 }}
       id="projects"
       className="w-full"
     >
