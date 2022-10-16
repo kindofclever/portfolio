@@ -30,9 +30,8 @@ const puppy = () => {
             Project overview
           </h2>
           <p className="text-white mb-2">
-            I'm still fighting with some deployment issues. So please excuse the
-            lack of some CRUD functionalities and you have to be patient with
-            the database.
+            Hey there. The front end is currently down, due to avoiding costs
+            from Amayon Web Services. I will soon deploy it somewhere else.
           </p>
           <p className="mb-4">
             This TypeScript App allows you to check out puppies and to learn
@@ -52,7 +51,7 @@ const puppy = () => {
               Demo backenend
             </motion.button>
           </a>
-          <a href="https://main.d3mfuxjxgnbn1p.amplifyapp.com/">
+          {/* <a href="https://main.d3mfuxjxgnbn1p.amplifyapp.com/">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.9 }}
@@ -61,7 +60,7 @@ const puppy = () => {
             >
               Demo frontend
             </motion.button>
-          </a>
+          </a> */}
           <a href="https://github.com/kindofclever/ts-react-fullstack">
             <motion.button
               whileHover={{ scale: 1.05 }}
