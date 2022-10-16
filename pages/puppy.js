@@ -30,8 +30,8 @@ const puppy = () => {
             Project overview
           </h2>
           <p className="text-white mb-2">
-            Hey there. The front end is currently down, due to avoiding costs
-            from Amayon Web Services. I will soon deploy it somewhere else.
+            Hey there! The frontend is currently down, due to avoiding costs
+            from Amazon Web Services. I will soon deploy it somewhere else.
           </p>
           <p className="mb-4">
             This TypeScript App allows you to check out puppies and to learn
