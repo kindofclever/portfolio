@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaAngleDoubleLeft } from 'react-icons/fa';
+import useMediaQuery from '../helpers/mediaQueries';
 
 const whatIamlookingfor = () => {
+  const isPhone = useMediaQuery('(max-width: 550px)');
   return (
     <>
       <div className="w-screen h-screen flex flex-col justify-start items-center">
@@ -17,11 +19,11 @@ const whatIamlookingfor = () => {
               >
                 Alvalabs
               </motion.h3>
-              <h3 className="text-white text-center px-[12%] mt-1 md:mt-[-2.5%] xl:mt-5 z-10  bg-[#00b4d8] text-xl md:text-3xl xl:text-5xl uppercase mx-[5%]">
+              <h3 className="text-white text-center px-[12%] mb-4 mt-1 md:mt-[-2.5%] xl:mt-5 z-10  bg-[#00b4d8] text-xl md:text-3xl xl:text-5xl uppercase mx-[5%]">
                 personality and general mental ability test
               </h3>
             </div>
-            <p className="mb-2 md:my-[3%] text-lg mx-[10%] xl:mx-[20%] text-center">
+            <p className="mb-5 md:my-[3%] text-lg mx-[10%] xl:mx-[20%] text-center">
               The Alvalabs test is a popular tool for recruiters and companies
               to find out more about potential candiates. The first part of the
               test covers information about the candidates personality when it
@@ -49,7 +51,7 @@ const whatIamlookingfor = () => {
           <Link href="/">
             <motion.div
               className=" hover:text-[#ffec43] p-2 cursor-pointer"
-              animate={{ y: [700, -50] }}
+              animate={isPhone ? { y: [700, 0] } : { y: [700, -50] }}
               transition={{
                 duration: 0.8,
                 type: 'spring',

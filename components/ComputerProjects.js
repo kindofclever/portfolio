@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 const ComputerProjects = () => {
   const animate = {
-    offscreen: { x: -1500 },
+    offscreen: { x: -1800 },
     onscreen: { x: 0 },
     rotate: [0, 20, -20, 20, 0],
     transition: {

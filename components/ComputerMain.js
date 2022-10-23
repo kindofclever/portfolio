@@ -13,7 +13,7 @@ const ComputerMain = () => {
             <motion.p
               className="uppercase text-sm tracking-widest text-[#03045E]"
               animate={{ x: [-700, 0] }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.8, bounce: 0.2 }}
             >
               Nice that you are visiting me
             </motion.p>
