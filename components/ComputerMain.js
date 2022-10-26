@@ -1,4 +1,3 @@
-import React from 'react';
 import { IoLogoLinkedin, IoMdMail } from 'react-icons/io';
 import { ImGithub } from 'react-icons/im';
 import { SiCodewars } from 'react-icons/si';

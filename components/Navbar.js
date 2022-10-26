@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+import logo from '../public/assets/logo/logo2.png';
+
 import { RiMenu4Fill } from 'react-icons/ri';
 import { VscChromeClose } from 'react-icons/vsc';
 import { IoLogoLinkedin, IoMdMail } from 'react-icons/io';
 import { ImGithub } from 'react-icons/im';
 import { SiCodewars } from 'react-icons/si';
 import { BsSunFill } from 'react-icons/bs';
-import logo from '../public/assets/logo/logo2.png';
-import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {

@@ -1,13 +1,16 @@
+import { useEffect, useRef, useState } from 'react';
+
+import { angleToRadians } from '../utils/angle';
+
 import {
   Environment,
   OrbitControls,
   PerspectiveCamera,
 } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
-import { useEffect, useRef, useState } from 'react';
-import { angleToRadians } from '../utils/angle';
 import gsap from 'gsap';
 import Router from 'next/router';
+
 export default function Three() {
   const orbitControlsRef = useRef(null);
   const [colorBox, setColorBox] = useState('#ffec43');

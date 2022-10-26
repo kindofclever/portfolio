@@ -1,7 +1,7 @@
-import React from 'react';
+import Link from 'next/link';
+
 import { BsSunFill } from 'react-icons/bs';
 import { FaAngleDoubleLeft } from 'react-icons/fa';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const thankyou = () => {

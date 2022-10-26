@@ -1,9 +1,11 @@
 import React from 'react';
+
 import activity from '../public/assets/projects/activity-knot.png';
 import shoppinglist from '../public/assets/projects/shopping-list.png';
 import elevators from '../public/assets/projects/elevators.png';
 import puppy from '../public/assets/projects/puppy.png';
 import ProjectItem from './ProjectItem';
+
 import { motion, Variants } from 'framer-motion';
 
 const PhoneProjects = () => {

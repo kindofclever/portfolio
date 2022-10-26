@@ -1,10 +1,10 @@
-import React from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 import { IoLogoLinkedin, IoMdMail } from 'react-icons/io';
 import { ImGithub } from 'react-icons/im';
 import { SiCodewars } from 'react-icons/si';
 import { FaAngleDoubleUp } from 'react-icons/fa';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 
 const Contact = () => {

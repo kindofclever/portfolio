@@ -1,6 +1,8 @@
-import '../styles/globals.css';
-import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router';
+
+import '../styles/globals.css';
+
+import { AnimatePresence, motion } from 'framer-motion';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

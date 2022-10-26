@@ -1,8 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import activity from '../public/assets/projects/elevators.png';
-import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 import Link from 'next/link';
+import Head from 'next/head';
+
+import activity from '../public/assets/projects/elevators.png';
+
+import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const elevators = () => {

@@ -1,10 +1,11 @@
-import React from 'react';
 import Image from 'next/image';
-import shoppyImg from '../public/assets/projects/shopping-list.png';
-import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import Head from 'next/head';
+
+import shoppyImg from '../public/assets/projects/shopping-list.png';
+
+import { motion } from 'framer-motion';
+import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 
 const shoppinglist = () => {
   return (

@@ -18,7 +18,6 @@ import {
   SiExpress,
 } from 'react-icons/si';
 import { motion as m } from 'framer-motion';
-import { useState, useRef, useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
 
 const Skills = () => {

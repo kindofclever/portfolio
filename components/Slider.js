@@ -1,5 +1,4 @@
 import SimpleImageSlider from 'react-simple-image-slider';
-import { createClient } from 'contentful';
 
 import React from 'react';
 

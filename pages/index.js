@@ -1,14 +1,16 @@
 import Head from 'next/head';
+
 import About from '../components/About';
 import Skills from '../components/Skills';
 import ComputerProjects from '../components/ComputerProjects';
 import PhoneProjects from '../components/PhoneProjects';
 import Contact from '../components/Contact';
 import Navbar from '../components/Navbar';
-import { motion } from 'framer-motion';
-import useMediaQuery from '../helpers/mediaQueries';
 import ComputerMain from '../components/ComputerMain';
 import PhoneMain from '../components/PhoneMain';
+import useMediaQuery from '../helpers/mediaQueries';
+
+import { motion } from 'framer-motion';
 
 export default function Home() {
   const isPhone = useMediaQuery('(max-width: 550px)');
