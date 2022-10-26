@@ -3,11 +3,15 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaAngleDoubleLeft } from 'react-icons/fa';
 import useMediaQuery from '../helpers/mediaQueries';
+import Head from 'next/head';
 
 const whatIamlookingfor = () => {
   const isPhone = useMediaQuery('(max-width: 550px)');
   return (
     <>
+      <Head>
+        <title>Sandra Gufler | Alva Labs</title>
+      </Head>
       <div className="w-screen h-screen flex flex-col justify-start items-center">
         <div>
           <div className="flex flex-col justify-center items-center m-5">

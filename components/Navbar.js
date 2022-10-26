@@ -80,20 +80,20 @@ const Navbar = () => {
                 About me
               </li>
             </Link>
-            <Link href="/#skills">
-              <li
-                style={{ color: `${navbarTextColour}` }}
-                className="ml-10 text-sm uppercase hover:border-b"
-              >
-                Skills I have to offer
-              </li>
-            </Link>
             <Link href="/#projects">
               <li
                 style={{ color: `${navbarTextColour}` }}
                 className="ml-10 text-sm uppercase hover:border-b"
               >
                 Projects
+              </li>
+            </Link>
+            <Link href="/#skills">
+              <li
+                style={{ color: `${navbarTextColour}` }}
+                className="ml-10 text-sm uppercase hover:border-b"
+              >
+                Skills I have to offer
               </li>
             </Link>
             <Link href="/#contact">
@@ -154,14 +154,14 @@ const Navbar = () => {
                   About me
                 </li>
               </Link>
-              <Link href="/#skills">
-                <li onClick={() => setNavbar(false)} className="py-2">
-                  Skills I have to offer
-                </li>
-              </Link>
               <Link href="/#projects">
                 <li onClick={() => setNavbar(false)} className="py-2">
                   Projects
+                </li>
+              </Link>
+              <Link href="/#skills">
+                <li onClick={() => setNavbar(false)} className="py-2">
+                  Skills I have to offer
                 </li>
               </Link>
               <Link href="/#contact">
