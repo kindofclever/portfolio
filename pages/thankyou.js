@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 import { BsSunFill } from 'react-icons/bs';
 import { FaAngleDoubleLeft } from 'react-icons/fa';
