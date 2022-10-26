@@ -60,14 +60,14 @@ const ComputerProjects = () => {
               projectUrl="/elevators"
             />{' '}
           </motion.div>
-          <motion.div variants={animate}>
+          {/* <motion.div variants={animate}>
             <ProjectItem
               projectTitle="Shopping-List"
               projectDescription="A very simple shopping item tracker"
               backgroundImg={shoppinglist}
               projectUrl="/shoppinglist"
             />{' '}
-          </motion.div>
+          </motion.div> */}
           {/* <ProjectItem 
                     projectTitle='Tilia-App' 
                     projectDescription='A page for a company that provides courses'
