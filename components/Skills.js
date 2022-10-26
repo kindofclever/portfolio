@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { IoLogoCss3, IoLogoNodejs } from 'react-icons/io';
 import { DiJavascript } from 'react-icons/di';

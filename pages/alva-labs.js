@@ -1,9 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaAngleDoubleLeft } from 'react-icons/fa';
-import useMediaQuery from '../helpers/mediaQueries';
 import Head from 'next/head';
+
+import useMediaQuery from '../helpers/mediaQueries';
+
+import { motion } from 'framer-motion';
+import { FaAngleDoubleLeft } from 'react-icons/fa';
 
 const whatIamlookingfor = () => {
   const isPhone = useMediaQuery('(max-width: 550px)');

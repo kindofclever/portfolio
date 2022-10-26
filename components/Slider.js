@@ -1,7 +1,5 @@
 import SimpleImageSlider from 'react-simple-image-slider';
 
-import React from 'react';
-
 const Slider = ({ aboutMe }) => {
   const images = [
     { url: aboutMe[0].fields.picture2.fields.file.url },

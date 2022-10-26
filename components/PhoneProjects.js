@@ -1,5 +1,3 @@
-import React from 'react';
-
 import activity from '../public/assets/projects/activity-knot.png';
 import shoppinglist from '../public/assets/projects/shopping-list.png';
 import elevators from '../public/assets/projects/elevators.png';
