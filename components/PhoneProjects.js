@@ -1,5 +1,5 @@
 import activity from '../public/assets/projects/activity-knot.png';
-import shoppinglist from '../public/assets/projects/shopping-list.png';
+import todos from '../public/assets/projects/todos.png';
 import elevators from '../public/assets/projects/elevators.png';
 import puppy from '../public/assets/projects/puppy.png';
 import ProjectItem from './ProjectItem';
@@ -35,10 +35,10 @@ const PhoneProjects = () => {
             projectUrl="/elevators"
           />
           <ProjectItem
-            projectTitle="Shopping-List"
-            projectDescription="A very simple shopping item tracker"
-            backgroundImg={shoppinglist}
-            projectUrl="/shoppinglist"
+            projectTitle="Firebase Todo App"
+            projectDescription="A todo list with Firebase authentication and fetching todos from Firestore"
+            backgroundImg={todos}
+            projectUrl="/todo"
           />
           {/* <ProjectItem 
                     projectTitle='Tilia-App' 
