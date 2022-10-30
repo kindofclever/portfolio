@@ -47,17 +47,19 @@ const puppy = () => {
               authentication, comment sections, the possibility to give puppies
               likes, a blog section to present the latest products ect ect.
             </p>
-            <a href="https://puppy-backend.onrender.com/api/puppies">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-                className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
-              >
-                Demo backenend
-              </motion.button>
-            </a>
-            {/* <a href="https://main.d3mfuxjxgnbn1p.amplifyapp.com/">
+            <div className="flex justify-center md:justify-start">
+              <a href="https://puppy-backend.onrender.com/api/puppies">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+                  className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
+                >
+                  Demo backenend
+                </motion.button>
+              </a>
+
+              {/* <a href="https://main.d3mfuxjxgnbn1p.amplifyapp.com/">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.9 }}
@@ -67,16 +69,17 @@ const puppy = () => {
               Demo frontend
             </motion.button>
           </a> */}
-            <a href="https://github.com/kindofclever/ts-react-fullstack">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-                className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
-              >
-                Code
-              </motion.button>
-            </a>
+              <a href="https://github.com/kindofclever/ts-react-fullstack">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+                  className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
+                >
+                  Code
+                </motion.button>
+              </a>
+            </div>
           </div>
           <div className="col-span-4 md:col-span-1 shadow-xl rounded-xl bg-white hover:bg-[#03055e] group  hover:text-white ">
             <div className="py-9">
