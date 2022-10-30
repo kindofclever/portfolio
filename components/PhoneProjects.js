@@ -16,12 +16,17 @@ const PhoneProjects = () => {
         </h2>
         <motion.div className="grid md:grid-cols-2 xl:grid-cols-2  gap-8 mt-5">
           <ProjectItem
+            projectTitle="Firebase Todo App"
+            projectDescription="A todo list with Firebase authentication and fetching todos from Firestore"
+            backgroundImg={todos}
+            projectUrl="/todos"
+          />
+          <ProjectItem
             projectTitle="Activity-Knot"
             projectDescription="A social media app for people who share the same interests"
             backgroundImg={activity}
             projectUrl="/activityknot"
           />
-
           <ProjectItem
             projectTitle="Happy-Puppy"
             projectDescription="A fullstack app for dog lovers"
@@ -34,12 +39,7 @@ const PhoneProjects = () => {
             backgroundImg={elevators}
             projectUrl="/elevators"
           />
-          <ProjectItem
-            projectTitle="Firebase Todo App"
-            projectDescription="A todo list with Firebase authentication and fetching todos from Firestore"
-            backgroundImg={todos}
-            projectUrl="/todo"
-          />
+
           {/* <ProjectItem 
                     projectTitle='Tilia-App' 
                     projectDescription='A page for a company that provides courses'
