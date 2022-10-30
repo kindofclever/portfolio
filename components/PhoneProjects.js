@@ -16,8 +16,8 @@ const PhoneProjects = () => {
         </h2>
         <motion.div className="grid md:grid-cols-2 xl:grid-cols-2  gap-8 mt-5">
           <ProjectItem
-            projectTitle="Firebase Todo App"
-            projectDescription="A todo list with Firebase authentication and fetching todos from Firestore"
+            projectTitle="Todo App"
+            projectDescription="A todo app with Firebase authentication"
             backgroundImg={todos}
             projectUrl="/todos"
           />

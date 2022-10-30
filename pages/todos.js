@@ -24,14 +24,14 @@ const shoppinglist = () => {
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-20 p-2 text-white">
-            <h2 className="py-2 text-white">Todo App</h2>
-            <h3 className=" text-white">
+            <h2 className="py-2 text-white ml-5 md:ml-0">Todo App</h2>
+            <h3 className=" text-white ml-5 md:ml-0">
               Next.js/ Vercel/ Firestore Database / Firebase Authentication/
               React-Icons / Tailwind
             </h3>
           </div>
         </div>
-        <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 ml-5">
+        <div className="m-5 p-2 grid md:grid-cols-5 gap-8 pt-8 ">
           <div className="col-span-4">
             <h2 className="uppercase text-xl tracking-widest mb-4">
               Project overview
@@ -42,29 +42,31 @@ const shoppinglist = () => {
               updated and deleted. The app was built with "mobile approach
               first" and is fully responsive.
             </p>
-            <a href="https://firebase-todo-with-auth.vercel.app/">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-                className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
-              >
-                Demo
-              </motion.button>
-            </a>
-            <a href="https://github.com/kindofclever/firebase-todo-with-auth">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-                className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
-              >
-                Code
-              </motion.button>
-            </a>
+            <div className="flex justify-center md:justify-start">
+              <a href="https://firebase-todo-with-auth.vercel.app/">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+                  className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
+                >
+                  Demo
+                </motion.button>
+              </a>
+              <a href="https://github.com/kindofclever/firebase-todo-with-auth">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+                  className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  rounded-xl shadow-xl cursor-pointer"
+                >
+                  Code
+                </motion.button>
+              </a>
+            </div>
           </div>
           <div className="col-span-4 md:col-span-1 shadow-xl rounded-xl bg-white hover:bg-[#03055e] group  hover:text-white ">
-            <div className="py-9">
+            <div className="py-9 mr-5">
               <p className="text-center font-bold pb-2  group-hover:text-white ">
                 Technologies
               </p>
