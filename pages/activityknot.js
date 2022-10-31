@@ -41,7 +41,7 @@ const activityknot = () => {
               hobby. To check out the code for this project, you have to switch
               to the wednesdaybranch.
             </p>
-            <div>
+            <div className="flex justify-center md:justify-start">
               <a href="https://activity-knot.herokuapp.com/">
                 <motion.button
                   whileHover={{ scale: 1.05 }}

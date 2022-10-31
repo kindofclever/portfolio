@@ -83,6 +83,13 @@ const shoppinglist = () => {
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
+                  React useContext hook
+                </p>
+                <p className="  group-hover:text-white  flex items-center ">
+                  <FaDotCircle
+                    size={10}
+                    className="mx-4  group-hover:text-white "
+                  />
                   Vercel
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
