@@ -7,7 +7,7 @@ import todos from '../public/assets/projects/tilia.png';
 import { motion } from 'framer-motion';
 import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 
-const todos = () => {
+const Tilia = () => {
   return (
     <>
       <Head>
@@ -115,4 +115,4 @@ const todos = () => {
   );
 };
 
-export default tilia;
+export default Tilia;
