@@ -1,5 +1,6 @@
 import activity from '../public/assets/projects/activity-knot.png';
 import todos from '../public/assets/projects/todos.png';
+import tilia from '../public/assets/projects/tilia.png';
 import picturesque from '../public/assets/projects/picturesque.png';
 import elevators from '../public/assets/projects/elevators.png';
 import puppy from '../public/assets/projects/puppy.png';
@@ -41,16 +42,16 @@ const PhoneProjects = () => {
             projectUrl="/puppy"
           />
           <ProjectItem
+            projectTitle="Tilia-App"
+            projectDescription="A page for a company that provides courses"
+            backgroundImg={tilia}
+            projectUrl="/tilia"
+          />
+          <ProjectItem
             projectTitle="Elevators"
             projectDescription="An elevator system with five elevators and 20 floors"
             backgroundImg={elevators}
             projectUrl="/elevators"
-          />
-          <ProjectItem
-            projectTitle="Tilia-App"
-            projectDescription="A page for a company that provides courses"
-            backgroundImg={activity}
-            projectUrl="/tilia"
           />
         </motion.div>
       </div>

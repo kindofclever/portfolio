@@ -1,5 +1,6 @@
 import activity from '../public/assets/projects/activity-knot.png';
 import todos from '../public/assets/projects/todos.png';
+import tilia from '../public/assets/projects/tilia.png';
 import picturesque from '../public/assets/projects/picturesque.png';
 import elevators from '../public/assets/projects/elevators.png';
 import puppy from '../public/assets/projects/puppy.png';
@@ -66,6 +67,14 @@ const ComputerProjects = () => {
               projectDescription="A fullstack app for dog lovers"
               backgroundImg={puppy}
               projectUrl="/puppy"
+            />
+          </motion.div>
+          <motion.div variants={animate}>
+            <ProjectItem
+              projectTitle="Tilia"
+              projectDescription="Web app for a company"
+              backgroundImg={tilia}
+              projectUrl="/tilia"
             />
           </motion.div>
           <motion.div variants={animate}>
