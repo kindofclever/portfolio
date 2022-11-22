@@ -1,6 +1,6 @@
 import activity from '../public/assets/projects/activity-knot.png';
 import todos from '../public/assets/projects/todos.png';
-import todos from '../public/assets/projects/picturesque.png';
+import picturesque from '../public/assets/projects/picturesque.png';
 import elevators from '../public/assets/projects/elevators.png';
 import puppy from '../public/assets/projects/puppy.png';
 import ProjectItem from './ProjectItem';
