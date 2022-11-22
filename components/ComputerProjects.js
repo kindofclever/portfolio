@@ -12,22 +12,21 @@ const ComputerProjects = () => {
   const animate = {
     offscreen: { x: -1800 },
     onscreen: { x: 0 },
-    rotate: [0, 20, -20, 20, 0],
     transition: {
       type: 'spring',
       bounce: '0.1',
-      duration: '7s',
+      duration: '3s',
       easing: 'ease',
     },
   };
 
   return (
     <motion.div
-      exit={{ opacity: 0 }}
+      exit={{ opacity: 1 }}
       initial={'offscreen'}
       whileInView={'onscreen'}
-      viewport={{ once: false, amount: 0.5 }}
-      transition={{ staggerChildren: 0.5 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ staggerChildren: 0.1 }}
       id="projects"
       className="w-full"
     >
