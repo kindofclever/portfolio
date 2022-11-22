@@ -55,7 +55,7 @@ const whatIamlookingfor = () => {
         <div className="flex justify-center mt-0 md:mt-10">
           <Link href="/">
             <motion.div
-              className=" hover:text-[#ffec43] p-2 cursor-pointer"
+              className=" hover:text-[#ffec43] animate-bounce p-2 cursor-pointer"
               animate={isPhone ? { y: [700, 0] } : { y: [700, -50] }}
               transition={{
                 duration: 0.8,

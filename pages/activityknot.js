@@ -112,7 +112,7 @@ const activityknot = () => {
         <div className="flex justify-center">
           <Link href="/#projects">
             <motion.div
-              className="hover:text-[#ffec43] p-2 m-1  cursor-pointer"
+              className="hover:text-[#ffec43] animate-bounce p-2 m-1  cursor-pointer"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               transition={{ type: 'spring', stiffness: 400, damping: 17 }}

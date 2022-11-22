@@ -46,12 +46,12 @@ const PhoneProjects = () => {
             backgroundImg={elevators}
             projectUrl="/elevators"
           />
-
-          {/* <ProjectItem 
-                    projectTitle='Tilia-App' 
-                    projectDescription='A page for a company that provides courses'
-                    backgroundImg={activity} 
-                    projectUrl='/tilia'/> */}
+          <ProjectItem
+            projectTitle="Tilia-App"
+            projectDescription="A page for a company that provides courses"
+            backgroundImg={activity}
+            projectUrl="/tilia"
+          />
         </motion.div>
       </div>
     </motion.div>

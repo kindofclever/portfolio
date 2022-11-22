@@ -7,7 +7,7 @@ import picture from '../public/assets/projects/picturesque.png';
 import { motion } from 'framer-motion';
 import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
 
-const shoppinglist = () => {
+const Picturesque = () => {
   return (
     <>
       <Head>
@@ -24,7 +24,7 @@ const shoppinglist = () => {
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-20 p-2 text-white">
-            <h2 className="py-2 text-white ml-5 md:ml-0">Todo App</h2>
+            <h2 className="py-2 text-white ml-5 md:ml-0">Picturesque</h2>
             <h3 className=" text-white ml-5 md:ml-0">
               React.js/ Netlify/ Auth0/ Sanity/ React-Icons/ Tailwind
             </h3>
@@ -57,7 +57,7 @@ const shoppinglist = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-                  className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  rounded-xl shadow-xl cursor-pointer"
+                  className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2 mr-5  rounded-xl shadow-xl cursor-pointer"
                 >
                   Frontend Code
                 </motion.button>
@@ -136,4 +136,4 @@ const shoppinglist = () => {
   );
 };
 
-export default shoppinglist;
+export default Picturesque;
