@@ -42,7 +42,7 @@ const shoppinglist = () => {
               titles and description texts. It is deployed on Netlify.
             </p>
             <div className="flex justify-center md:justify-start">
-              <a href="https://firebase-todo-with-auth.vercel.app/">
+              <a href="https://picturesque-by-sandra.netlify.app/login">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}
@@ -52,14 +52,24 @@ const shoppinglist = () => {
                   Demo
                 </motion.button>
               </a>
-              <a href="https://github.com/kindofclever/firebase-todo-with-auth">
+              <a href="https://github.com/kindofclever/picturesque-frontend">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 17 }}
                   className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  rounded-xl shadow-xl cursor-pointer"
                 >
-                  Code
+                  Frontend Code
+                </motion.button>
+              </a>
+              <a href="https://github.com/kindofclever/picturesque-backend">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+                  className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  rounded-xl shadow-xl cursor-pointer"
+                >
+                  Backend Code
                 </motion.button>
               </a>
             </div>
