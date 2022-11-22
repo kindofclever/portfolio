@@ -14,7 +14,6 @@ const ComputerProjects = () => {
     rotate: [0, 20, -20, 20, 0],
     transition: {
       type: 'spring',
-
       bounce: '0.1',
       duration: '7s',
       easing: 'ease',
@@ -39,8 +38,8 @@ const ComputerProjects = () => {
         <motion.div className="grid md:grid-cols-2 xl:grid-cols-2  gap-8 mt-5">
           <motion.div variants={animate}>
             <ProjectItem
-              projectTitle="Firebase Todo App"
-              projectDescription="A todo list with Firebase authentication and fetching todos from Firestore"
+              projectTitle="Picturesque"
+              projectDescription="A nature photography web app"
               backgroundImg={picturesque}
               projectUrl="/picturesque"
             />
