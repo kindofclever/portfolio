@@ -15,7 +15,7 @@ const ComputerProjects = () => {
     transition: {
       type: 'spring',
       bounce: '0.1',
-      duration: '3s',
+      duration: '5s',
       easing: 'ease',
     },
   };
