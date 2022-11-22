@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 
-import todos from '../public/assets/projects/todos.png';
+import picture from '../public/assets/projects/picturesque.png';
 
 import { motion } from 'framer-motion';
 import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
@@ -11,7 +11,7 @@ const shoppinglist = () => {
   return (
     <>
       <Head>
-        <title>Sandra Gufler | Todos</title>
+        <title>Sandra Gufler | Picturesque</title>
       </Head>
       <motion.div exit={{ opacity: 0 }} className="w-full">
         <div className="w-screen h-[30vh] lg:h-[30vh] relative">
@@ -20,14 +20,13 @@ const shoppinglist = () => {
             className="absolute z-1"
             layout="fill"
             objectFit="cover"
-            src={todos}
+            src={picture}
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-20 p-2 text-white">
             <h2 className="py-2 text-white ml-5 md:ml-0">Todo App</h2>
             <h3 className=" text-white ml-5 md:ml-0">
-              Next.js/ Vercel/ Firestore Database / Firebase Authentication/
-              React-Icons / Tailwind
+              React.js/ Netlify/ Auth0/ Sanity/ React-Icons/ Tailwind
             </h3>
           </div>
         </div>
@@ -37,10 +36,10 @@ const shoppinglist = () => {
               Project overview
             </h2>
             <p className="py-4">
-              This is a todo app where people can register and login. They can
-              keep track of their todos online. The todos can be created, read,
-              updated and deleted. The app was built with "mobile approach
-              first" and is fully responsive.
+              This app enables people to login with their Google account and
+              share nature photography with others. It has a search bar that is
+              able to query the Sanity database and search through all picture
+              titles and description texts. It is deployed on Netlify.
             </p>
             <div className="flex justify-center md:justify-start">
               <a href="https://firebase-todo-with-auth.vercel.app/">
@@ -76,42 +75,35 @@ const shoppinglist = () => {
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  Next.js
+                  React.js
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
                   <FaDotCircle
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  React useContext hook
+                  Sanity
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
                   <FaDotCircle
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  Vercel
+                  Netlify
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
                   <FaDotCircle
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  Firebase Authentication
+                  Google Authentication
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
                   <FaDotCircle
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  Firestore Database
-                </p>
-                <p className="  group-hover:text-white  flex items-center ">
-                  <FaDotCircle
-                    size={10}
-                    className="mx-4  group-hover:text-white "
-                  />
-                  Tailwind
+                  Tailwind CSS
                 </p>
               </div>
             </div>

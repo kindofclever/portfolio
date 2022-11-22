@@ -1,5 +1,6 @@
 import activity from '../public/assets/projects/activity-knot.png';
 import todos from '../public/assets/projects/todos.png';
+import picturesque from '../public/assets/projects/picturesque.png';
 import elevators from '../public/assets/projects/elevators.png';
 import puppy from '../public/assets/projects/puppy.png';
 import ProjectItem from './ProjectItem';
@@ -15,6 +16,12 @@ const PhoneProjects = () => {
           What I have built so far
         </h2>
         <motion.div className="grid md:grid-cols-2 xl:grid-cols-2  gap-8 mt-5">
+          <ProjectItem
+            projectTitle="Picturesque"
+            projectDescription="A web app to share nature photography"
+            backgroundImg={picturesque}
+            projectUrl="/picturesque"
+          />
           <ProjectItem
             projectTitle="Todo App"
             projectDescription="A todo app with Firebase authentication"
