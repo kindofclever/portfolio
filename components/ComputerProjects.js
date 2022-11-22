@@ -25,7 +25,7 @@ const ComputerProjects = () => {
       exit={{ opacity: 1 }}
       initial={'offscreen'}
       whileInView={'onscreen'}
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ staggerChildren: 0.1 }}
       id="projects"
       className="w-full"
