@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 
-import picture from '../public/assets/projects/picturesque.png';
+import todos from '../public/assets/projects/picturesque.png';
 
 import { motion } from 'framer-motion';
 import { FaDotCircle, FaAngleDoubleLeft } from 'react-icons/fa';
@@ -20,7 +20,7 @@ const Picturesque = () => {
             className="absolute z-1"
             layout="fill"
             objectFit="cover"
-            src={picture}
+            src={todos}
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-20 p-2 text-white">
@@ -57,19 +57,9 @@ const Picturesque = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-                  className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2 mr-5  rounded-xl shadow-xl cursor-pointer"
+                  className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  mr-5 rounded-xl shadow-xl cursor-pointer"
                 >
-                  Frontend Code
-                </motion.button>
-              </a>
-              <a href="https://github.com/kindofclever/picturesque-backend">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-                  className=" bg-[#03055e] text-white hover:bg-white hover:text-[#03055e] px-8 py-4 mt-2  rounded-xl shadow-xl cursor-pointer"
-                >
-                  Backend Code
+                  Code
                 </motion.button>
               </a>
             </div>
@@ -92,7 +82,7 @@ const Picturesque = () => {
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  Sanity
+                  Sanity headless CMS
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
                   <FaDotCircle
@@ -106,7 +96,7 @@ const Picturesque = () => {
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  Google Authentication
+                  Auth0
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
                   <FaDotCircle

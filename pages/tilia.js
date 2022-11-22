@@ -24,10 +24,10 @@ const Tilia = () => {
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-20 p-2 text-white">
-            <h2 className="py-2 text-white ml-5 md:ml-0">Todo App</h2>
+            <h2 className="py-2 text-white ml-5 md:ml-0">Tilia</h2>
             <h3 className=" text-white ml-5 md:ml-0">
-              React.js/ Sanity/ Netlify/ Google Authentication/ React-Icons /
-              Tailwind CSS
+              Next.js/ Contentful/ Formsubmit/ Vercel/ React-Icons / Tailwind
+              CSS
             </h3>
           </div>
         </div>
@@ -64,28 +64,28 @@ const Tilia = () => {
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  React.js
+                  Next.js
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
                   <FaDotCircle
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  Sanity headless CMS
+                  Contentful headless CMS
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
                   <FaDotCircle
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  Netlify
+                  Vercel
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
                   <FaDotCircle
                     size={10}
                     className="mx-4  group-hover:text-white "
                   />
-                  Google Authentication
+                  Formsubmit
                 </p>
                 <p className="  group-hover:text-white  flex items-center ">
                   <FaDotCircle
