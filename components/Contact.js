@@ -147,7 +147,7 @@ const Contact = () => {
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 17 }}
                   type="submit"
-                  className="w-full p-4 text-[#03045E] bg-[#ffec43] lg:mt-5  hover:bg-[#03045E] hover:text-[#ffec43] rounded-xl shadow-xl"
+                  className="w-full p-4 text-[#03045E] animate-pulse bg-[#ffec43] lg:mt-5  hover:bg-[#03045E] hover:text-[#ffec43] rounded-xl shadow-xl"
                 >
                   Send message
                 </motion.button>
