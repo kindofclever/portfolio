@@ -29,25 +29,27 @@ const whatIamlookingfor = () => {
               </h3>
             </div>
             <p className="mb-5 md:my-[3%] text-lg mx-[10%] xl:mx-[20%] text-center">
-              The Alvalabs test is a popular tool for recruiters and companies
-              to find out more about potential candiates. The first part of the
-              test covers information about the candidates personality when it
-              comes to social abilities, resilience, extraversion inovation etc.
-              The second part meassures ones mental abilities and logical
-              thinking. Click the button to find out about my results. I took
-              the test in the end of August 2022.
+              The Alva Labs tests are a popular tool used by recruiters and companies to gain insights into potential candidates. The first part delves into the candidate's personality, assessing attributes such as social abilities, resilience, extraversion, innovation, and more. The second section measures an individual's mental abilities, particularly logical thinking. Click the button below to view my results.
             </p>
-            <a
-              href="https://drive.google.com/drive/u/0/folders/1vTdW49KSIUkscAED2TVr3WUytB43tXrP"
-              className="mb-1 md:mb-3"
-            >
+
+            <a href="/Personality.pdf" download="Alva_Labs_Personality_Sandra_Gufler.pdf" className="mb-1 md:mb-3">
               <motion.div
-                className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-3  hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer"
+                className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-3  hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer lg:w-[300px] flex justify-center items-center"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}
               >
-                Results
+                Download Personality Results
+              </motion.div>
+            </a>
+            <a href="/Logic.pdf" download="Alva_Labs_Logic_Sandra_Gufler.pdf" className="mb-1 md:mb-3">
+              <motion.div
+                className="mx-5 text-[#03045E] bg-[#ffec43] hover:bg-[#03045E] p-3  hover:text-[#ffec43]  rounded-full shadow-xl cursor-pointer lg:w-[300px] flex justify-center items-center"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+              >
+                Download Logical Abilities
               </motion.div>
             </a>
           </div>
@@ -55,7 +57,7 @@ const whatIamlookingfor = () => {
         <div className="flex justify-center mt-0 md:mt-10">
           <Link href="/">
             <motion.div
-              className=" hover:text-[#ffec43] animate-bounce p-2 cursor-pointer"
+              className=" hover:text-[#ffec43] p-2 cursor-pointer"
               animate={isPhone ? { y: [700, 0] } : { y: [700, -50] }}
               transition={{
                 duration: 0.8,

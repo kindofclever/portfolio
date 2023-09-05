@@ -143,11 +143,11 @@ const Contact = () => {
                   />
                 </div>
                 <motion.button
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 17 }}
                   type="submit"
-                  className="w-full p-4 text-[#03045E] animate-pulse bg-[#ffec43] lg:mt-5  hover:bg-[#03045E] hover:text-[#ffec43] rounded-xl shadow-xl"
+                  className="w-full p-4 text-[#03045E]  bg-[#ffec43] lg:mt-5  hover:bg-[#03045E] hover:text-[#ffec43] rounded-xl shadow-xl"
                 >
                   Send message
                 </motion.button>
@@ -158,10 +158,9 @@ const Contact = () => {
         <div className="flex justify-center pt-12">
           <Link href="/">
             <motion.div
-              className="text-[#03045E] hover:text-[#ffec43] animate-bounce p-2 m-1  cursor-pointer"
+              className="text-[#03045E] hover:text-[#ffec43]  p-2 m-1  cursor-pointer"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 17 }}
             >
               <FaAngleDoubleUp size={35} />
             </motion.div>

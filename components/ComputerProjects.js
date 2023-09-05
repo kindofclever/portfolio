@@ -62,34 +62,12 @@ const ComputerProjects = () => {
           </motion.div>
           <motion.div variants={animate}>
             <ProjectItem
-              projectTitle="Happy-Puppy"
-              projectDescription="A fullstack app for dog lovers"
-              backgroundImg={puppy}
-              projectUrl="/puppy"
-            />
-          </motion.div>
-          <motion.div variants={animate}>
-            <ProjectItem
               projectTitle="Tilia"
               projectDescription="Web app for a company"
               backgroundImg={tilia}
               projectUrl="/tilia"
             />
           </motion.div>
-          <motion.div variants={animate}>
-            <ProjectItem
-              projectTitle="Elevators"
-              projectDescription="An elevator system with five elevators and 20 floors"
-              backgroundImg={elevators}
-              projectUrl="/elevators"
-            />
-          </motion.div>
-
-          {/* <ProjectItem 
-                    projectTitle='Tilia-App' 
-                    projectDescription='A page for a company that provides courses'
-                    backgroundImg={activity} 
-                    projectUrl='/tilia'/> */}
         </motion.div>
       </div>
     </motion.div>

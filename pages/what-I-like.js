@@ -65,7 +65,7 @@ const whatIlike = ({ aboutMe }) => {
       <Head>
         <title>Sandra Gufler | What I like</title>
       </Head>
-      <div className="w-screen h-screen flex flex-col justify-start items-center">
+      <div className="w-screen h-screen flex flex-col justify-start items-center overflow-x-hidden">
         <div className=" m-5 sm:mr-5  md:mr-5 md:h-screen md:p-2 flex flex-col items-start sticky w-full lg:h-screen">
           <div className="flex flex-col">
             <div className="grid md:grid-cols-2 mb-[1%]">
@@ -78,7 +78,7 @@ const whatIlike = ({ aboutMe }) => {
                 </h2>
               </div>
               <div className="m-5 flex justify-start md:ml-[-1%] rounded-xl">
-                <Slider aboutMe={aboutMe} className="w-full" />
+                <Slider aboutMe={aboutMe} className="w-full " />
               </div>
             </div>
             {!isPhone ? (

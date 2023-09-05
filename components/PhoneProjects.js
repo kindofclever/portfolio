@@ -36,22 +36,10 @@ const PhoneProjects = () => {
             projectUrl="/activityknot"
           />
           <ProjectItem
-            projectTitle="Happy-Puppy"
-            projectDescription="A fullstack app for dog lovers"
-            backgroundImg={puppy}
-            projectUrl="/puppy"
-          />
-          <ProjectItem
             projectTitle="Tilia-App"
             projectDescription="A page for a company that provides courses"
             backgroundImg={tilia}
             projectUrl="/tilia"
-          />
-          <ProjectItem
-            projectTitle="Elevators"
-            projectDescription="An elevator system with five elevators and 20 floors"
-            backgroundImg={elevators}
-            projectUrl="/elevators"
           />
         </motion.div>
       </div>
